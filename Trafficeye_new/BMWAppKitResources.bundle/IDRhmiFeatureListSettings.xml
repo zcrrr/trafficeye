@@ -1,0 +1,82 @@
+<pluginApps>
+    <pluginApp applicationType="Settings" applicationWeight="1" text="More Settings Apps">
+        <actions>
+            <hmiAction id="2" target="5" />
+            <raAction id="84" />
+            <combinedAction id="19">
+                <actions>
+                    <raAction id="6" />
+                    <hmiAction id="20" target="0" />
+                </actions>
+            </combinedAction>
+            <raAction id="22" />
+            <combinedAction id="33">
+                <actions>
+                    <hmiAction id="34" target="5" />
+                    <raAction id="35" />
+                </actions>
+            </combinedAction>
+        </actions>
+        <models>
+            <imageIdModel id="1" imageId="55001" />
+            <raListModel id="81" />
+            <textIdModel id="3" modelType="Info" textId="8" />
+            <textIdModel id="40" textId="34" />
+            <textIdModel id="41" modelType="Info" textId="42" />
+            <raBoolModel id="23" value="FALSE" />
+            <textIdModel id="24" textId="23" />
+            <textIdModel id="13" textId="21" />
+            <textIdModel id="36" textId="25" />
+            <raImageModel id="11" />
+            <formatDataModel id="7" modelType="Info" formatStringModel="10">
+                <models>
+                    <raDataModel id="9" />
+                </models>
+            </formatDataModel>
+            <textIdModel id="10" textId="22" />
+            <textIdModel id="12" modelType="Info" textId="20" />
+            <formatDataModel id="31" modelType="Info" formatStringModel="12">
+                <models>
+                    <raDataModel id="32" />
+                </models>
+            </formatDataModel>
+        </models>
+        <hmiStates>
+            <hmiState id="5" text="" textModel="40">
+                <components>
+                    <label id="42" model="41" />
+                    <separator id="43" />
+                    <list id="85" model="81" action="84">
+                        <properties>
+                            <property id="6" value="50,30,420" />
+                            <property id="7" value="true" />
+                        </properties>
+                    </list>
+                </components>
+            </hmiState>
+            <popupHmiState id="15">
+                <components>
+                    <label id="16" model="7" imageModel="11">
+                        <properties>
+                            <property id="2" value="false" />
+                            <property id="10" value="56" />
+                        </properties>
+                    </label>
+                    <separator id="21" />
+                    <label id="17" model="31" />
+                    <button id="18" action="19" model="13" />
+                    <button id="37" action="33" model="36" />
+                </components>
+            </popupHmiState>
+        </hmiStates>
+        <events>
+            <popupEvent id="14" target="15" priority="0" />
+            <focusEvent id="38" />
+        </events>
+        <entryButton id="4" action="2" model="3" imageModel="1">
+            <properties>
+                <property id="23" value="1" />
+            </properties>
+        </entryButton>
+    </pluginApp>
+</pluginApps>

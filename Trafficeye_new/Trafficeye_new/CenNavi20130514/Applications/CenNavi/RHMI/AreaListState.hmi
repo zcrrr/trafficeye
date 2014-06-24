@@ -1,0 +1,24 @@
+app CenNavi
+
+model string area_list_state_title
+model table table_area_list_state_area_name_data
+
+action cac_open_area_state{
+	action open_area_state
+	open AreaState
+}
+
+model string info lbl_area_list_state_city_name
+
+state AreaListState{
+	title [area_list_state_title]
+	label lbl_area_list_state_city_name{
+		text [lbl_area_list_state_city_name]
+		selectable false
+	}
+	separator
+	table table_area_list_state_area_name{
+
+		onSelect trigger cac_open_area_state
+	}
+}

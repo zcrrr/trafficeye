@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>FeatureCategory</key>
+		<string>audio</string>
+		<key>FeatureRequiresNBT</key>
+		<false/>
+		<key>FeatureDisplayOrder</key>
+		<integer>0</integer>
+		<key>FeatureRequiresFMOD</key>
+		<false/>
+		<key>FeatureConflictsWithFMOD</key>
+		<false/>
+		<key>AppProfiles</key>
+		<array>
+			<string>classic</string>
+		</array>
+		<key>FeatureIdentifier</key>
+		<string>CenNavi</string>
+	</dict>
+</array>
+</plist>

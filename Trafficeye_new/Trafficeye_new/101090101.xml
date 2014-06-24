@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<result code="200" description="简图列表返回成功" fill="1">
+<imgInfo imgid="S180001" imgname="全市路况" imgsize="176x150" imgtype="全市简图" typecode="R01" /> 
+<imgInfo imgid="0311_103_001" imgname="石家庄城市内主干路" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0311_105_001" imgname="北国区域" imgsize="176x150" imgtype="区域简图" typecode="R01" />
+<imgInfo imgid="0311_105_002" imgname="石家庄火车站区域" imgsize="176x150" imgtype="区域简图" typecode="R01" />
+<imgInfo imgid="0311_105_003" imgname="怀特区域" imgsize="176x150" imgtype="区域简图" typecode="R01" />
+<imgInfo imgid="0311_105_004" imgname="博物馆区域" imgsize="176x150" imgtype="区域简图" typecode="R01" />
+<imgInfo imgid="0311_105_005" imgname="东方明珠区域" imgsize="176x150" imgtype="区域简图" typecode="R01" />
+<imgInfo imgid="0311_106_001" imgname="石清路-古城西路" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0311_106_002" imgname="柳辛庄立交" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0311_106_003" imgname="石太公园" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0311_106_004" imgname="石家庄北站" imgsize="176x150" imgtype="交通枢纽" typecode="R01" />
+<imgInfo imgid="0311_106_005" imgname="义堂-建北" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0311_106_006" imgname="建华北大街-丰收路" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0311_106_007" imgname="土贤庄站" imgsize="176x150" imgtype="交通枢纽" typecode="R01" />
+<imgInfo imgid="0311_106_008" imgname="西二环北路-中山西路" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0311_106_009" imgname="石家庄客运总站" imgsize="176x150" imgtype="交通枢纽" typecode="R01" />
+<imgInfo imgid="0311_106_010" imgname="人民广场-长安公园" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0311_106_011" imgname="裕彤国际体育中心" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0311_106_012" imgname="京港澳高速-裕华东路" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0311_106_013" imgname="长江大道-天山大街" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0311_106_014" imgname="玉村站" imgsize="176x150" imgtype="交通枢纽" typecode="R01" />
+<imgInfo imgid="0311_106_015" imgname="石家庄火车站" imgsize="176x150" imgtype="交通枢纽" typecode="R01" />
+<imgInfo imgid="0311_106_016" imgname="魁安路-建设南大街" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0311_106_017" imgname="世纪公园" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0311_106_018" imgname="东环公园" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+</result>

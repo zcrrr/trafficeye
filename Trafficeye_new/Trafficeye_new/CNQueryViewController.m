@@ -1,0 +1,450 @@
+//
+//  CNQueryViewController.m
+//  WhereIsTheBus
+//
+//  Created by zc on 14-4-2.
+//  Copyright (c) 2014年 张 驰. All rights reserved.
+//
+
+#import "CNQueryViewController.h"
+#import "Toast+UIView.h"
+#import "CNStationViewController.h"
+#import "CNWebViewController.h"
+#import "CLLocation+YCLocation.h"
+#import "SBJson.h"
+
+@interface CNQueryViewController ()
+
+@end
+
+@implementation CNQueryViewController
+@synthesize timer;
+@synthesize two_second;
+@synthesize lineNOList;
+@synthesize lineNOSelected;
+@synthesize lineNOCollapse;
+@synthesize directionCollapse;
+@synthesize directionSelected;
+@synthesize directionList;
+@synthesize stationCollapse;
+@synthesize stationSelected;
+@synthesize stationList;
+@synthesize selectDirIndex;
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:NO];
+    [MobClick beginLogPageView:[NSString stringWithUTF8String:object_getClassName(self)]];
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    // Do any additional setup after loading the view from its nib.
+    self.textfield.delegate = self;
+    self.textfield_dir.delegate = self;
+    self.textfield_station.delegate = self;
+    self.lineNOList = [[NSMutableArray alloc]init];
+    self.directionList = [[NSMutableArray alloc]init];
+    self.stationList = [[NSMutableArray alloc]init];
+    
+//    CALayer *layer = [self.view_lineno layer];
+//    layer.borderColor = [[UIColor lightGrayColor] CGColor];
+//    layer.borderWidth = 1.0f;
+//    CALayer *layer2 = [self.view_direction layer];
+//    layer2.borderColor = [[UIColor lightGrayColor] CGColor];
+//    layer2.borderWidth = 1.0f;
+//    CALayer *layer3 = [self.view_station layer];
+//    layer3.borderColor = [[UIColor lightGrayColor] CGColor];
+//    layer3.borderWidth = 1.0f;
+    
+    self.tableview_lineno.layer.borderWidth = 1;
+    self.tableview_lineno.layer.borderColor = [[UIColor blackColor] CGColor];//设置列表边框
+    self.tableview_direction.layer.borderWidth = 1;
+    self.tableview_direction.layer.borderColor = [[UIColor blackColor] CGColor];//设置列表边框
+    self.tableview_station.layer.borderWidth = 1;
+    self.tableview_station.layer.borderColor = [[UIColor blackColor] CGColor];//设置列表边框
+    self.indicator_lineNO.hidden = YES;
+    self.indicator_dir.hidden = YES;
+    self.lineNOSelected = NO;
+    self.lineNOCollapse = YES;
+    self.directionSelected = NO;
+    self.directionCollapse = YES;
+    self.stationSelected = NO;
+    self.stationCollapse = YES;
+    
+    self.label_change.textColor = [UIColor blueColor];
+    NSMutableAttributedString *content = [[NSMutableAttributedString alloc]initWithString:@"公交换乘查询"];
+    NSRange contentRange = {0,[content length]};
+    [content addAttribute:NSUnderlineStyleAttributeName value:[NSNumber numberWithInteger:NSUnderlineStyleSingle] range:contentRange];
+    self.label_change.attributedText = content;
+    
+//    [self testzcrrr];
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+- (void)textFieldDidBeginEditing:(UITextField *)textField{
+    NSLog(@"tag is %i",textField.tag);
+    switch (textField.tag) {
+        case 0:
+        {
+            NSLog(@"begin..");
+            self.two_second = 2.0;
+            self.timer = [NSTimer scheduledTimerWithTimeInterval:0.2 target:self selector:@selector(checkTime) userInfo:nil repeats:YES];
+            [self collapseLineNOTable:NO];
+            break;
+        }
+//        case 1:
+//        {
+//            [self collapseDirectionTable:NO];
+//            break;
+//        }
+        default:
+            break;
+    }
+}
+- (IBAction)textEditChanged:(id)sender {
+    self.two_second = 2.0;
+    NSLog(@"text changed..");
+    self.lineNOSelected = NO;
+}
+- (IBAction)button_lineNO_clicked:(id)sender {
+    if(self.lineNOCollapse){
+        [self collapseLineNOTable:NO];
+    }else{
+        [self collapseLineNOTable:YES];
+        [self.textfield resignFirstResponder];
+    }
+}
+
+- (IBAction)button_dir_clicked:(id)sender {
+    if(self.directionCollapse){
+        [self collapseDirectionTable:NO];
+    }else{
+        [self collapseDirectionTable:YES];
+    }
+}
+
+- (IBAction)button_station_clicked:(id)sender {
+    if(self.stationCollapse){
+        [self collapseStationTable:NO];
+    }else{
+        [self collapseStationTable:YES];
+    }
+}
+
+- (IBAction)button_quary_clicked:(id)sender {
+    if(self.textfield_dir.text.length > 0 && self.textfield_station.text.length > 0){
+        CNStationViewController* stationVC = [[CNStationViewController alloc]init];
+        stationVC.linename = self.textfield_dir.text;
+        stationVC.stationName = self.textfield_station.text;
+        [self.navigationController pushViewController:stationVC animated:YES];
+    }else{
+        [self.view makeToast:@"请选择方向和站点"];
+    }
+}
+
+- (IBAction)button_back_clicked:(id)sender {
+    CNWebViewController* webviewVC = [[CNWebViewController alloc]init];
+    [self.navigationController pushViewController:webviewVC animated:YES];
+}
+- (void)checkTime{
+    self.two_second = self.two_second-0.2;
+    if(self.two_second < 0.9&&self.two_second > 0.7){
+        if(self.textfield.text != nil && self.textfield.text.length > 0){
+            NSLog(@"请求网络。。。");
+            [self lineNORequestStartWating];
+            [TEAppDelegate getApplicationDelegate].networkHandler.delegate_smartTip = self;
+            [[TEAppDelegate getApplicationDelegate].networkHandler doRequest_smartTip:self.textfield.text];
+            
+        }
+    }
+}
+#pragma mark tableview delegate
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    switch (tableView.tag) {
+        case 0:
+            return [self.lineNOList count];
+            break;
+        case 1:
+            return [self.directionList count];
+            break;
+        case 2:
+            if([self.stationList count]>0){
+                return [[self.stationList objectAtIndex:self.selectDirIndex] count];
+            }else{
+                return 0;
+            }
+            
+            break;
+        default:
+            return 0;
+            break;
+    }
+}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    switch (tableView.tag) {
+        case 0:
+        {
+            static NSString* table_lineNO_identifier = @"lineNOidentifier";
+            UITableViewCell *cell = [tableView dequeueReusableHeaderFooterViewWithIdentifier:table_lineNO_identifier];
+            if(cell == nil){
+                cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:table_lineNO_identifier];
+            }
+            NSUInteger row = [indexPath row];
+            cell.textLabel.text = [[self.lineNOList objectAtIndex:row]objectForKey:@"name"];
+            return  cell;
+            break;
+        }
+        case 1:
+        {
+            static NSString* table_dir_identifier = @"directionIdentifier";
+            UITableViewCell *cell = [tableView dequeueReusableHeaderFooterViewWithIdentifier:table_dir_identifier];
+            if(cell == nil){
+                cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:table_dir_identifier];
+            }
+            NSUInteger row = [indexPath row];
+            cell.textLabel.text = [self.directionList objectAtIndex:row];
+            return  cell;
+            break;
+        }
+        case 2:
+        {
+            static NSString* table_sta_identifier = @"stationIdentifier";
+            UITableViewCell *cell = [tableView dequeueReusableHeaderFooterViewWithIdentifier:table_sta_identifier];
+            if(cell == nil){
+                cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:table_sta_identifier];
+            }
+            NSUInteger row = [indexPath row];
+            cell.textLabel.text = [[self.stationList objectAtIndex:self.selectDirIndex] objectAtIndex:row];
+            return  cell;
+            break;
+        }
+        default:
+            return nil;
+            break;
+    }
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    int row = [indexPath row];
+    switch (tableView.tag) {
+        case 0:
+        {
+            NSString* lineName = [[self.lineNOList objectAtIndex:row]objectForKey:@"name"];
+            if([lineName isEqualToString:@"没有数据"]){
+                return;
+            }
+            self.textfield.text = lineName;
+            [self collapseLineNOTable:YES];
+            [self.textfield resignFirstResponder];
+            self.lineNOSelected = YES;
+            
+            [TEAppDelegate getApplicationDelegate].networkHandler.delegate_oneLineInfo = self;
+            [[TEAppDelegate getApplicationDelegate].networkHandler doRequest_oneLineInfo:lineName];
+            self.directionList = [[NSMutableArray alloc]init];
+            self.stationList = [[NSMutableArray alloc]init];
+            self.textfield_dir.text = @"";
+            self.textfield_station.text = @"";
+            [self oneLineRequestStartWating];
+            break;
+        }
+        case 1:
+        {
+            self.textfield_dir.text = [self.directionList objectAtIndex:row];
+            [self collapseDirectionTable:YES];
+            self.directionSelected = YES;
+            self.selectDirIndex = row;
+            [self.tableview_station reloadData];
+            self.textfield_station.text = @"";
+            break;
+        }
+        case 2:
+        {
+            self.textfield_station.text = [[self.stationList objectAtIndex:self.selectDirIndex]objectAtIndex:row];
+            [self collapseStationTable:YES];
+            self.stationSelected = YES;
+            break;
+        }
+        default:
+            break;
+    }
+}
+
+#pragma mark- smart tip delegate
+- (void)smartTipDidSuccess:(NSArray *)lineNOs{
+    [self lineNORequestStopWating];
+    if ((NSNull *)lineNOs == [NSNull null]){
+        NSLog(@"没有数据");
+        NSMutableDictionary* dic = [[NSMutableDictionary alloc]initWithObjectsAndKeys:@"没有数据",@"name",nil];
+        self.lineNOList = [[NSMutableArray alloc]initWithObjects:dic, nil];
+    }else{
+        NSLog(@"长度是%i",[lineNOs count]);
+        self.lineNOList = [[NSMutableArray alloc]initWithArray:lineNOs];
+    }
+    [self.tableview_lineno reloadData];
+}
+- (void)smartTipDidFailed{
+    [self lineNORequestStopWating];
+}
+#pragma mark- oneline info delegate
+- (void)oneLineInfoDidFailed{
+    [self oneLineRequestStopWating];
+}
+- (void)oneLineInfoDidSuccess:(NSDictionary *)busInfo{
+    [self oneLineRequestStopWating];
+    NSArray* lineList = [[[busInfo objectForKey:@"response"]objectForKey:@"result"]objectForKey:@"keyresult"];
+    int i = 0;
+    for(i=0;i<[lineList count];i++){
+        NSDictionary* onelineDic = [lineList objectAtIndex:i];
+        [self.directionList addObject:[onelineDic objectForKey:@"name"]];
+        NSString* stationListStr = [onelineDic objectForKey:@"site"];
+        NSArray *stationStrList = [stationListStr componentsSeparatedByString:@";"];
+        NSMutableArray* list4dir = [[NSMutableArray alloc]init];
+        for(int j=0;j<[stationStrList count];j++){
+            NSString *oneStationStr = [stationStrList objectAtIndex:j];
+            NSArray* tempList = [oneStationStr componentsSeparatedByString:@","];
+            [list4dir addObject:[tempList objectAtIndex:0]];
+        }
+        [self.stationList addObject:list4dir];
+    }
+    [self.tableview_direction reloadData];
+    [self.tableview_station reloadData];
+}
+
+
+
+- (void)lineNORequestStartWating{
+    self.indicator_lineNO.hidden = NO;
+    [self.indicator_lineNO startAnimating];
+}
+- (void)lineNORequestStopWating{
+    self.indicator_lineNO.hidden = YES;
+    [self.indicator_lineNO stopAnimating];
+}
+- (void)oneLineRequestStartWating{
+    self.indicator_dir.hidden = NO;
+    [self.indicator_dir startAnimating];
+}
+- (void)oneLineRequestStopWating{
+    self.indicator_dir.hidden = YES;
+    [self.indicator_dir stopAnimating];
+}
+- (void)collapseLineNOTable:(BOOL) isCollapse{
+    if(isCollapse){//收缩
+        [self.arrow_lineNO setBackgroundImage:[UIImage imageNamed:@"sanjiao2.png"] forState:UIControlStateNormal];
+        self.tableview_lineno.hidden = YES;
+        self.lineNOCollapse = YES;
+    }else{
+        [self.arrow_lineNO setBackgroundImage:[UIImage imageNamed:@"sanjiao.png"] forState:UIControlStateNormal];
+        [self hideAllTable];
+        self.tableview_lineno.hidden = NO;
+//        [self.textfield resignFirstResponder];
+        self.lineNOCollapse = NO;
+    }
+}
+- (void)collapseDirectionTable:(BOOL) isCollapse{
+    if(isCollapse){//收缩
+        [self.arrow_dir setBackgroundImage:[UIImage imageNamed:@"sanjiao2.png"] forState:UIControlStateNormal];
+        self.tableview_direction.hidden = YES;
+        self.directionCollapse = YES;
+    }else{//判断是否可以展开
+        if(self.lineNOSelected){//展开
+            [self.arrow_dir setBackgroundImage:[UIImage imageNamed:@"sanjiao.png"] forState:UIControlStateNormal];
+            self.directionCollapse = NO;
+            [self hideAllTable];
+            self.tableview_direction.hidden = NO;
+        }else{
+            [self.view makeToast:@"请先选择线路"];
+            [self.textfield_dir resignFirstResponder];
+        }
+    }
+}
+- (void)collapseStationTable:(BOOL) isCollapse{
+    if(isCollapse){//收缩
+        [self.arrow_station setBackgroundImage:[UIImage imageNamed:@"sanjiao2.png"] forState:UIControlStateNormal];
+        self.tableview_station.hidden = YES;
+        self.stationCollapse = YES;
+    }else{//判断是否可以展开
+        if(self.lineNOSelected&&self.directionSelected){//展开
+            [self.arrow_station setBackgroundImage:[UIImage imageNamed:@"sanjiao.png"] forState:UIControlStateNormal];
+            self.stationCollapse = NO;
+            [self hideAllTable];
+            self.tableview_station.hidden = NO;
+        }else{
+            [self.view makeToast:@"请先选择线路和方向"];
+        }
+    }
+}
+- (void)hideAllTable{
+    self.tableview_lineno.hidden = YES;
+    self.tableview_direction.hidden = YES;
+    self.tableview_station.hidden = YES;
+}
+- (void)testzcrrr{
+    NSString* beforeString = @"116.204717,39.770208;116.205668,39.770925;116.206619,39.771641;116.207570,39.772357;116.208521,39.773073;116.209472,39.773790;116.210423,39.774506;116.211374,39.775222;116.212325,39.775938;116.213276,39.776655;116.214227,39.777371;116.215178,39.778087;116.216129,39.778804;116.217080,39.779520;116.218031,39.780236;116.218982,39.780952;116.219933,39.781669;116.220884,39.782385;116.221835,39.783101;116.222786,39.783817;116.223737,39.784534;116.224688,39.785250;116.225639,39.785966;116.226590,39.786683;116.227541,39.787399;116.228492,39.788115;116.229443,39.788831;116.230394,39.789548;116.231345,39.790264;116.232296,39.790980;116.233247,39.791696;116.234198,39.792413;116.235149,39.793129;116.236100,39.793845;116.237051,39.794562;116.238002,39.795278;116.238953,39.795994;116.239904,39.796710;116.240855,39.797427;116.241806,39.798143;116.242757,39.798859;116.243708,39.799575;116.244659,39.800292;116.245610,39.801008;116.246561,39.801724;116.247512,39.802441;116.248463,39.803157;116.249414,39.803873;116.250365,39.804589;116.251316,39.805306;116.252267,39.806022;116.253218,39.806738;116.254169,39.807454;116.255120,39.808171;116.256071,39.808887;116.257022,39.809603;116.257973,39.810320;116.258924,39.811036;116.259875,39.811752;116.260826,39.812468;116.261777,39.813185;116.262728,39.813901;116.263679,39.814617;116.264630,39.815333;116.265581,39.816050;116.266532,39.816766;116.267483,39.817482;116.268434,39.818199;116.269385,39.818915;116.270336,39.819631;116.271287,39.820347;116.272238,39.821064;116.273189,39.821780;116.274140,39.822496;116.275091,39.823212;116.276042,39.823929;116.276993,39.824645;116.277944,39.825361;116.278895,39.826078;116.279846,39.826794;116.280797,39.827510;116.281748,39.828226;116.282699,39.828943;116.283650,39.829659;116.284601,39.830375;116.285552,39.831091;116.286503,39.831808;116.287454,39.832524;116.288405,39.833240;116.289356,39.833957;116.290307,39.834673;116.291258,39.835389;116.292209,39.836105;116.293160,39.836822;116.294111,39.837538;116.295062,39.838254;116.296013,39.838970;116.296964,39.839687;116.297915,39.840403;116.298866,39.841119;116.299817,39.841836;116.300768,39.842552;116.301719,39.843268;116.302670,39.843984;116.303621,39.844701;116.304572,39.845417;116.305523,39.846133;116.306474,39.846849;116.307425,39.847566;116.308376,39.848282;116.309327,39.848998;116.310278,39.849715;116.311229,39.850431;116.312180,39.851147;116.313131,39.851863;116.314082,39.852580;116.315033,39.853296;116.315984,39.854012;116.316935,39.854728;116.317886,39.855445;116.318837,39.856161;116.319788,39.856877;116.320739,39.857594;116.321690,39.858310;116.322641,39.859026;116.323592,39.859742;116.324543,39.860459;116.325494,39.861175;116.326445,39.861891;116.327396,39.862607;116.328347,39.863324;116.329298,39.864040;116.330249,39.864756;116.331200,39.865473;116.332151,39.866189;116.333102,39.866905;116.334053,39.867621;116.335004,39.868338;116.335955,39.869054;116.336906,39.869770;116.337857,39.870486;116.338808,39.871203;116.339759,39.871919;116.340710,39.872635;116.341661,39.873352;116.342612,39.874068;116.343563,39.874784;116.344514,39.875500;116.345465,39.876217;116.346416,39.876933;116.347367,39.877649;116.348318,39.878365;116.349269,39.879082;116.350220,39.879798;116.351171,39.880514;116.352122,39.881231;116.353073,39.881947;116.354024,39.882663;116.354975,39.883379;116.355926,39.884096;116.356877,39.884812;116.357828,39.885528;116.358779,39.886244;116.359730,39.886961;116.360681,39.887677;116.361632,39.888393;116.362583,39.889110;116.363534,39.889826;116.364485,39.890542;116.365436,39.891258;116.366387,39.891975;116.367338,39.892691;116.368289,39.893407;116.369240,39.894123;116.370191,39.894840;116.371142,39.895556;116.372093,39.896272;116.373044,39.896989;116.373995,39.897705;116.374946,39.898421;116.375897,39.899137;116.376848,39.899854;116.377799,39.900570;116.378750,39.901286;116.379701,39.902002;116.380652,39.902719;116.381603,39.903435;116.382554,39.904151;116.383505,39.904868;116.384456,39.905584;116.385407,39.906300;116.386358,39.907016;116.387309,39.907733;116.388260,39.908449;116.389211,39.909165;116.390162,39.909881;116.391113,39.910598;116.392064,39.911314;116.393015,39.912030;116.393967,39.912747;116.394918,39.913463;116.395869,39.914179;116.396820,39.914895;116.397771,39.915612;116.398722,39.916328;116.399673,39.917044;116.400624,39.917760;116.401575,39.918477;116.402526,39.919193;116.403477,39.919909;116.404428,39.920625;116.405379,39.921342;116.406330,39.922058;116.407281,39.922774;116.408232,39.923491;116.409183,39.924207;116.410134,39.924923;116.411085,39.925639;116.412036,39.926356;116.412987,39.927072;116.413938,39.927788;116.414889,39.928504;116.415840,39.929221;116.416791,39.929937;116.417742,39.930653;116.418693,39.931370;116.419644,39.932086;116.420595,39.932802;116.421546,39.933518;116.422497,39.934235;116.423448,39.934951;116.424399,39.935667;116.425350,39.936383;116.426301,39.937100;116.427252,39.937816;116.428203,39.938532;116.429154,39.939249;116.430105,39.939965;116.431056,39.940681;116.432007,39.941397;116.432958,39.942114;116.433909,39.942830;116.434860,39.943546;116.435811,39.944262;116.436762,39.944979;116.437713,39.945695;116.438664,39.946411;116.439615,39.947128;116.440566,39.947844;116.441517,39.948560;121.337722,31.176796;121.338316,31.177207;121.338910,31.177618;121.339504,31.178029;121.340098,31.178439;121.340692,31.178850;121.341286,31.179261;121.341880,31.179672;121.342474,31.180083;121.343067,31.180494;121.343661,31.180905;121.344255,31.181316;121.344849,31.181726;121.345443,31.182137;121.346037,31.182548;121.346631,31.182959;121.347225,31.183370;121.347819,31.183781;121.348413,31.184192;121.349007,31.184603;121.349601,31.185013;121.350195,31.185424;121.350789,31.185835;121.351383,31.186246;121.351977,31.186657;121.352571,31.187068;121.353165,31.187479;121.353759,31.187890;121.354352,31.188300;121.354946,31.188711;121.355540,31.189122;121.356134,31.189533;121.356728,31.189944;121.357322,31.190355;121.357916,31.190766;121.358510,31.191177;121.359104,31.191587;121.359698,31.191998;121.360292,31.192409;121.360886,31.192820;121.361480,31.193231;121.362074,31.193642;121.362668,31.194053;121.363262,31.194464;121.363856,31.194874;121.364450,31.195285;121.365044,31.195696;121.365637,31.196107;121.366231,31.196518;121.366825,31.196929;121.367419,31.197340;121.368013,31.197751;121.368607,31.198162;121.369201,31.198572;121.369795,31.198983;121.370389,31.199394;121.370983,31.199805;121.371577,31.200216;121.372171,31.200627;121.372765,31.201038;121.373359,31.201449;121.373953,31.201859;121.374547,31.202270;121.375141,31.202681;121.375735,31.203092;121.376329,31.203503;121.376922,31.203914;121.377516,31.204325;121.378110,31.204736;121.378704,31.205146;121.379298,31.205557;121.379892,31.205968;121.380486,31.206379;121.381080,31.206790;121.381674,31.207201;121.382268,31.207612;121.382862,31.208023;121.383456,31.208433;121.384050,31.208844;121.384644,31.209255;121.385238,31.209666;121.385832,31.210077;121.386426,31.210488;121.387020,31.210899;121.387614,31.211310;121.388207,31.211720;121.388801,31.212131;121.389395,31.212542;121.389989,31.212953;121.390583,31.213364;121.391177,31.213775;121.391771,31.214186;121.392365,31.214597;121.392959,31.215007;121.393553,31.215418;121.394147,31.215829;121.394741,31.216240;121.395335,31.216651;121.395929,31.217062;121.396523,31.217473;121.397117,31.217884;121.397711,31.218295;121.398305,31.218705;121.398899,31.219116;121.399492,31.219527;121.400086,31.219938;121.400680,31.220349;121.401274,31.220760;121.401868,31.221171;121.402462,31.221582;121.403056,31.221992;121.403650,31.222403;121.404244,31.222814;121.404838,31.223225;121.405432,31.223636;121.406026,31.224047;121.406620,31.224458;121.407214,31.224869;121.407808,31.225279;121.408402,31.225690;121.408996,31.226101;121.409590,31.226512;121.410184,31.226923;121.410777,31.227334;121.411371,31.227745;121.411965,31.228156;121.412559,31.228566;121.413153,31.228977;121.413747,31.229388;121.414341,31.229799;121.414935,31.230210;121.415529,31.230621;121.416123,31.231032;121.416717,31.231443;121.417311,31.231853;121.417905,31.232264;121.418499,31.232675;121.419093,31.233086;121.419687,31.233497;121.420281,31.233908;121.420875,31.234319;121.421469,31.234730;121.422062,31.235140;121.422656,31.235551;121.423250,31.235962;121.423844,31.236373;121.424438,31.236784;121.425032,31.237195;121.425626,31.237606;121.426220,31.238017;121.426814,31.238428;121.427408,31.238838;121.428002,31.239249;121.428596,31.239660;121.429190,31.240071;121.429784,31.240482;121.430378,31.240893;121.430972,31.241304;121.431566,31.241715;121.432160,31.242125;121.432754,31.242536;121.433347,31.242947;121.433941,31.243358;121.434535,31.243769;121.435129,31.244180;121.435723,31.244591;121.436317,31.245002;121.436911,31.245412;121.437505,31.245823;121.438099,31.246234;121.438693,31.246645;121.439287,31.247056;121.439881,31.247467;121.440475,31.247878;121.441069,31.248289;121.441663,31.248699;121.442257,31.249110;121.442851,31.249521;121.443445,31.249932;121.444039,31.250343;121.444632,31.250754;121.445226,31.251165;121.445820,31.251576;121.446414,31.251986;121.447008,31.252397;121.447602,31.252808;121.448196,31.253219;121.448790,31.253630;121.449384,31.254041;121.449978,31.254452;121.450572,31.254863;121.451166,31.255273;121.451760,31.255684;121.452354,31.256095;121.452948,31.256506;121.453542,31.256917;121.454136,31.257328;121.454730,31.257739;121.455324,31.258150;121.455917,31.258560;121.456511,31.258971;121.457105,31.259382;121.457699,31.259793;121.458293,31.260204;121.458887,31.260615;121.459481,31.261026;121.460075,31.261437;121.460669,31.261848;121.461263,31.262258;121.461857,31.262669;121.462451,31.263080;121.463045,31.263491;121.463639,31.263902;121.464233,31.264313;121.464827,31.264724;121.465421,31.265135;121.466015,31.265545;121.466609,31.265956;121.467203,31.266367;121.467796,31.266778;121.468390,31.267189;121.468984,31.267600;121.469578,31.268011;121.470172,31.268422;121.470766,31.268832;121.471360,31.269243;121.471954,31.269654;121.472548,31.270065;121.473142,31.270476;121.473736,31.270887;121.474330,31.271298;121.474924,31.271709;121.475518,31.272119;121.476112,31.272530;121.476706,31.272941;121.477300,31.273352;121.477894,31.273763;121.478488,31.274174;121.479081,31.274585;121.479675,31.274996;121.480269,31.275406;121.480863,31.275817;121.481457,31.276228;121.482051,31.276639;121.482645,31.277050;121.483239,31.277461;121.483833,31.277872;121.484427,31.278283;121.485021,31.278693;121.485615,31.279104;113.107881,22.931329;113.108767,22.932087;113.109652,22.932845;113.110538,22.933603;113.111424,22.934361;113.112310,22.935119;113.113195,22.935877;113.114081,22.936635;113.114967,22.937393;113.115853,22.938151;113.116738,22.938909;113.117624,22.939667;113.118510,22.940425;113.119396,22.941183;113.120282,22.941941;113.121167,22.942699;113.122053,22.943457;113.122939,22.944215;113.123825,22.944973;113.124710,22.945731;113.125596,22.946489;113.126482,22.947247;113.127368,22.948005;113.128254,22.948763;113.129139,22.949521;113.130025,22.950279;113.130911,22.951037;113.131797,22.951795;113.132682,22.952553;113.133568,22.953311;113.134454,22.954069;113.135340,22.954827;113.136225,22.955585;113.137111,22.956343;113.137997,22.957101;113.138883,22.957859;113.139769,22.958617;113.140654,22.959375;113.141540,22.960133;113.142426,22.960891;113.143312,22.961649;113.144197,22.962407;113.145083,22.963165;113.145969,22.963923;113.146855,22.964681;113.147741,22.965439;113.148626,22.966197;113.149512,22.966955;113.150398,22.967713;113.151284,22.968471;113.152169,22.969230;113.153055,22.969988;113.153941,22.970746;113.154827,22.971504;113.155712,22.972262;113.156598,22.973020;113.157484,22.973778;113.158370,22.974536;113.159256,22.975294;113.160141,22.976052;113.161027,22.976810;113.161913,22.977568;113.162799,22.978326;113.163684,22.979084;113.164570,22.979842;113.165456,22.980600;113.166342,22.981358;113.167228,22.982116;113.168113,22.982874;113.168999,22.983632;113.169885,22.984390;113.170771,22.985148;113.171656,22.985906;113.172542,22.986664;113.173428,22.987422;113.174314,22.988180;113.175199,22.988938;113.176085,22.989696;113.176971,22.990454;113.177857,22.991212;113.178743,22.991970;113.179628,22.992728;113.180514,22.993486;113.181400,22.994244;113.182286,22.995002;113.183171,22.995760;113.184057,22.996518;113.184943,22.997276;113.185829,22.998034;113.186715,22.998792;113.187600,22.999550;113.188486,23.000308;113.189372,23.001066;113.190258,23.001824;113.191143,23.002582;113.192029,23.003340;113.192915,23.004098;113.193801,23.004856;113.194686,23.005614;113.195572,23.006372;113.196458,23.007130;113.197344,23.007888;113.198230,23.008646;113.199115,23.009404;113.200001,23.010162;113.200887,23.010920;113.201773,23.011678;113.202658,23.012436;113.203544,23.013194;113.204430,23.013952;113.205316,23.014710;113.206202,23.015468;113.207087,23.016226;113.207973,23.016984;113.208859,23.017742;113.209745,23.018500;113.210630,23.019258;113.211516,23.020016;113.212402,23.020774;113.213288,23.021532;113.214173,23.022290;113.215059,23.023048;113.215945,23.023806;113.216831,23.024564;113.217717,23.025322;113.218602,23.026080;113.219488,23.026838;113.220374,23.027596;113.221260,23.028354;113.222145,23.029112;113.223031,23.029870;113.223917,23.030628;113.224803,23.031386;113.225689,23.032144;113.226574,23.032902;113.227460,23.033660;113.228346,23.034418;113.229232,23.035176;113.230117,23.035934;113.231003,23.036692;113.231889,23.037450;113.232775,23.038208;113.233660,23.038966;113.234546,23.039724;113.235432,23.040482;113.236318,23.041240;113.237204,23.041998;113.238089,23.042756;113.238975,23.043514;113.239861,23.044272;113.240747,23.045031;113.241632,23.045789;113.242518,23.046547;113.243404,23.047305;113.244290,23.048063;113.245176,23.048821;113.246061,23.049579;113.246947,23.050337;113.247833,23.051095;113.248719,23.051853;113.249604,23.052611;113.250490,23.053369;113.251376,23.054127;113.252262,23.054885;113.253147,23.055643;113.254033,23.056401;113.254919,23.057159;113.255805,23.057917;113.256691,23.058675;113.257576,23.059433;113.258462,23.060191;113.259348,23.060949;113.260234,23.061707;113.261119,23.062465;113.262005,23.063223;113.262891,23.063981;113.263777,23.064739;113.264663,23.065497;113.265548,23.066255;113.266434,23.067013;113.267320,23.067771;113.268206,23.068529;113.269091,23.069287;113.269977,23.070045;113.270863,23.070803;113.271749,23.071561;113.272634,23.072319;113.273520,23.073077;113.274406,23.073835;113.275292,23.074593;113.276178,23.075351;113.277063,23.076109;113.277949,23.076867;113.278835,23.077625;113.279721,23.078383;113.280606,23.079141;113.281492,23.079899;113.282378,23.080657;113.283264,23.081415;113.284149,23.082173;113.285035,23.082931;113.285921,23.083689;113.286807,23.084447;113.287693,23.085205;113.288578,23.085963;113.289464,23.086721;113.290350,23.087479;113.291236,23.088237;113.292121,23.088995;113.293007,23.089753;113.293893,23.090511;113.294779,23.091269;113.295665,23.092027;113.296550,23.092785;113.297436,23.093543;113.298322,23.094301;113.299208,23.095059;113.300093,23.095817;113.300979,23.096575;113.301865,23.097333;113.302751,23.098091;113.303636,23.098849;113.304522,23.099607;113.305408,23.100365;113.306294,23.101123;113.307180,23.101881;113.308065,23.102639;113.308951,23.103397;113.309837,23.104155;113.310723,23.104913;113.311608,23.105671;113.312494,23.106429;113.313380,23.107187;113.314266,23.107945;113.315152,23.108703;113.316037,23.109461;113.316923,23.110219;113.317809,23.110977;113.318695,23.111735;113.319580,23.112493;113.320466,23.113251;113.321352,23.114009;113.322238,23.114767;113.323123,23.115525;113.324009,23.116283;113.324895,23.117041;113.325781,23.117799;113.326667,23.118557;113.327552,23.119315;113.328438,23.120073;103.965525,30.606385;103.966053,30.606766;103.966582,30.607147;103.967111,30.607528;103.967640,30.607908;103.968168,30.608289;103.968697,30.608670;103.969226,30.609051;103.969754,30.609432;103.970283,30.609813;103.970812,30.610194;103.971341,30.610575;103.971869,30.610956;103.972398,30.611336;103.972927,30.611717;103.973455,30.612098;103.973984,30.612479;103.974513,30.612860;103.975042,30.613241;103.975570,30.613622;103.976099,30.614003;103.976628,30.614384;103.977157,30.614764;103.977685,30.615145;103.978214,30.615526;103.978743,30.615907;103.979271,30.616288;103.979800,30.616669;103.980329,30.617050;103.980858,30.617431;103.981386,30.617812;103.981915,30.618192;103.982444,30.618573;103.982972,30.618954;103.983501,30.619335;103.984030,30.619716;103.984559,30.620097;103.985087,30.620478;103.985616,30.620859;103.986145,30.621240;103.986673,30.621620;103.987202,30.622001;103.987731,30.622382;103.988260,30.622763;103.988788,30.623144;103.989317,30.623525;103.989846,30.623906;103.990374,30.624287;103.990903,30.624667;103.991432,30.625048;103.991961,30.625429;103.992489,30.625810;103.993018,30.626191;103.993547,30.626572;103.994075,30.626953;103.994604,30.627334;103.995133,30.627715;103.995662,30.628095;103.996190,30.628476;103.996719,30.628857;103.997248,30.629238;103.997776,30.629619;103.998305,30.630000;103.998834,30.630381;103.999363,30.630762;103.999891,30.631143;104.000420,30.631523;104.000949,30.631904;104.001478,30.632285;104.002006,30.632666;104.002535,30.633047;104.003064,30.633428;104.003592,30.633809;104.004121,30.634190;104.004650,30.634571;104.005179,30.634951;104.005707,30.635332;104.006236,30.635713;104.006765,30.636094;104.007293,30.636475;104.007822,30.636856;104.008351,30.637237;104.008880,30.637618;104.009408,30.637999;104.009937,30.638379;104.010466,30.638760;104.010994,30.639141;104.011523,30.639522;104.012052,30.639903;104.012581,30.640284;104.013109,30.640665;104.013638,30.641046;104.014167,30.641427;104.014695,30.641807;104.015224,30.642188;104.015753,30.642569;104.016282,30.642950;104.016810,30.643331;104.017339,30.643712;104.017868,30.644093;104.018396,30.644474;104.018925,30.644855;104.019454,30.645235;104.019983,30.645616;104.020511,30.645997;104.021040,30.646378;104.021569,30.646759;104.022097,30.647140;104.022626,30.647521;104.023155,30.647902;104.023684,30.648283;104.024212,30.648663;104.024741,30.649044;104.025270,30.649425;104.025799,30.649806;104.026327,30.650187;104.026856,30.650568;104.027385,30.650949;104.027913,30.651330;104.028442,30.651711;104.028971,30.652091;104.029500,30.652472;104.030028,30.652853;104.030557,30.653234;104.031086,30.653615;104.031614,30.653996;104.032143,30.654377;104.032672,30.654758;104.033201,30.655138;104.033729,30.655519;104.034258,30.655900;104.034787,30.656281;104.035315,30.656662;104.035844,30.657043;104.036373,30.657424;104.036902,30.657805;104.037430,30.658186;104.037959,30.658566;104.038488,30.658947;104.039016,30.659328;104.039545,30.659709;104.040074,30.660090;104.040603,30.660471;104.041131,30.660852;104.041660,30.661233;104.042189,30.661614;104.042717,30.661994;104.043246,30.662375;104.043775,30.662756;104.044304,30.663137;104.044832,30.663518;104.045361,30.663899;104.045890,30.664280;104.046418,30.664661;104.046947,30.665042;104.047476,30.665422;104.048005,30.665803;104.048533,30.666184;104.049062,30.666565;104.049591,30.666946;104.050120,30.667327;104.050648,30.667708;104.051177,30.668089;104.051706,30.668470;104.052234,30.668850;104.052763,30.669231;104.053292,30.669612;104.053821,30.669993;104.054349,30.670374;104.054878,30.670755;104.055407,30.671136;104.055935,30.671517;104.056464,30.671898;104.056993,30.672278;104.057522,30.672659;104.058050,30.673040;104.058579,30.673421;104.059108,30.673802;104.059636,30.674183;104.060165,30.674564;104.060694,30.674945;104.061223,30.675326;104.061751,30.675706;104.062280,30.676087;104.062809,30.676468;104.063337,30.676849;104.063866,30.677230;104.064395,30.677611;104.064924,30.677992;104.065452,30.678373;104.065981,30.678754;104.066510,30.679134;104.067038,30.679515;104.067567,30.679896;104.068096,30.680277;104.068625,30.680658;104.069153,30.681039;104.069682,30.681420;104.070211,30.681801;104.070740,30.682182;104.071268,30.682562;104.071797,30.682943;104.072326,30.683324;104.072854,30.683705;104.073383,30.684086;104.073912,30.684467;104.074441,30.684848;104.074969,30.685229;104.075498,30.685609;104.076027,30.685990;104.076555,30.686371;104.077084,30.686752;104.077613,30.687133;104.078142,30.687514;104.078670,30.687895;104.079199,30.688276;104.079728,30.688657;104.080256,30.689037;104.080785,30.689418;104.081314,30.689799;104.081843,30.690180;104.082371,30.690561;104.082900,30.690942;104.083429,30.691323;104.083957,30.691704;104.084486,30.692085;104.085015,30.692465;104.085544,30.692846;104.086072,30.693227;104.086601,30.693608;104.087130,30.693989;104.087658,30.694370;104.088187,30.694751;104.088716,30.695132;104.089245,30.695513;104.089773,30.695893;104.090302,30.696274;104.090831,30.696655;104.091359,30.697036;104.091888,30.697417;104.092417,30.697798;104.092946,30.698179;104.093474,30.698560;104.094003,30.698941;104.094532,30.699321;104.095061,30.699702;104.095589,30.700083;104.096118,30.700464;104.096647,30.700845;104.097175,30.701226";
+    NSArray* arr_parts = [beforeString componentsSeparatedByString:@";"];
+    int i = 0;
+    NSMutableString* coorstr = [NSMutableString stringWithString:@""];
+    for(i=0;i<[arr_parts count];i++){
+        NSArray* lonlat = [[arr_parts objectAtIndex:i] componentsSeparatedByString:@","];
+        NSString* lat = [lonlat objectAtIndex:1];
+        NSString* lon = [lonlat objectAtIndex:0];
+        CLLocation* location = [[CLLocation alloc]initWithLatitude:[lat doubleValue] longitude:[lon doubleValue]];
+        CLLocation* location2 = [location locationMarsFromBaidu];
+        [coorstr appendString:[NSString stringWithFormat:@"%f,%f",location2.coordinate.longitude,location2.coordinate.latitude]];
+        int n = i/100;
+        if(i!=((n+1)*100-1)){
+            [coorstr appendString:@";"];
+        }else{
+            NSString* imageURL = [NSString stringWithFormat:@"http://api.map.baidu.com/geoconv/v1/?coords=%@&from=3&to=5&ak=6df513102982a7dd662557aef4604401",coorstr];
+            NSLog(@"avatar is %@",imageURL);
+            NSURL *url = [NSURL URLWithString:imageURL];
+            ASIHTTPRequest *Imagerequest = [ASIHTTPRequest requestWithURL:url];
+            Imagerequest.tag = n;
+            Imagerequest.timeOutSeconds = 15;
+            [Imagerequest setDelegate:self];
+            [Imagerequest startAsynchronous];
+            coorstr = [NSMutableString stringWithString:@""];
+        }
+    }
+//    NSLog(@"coorstr is %@",coorstr);
+    
+}
+- (void)requestFinished:(ASIHTTPRequest *)request{
+    NSString *responseString = [[NSString alloc] initWithData:[request responseData] encoding:NSUTF8StringEncoding];
+    NSLog(@"---服务器返回结果是%i:%@",request.tag,responseString);
+    SBJsonParser *jsonParser = [[SBJsonParser alloc]init];
+    NSMutableArray* array = [[jsonParser objectWithString:responseString] objectForKey:@"result"];
+    int i=0;
+    NSMutableString* baiduStr = [NSMutableString stringWithString:@""];
+    for(i=0;i<[array count];i++){
+        [baiduStr appendString:[NSString stringWithFormat:@"%@",[[array objectAtIndex:i] objectForKey:@"x"]]];
+        [baiduStr appendString:@","];
+        [baiduStr appendString:[NSString stringWithFormat:@"%@",[[array objectAtIndex:i] objectForKey:@"y"]]];
+        [baiduStr appendString:@";"];
+    }
+    NSLog(@"baidu str is %@",baiduStr);
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    [MobClick endLogPageView:[NSString stringWithUTF8String:object_getClassName(self)]];
+}
+
+
+@end

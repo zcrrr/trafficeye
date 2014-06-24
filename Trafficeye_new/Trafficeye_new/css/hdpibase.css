@@ -1,0 +1,112 @@
+﻿/*==========-webkit-device-pixel-ratio:2.0)==================*/
+/*@media screen and (-webkit-device-pixel-ratio:2.0) {*/
+.header, .topbtn_l a, .topbtn_r a, .prompt_title, .prompt_cont, .prompt_btn > .btn, .w_box h3, .w_box h4, .m_cancel s, .mainlist li p b, .rs_cont li, .rs_cont li ul li a, .city_tishi span, .citylist li, .citylist li ul li a, .poilist li p, .poilist li p b, .favorites li p, .favorites li p b, .route_cont, .select li, .nr_tishi1, .nr_tishi2, .common_list li, .theme li p b {
+font-weight:bold;
+}
+.main_search_list li.main_search_prompt b, .favorites_norecord, .favorites li.favorites_load, .poi_name, .setup_list li, .setnavi_list li, .nettype_xx span, .nettype_btn, .q_help span {
+font-weight:700
+}
+.poi_nameb, .poi_btn, .poi_subnav li a, .poilist_no_a_i li, .poilist_no_a_i li {
+font-weight:700
+}
+body {
+-webkit-background-size:40px 25px;
+background:#f5f5f5 url(../images/dpi2/common_body_bg.png) repeat;
+}
+.header {
+-webkit-background-size:40px 44px;
+background:#559cba url(../images/dpi2/common_header_bg.png) repeat-x;
+}
+.topbtn_l a, .topbtn_r a {
+-webkit-background-size:55px 64px;
+background:url(../images/dpi2/common_header_btn_bg.png) no-repeat left top;
+}
+.text3 a {
+-webkit-background-size:65px 64px;
+background:url(../images/dpi2/common_header_3btn_bg.png) no-repeat left top;
+}
+.text4 a {
+-webkit-background-size:88px 64px;
+background:url(../images/dpi2/common_header_4btn_bg.png) no-repeat left top;
+}
+.fh a {
+-webkit-background-size:55px 64px;
+background:url(../images/dpi2/common_header_fhbtn.png) no-repeat left top;
+}
+.topbtn_l.curr a, .topbtn_r.curr a, .topbtn_l.text3.curr a, .topbtn_r.text3.curr a, .topbtn_l.text4.curr a, .topbtn_r.text4.curr a, .topbtn_l.fh.curr a {
+background-position: left bottom;
+}
+.prompt_load {
+-webkit-background-size:54px 54px;
+background:url(../images/dpi2/waiting.gif) no-repeat center top;
+}
+.prompt_title {
+-webkit-background-size:22px 22px;
+background:#434343 url(../images/dpi2/prompt_logo.png) no-repeat 35px center;
+}
+.loadimg span {
+-webkit-background-size:50px 50px;
+background:url(../images/waiting.gif) no-repeat ;
+}
+.loadqx {
+-webkit-background-size:50px 50px;
+background:url(../images/icon_close.png) no-repeat ;
+}
+/*===============select_date.html style===============*/
+.date_title {
+-webkit-background-size:314px 38px;
+background:url(../images/dpi2/select_date_tl_bg.png) no-repeat left top;
+}
+.date_pre span{
+-webkit-background-size:44px 36px;
+background:url(../images/dpi2/select_date_pre.png) no-repeat left top;
+}
+.date_next span{
+-webkit-background-size:44px 36px;
+background:url(../images/dpi2/select_date_pre.png) no-repeat left bottom;
+}
+.date_pre.curr span{
+background-position: right top;
+}
+.date_next.curr span{
+background-position: right bottom;
+}
+.date_week {
+-webkit-background-size:314px 30px;
+background:url(../images/dpi2/select_date_week_bg.png) no-repeat left top;
+}
+.date_list {
+-webkit-background-size:314px 44px;
+background:url(../images/dpi2/select_date_li_bg.png) repeat-y left top;
+}
+.date_btbg{
+-webkit-background-size:314px 30px;
+background:url(../images/dpi2/select_date_bt_bg.png) no-repeat left top;
+}
+.select_date_logo {
+-webkit-background-size:60px 60px;
+background:url(../images/dpi2/select_date_icon01.png) no-repeat center center;
+}
+/*===============select_date.html end===============*/
+/*----------huisetishi start----------*/
+.nav_new .icon {
+-webkit-background-size:20px 20px;
+background:url(../images/dpi2/common_input_cancel.png) no-repeat 12px center;
+}
+/*----------huisetishi end----------*/
+/*----------reddottishi digital start----------*/
+.m-dot {
+-webkit-background-size:17px 17px;
+background: url(../images/dpi2/my.png) no-repeat center;
+}
+span.s{
+min-width:2px;
+-webkit-background-size:48px 22px;
+background:url(../images/dpi2/massicon.png) no-repeat left center;
+}
+span.s s{
+-webkit-background-size:48px 22px;
+background:url(../images/dpi2/massicon.png) no-repeat right center;
+}
+/*----------reddottishi digital end----------*/
+/*}*/

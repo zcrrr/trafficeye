@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<result code="200" description="简图列表返回成功" fill="1">
+<imgInfo imgid="0592_103_001" imgname="厦门城市内主干路" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0592_105_001" imgname="中山公园区域" imgsize="176x150" imgtype="区域简图" typecode="R01" />
+<imgInfo imgid="0592_105_002" imgname="火车站-富山区域" imgsize="176x150" imgtype="区域简图" typecode="R01" />
+<imgInfo imgid="0592_105_003" imgname="江头区域" imgsize="176x150" imgtype="区域简图" typecode="R01" />
+<imgInfo imgid="0592_105_004" imgname="翔鹭区域" imgsize="176x150" imgtype="区域简图" typecode="R01" />
+<imgInfo imgid="0592_106_001" imgname="厦门北站" imgsize="176x150" imgtype="交通枢纽" typecode="R01" />
+<imgInfo imgid="0592_106_002" imgname="美人山" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0592_106_003" imgname="杏林镇" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0592_106_004" imgname="集美大桥" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0592_106_005" imgname="海沧野生动物园" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0592_106_006" imgname="厦门站-厦门大学" imgsize="176x150" imgtype="交通枢纽" typecode="R01" />
+<imgInfo imgid="0592_106_007" imgname="厦门国际会展中心" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0592_106_008" imgname="湖边水库" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0592_106_009" imgname="湿地公园" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0592_106_010" imgname="石鼓山立交" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0592_106_011" imgname="高崎国际机场" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0592_106_012" imgname="仙岳公园" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0592_106_013" imgname="莲花-金尚路" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+</result>

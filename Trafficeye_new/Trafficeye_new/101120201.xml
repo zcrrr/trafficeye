@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<result code="200" description="简图列表返回成功" fill="1">
+<imgInfo imgid="S140001" imgname="四方区" imgsize="176x150" imgtype="区域简图" typecode="R01" />
+<imgInfo imgid="S140002" imgname="城阳区" imgsize="176x150" imgtype="区域简图" typecode="R01" /> 
+<imgInfo imgid="0532_103_001" imgname="青岛城市内主干路" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0532_105_001" imgname="香港中路区域" imgsize="176x150" imgtype="区域简图" typecode="R01" />
+<imgInfo imgid="0532_105_002" imgname="台东区域" imgsize="176x150" imgtype="区域简图" typecode="R01" />
+<imgInfo imgid="0532_105_003" imgname="市北CBD区域" imgsize="176x150" imgtype="区域简图" typecode="R01" />
+<imgInfo imgid="0532_106_001" imgname="城阳站" imgsize="176x150" imgtype="交通枢纽" typecode="R01" />
+<imgInfo imgid="0532_106_002" imgname="青岛农业大学" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0532_106_003" imgname="兴阳路-安顺北路" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0532_106_004" imgname="喜盈门立交" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0532_106_005" imgname="城阳南立交" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0532_106_006" imgname="青岛流亭国际机场" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0532_106_007" imgname="夏庄立交" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0532_106_008" imgname="沧口站" imgsize="176x150" imgtype="交通枢纽" typecode="R01" />
+<imgInfo imgid="0532_106_009" imgname="金水路" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0532_106_010" imgname="瑞昌路立交" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0532_106_011" imgname="沙岭庄站" imgsize="176x150" imgtype="交通枢纽" typecode="R01" />
+<imgInfo imgid="0532_106_012" imgname="跨海大桥高架-重庆中路" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0532_106_013" imgname="青岛北岭山森林公园" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0532_106_014" imgname="河西" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0532_106_015" imgname="辽阳东路立交" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0532_106_016" imgname="大港站" imgsize="176x150" imgtype="交通枢纽" typecode="R01" />
+<imgInfo imgid="0532_106_017" imgname="鞍山路-山东路" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0532_106_018" imgname="福辽立交" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0532_106_019" imgname="浮山森林公园" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0532_106_020" imgname="青岛火车站" imgsize="176x150" imgtype="交通枢纽" typecode="R01" />
+<imgInfo imgid="0532_106_021" imgname="汇泉广场" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0532_106_022" imgname="青岛中山公园" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0532_106_023" imgname="奥帆中心" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0532_106_024" imgname="青岛海昌极地海洋世界" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0532_106_025" imgname="胶州湾隧道" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0532_106_026" imgname="嘉陵江路连接线立交" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0532_106_027" imgname="香江路-黄岛" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0532_106_028" imgname="辛安" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0532_106_029" imgname="崇明岛路-澎湖岛街" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+</result>

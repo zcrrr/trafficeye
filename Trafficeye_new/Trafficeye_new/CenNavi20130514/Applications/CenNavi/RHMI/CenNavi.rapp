@@ -1,0 +1,11 @@
+name  CenNavi
+
+type OnlineServices weight 100
+link Navigation weight 100
+supported-vehicle-types bmw, mini
+default-localization zh_CN
+vendor "3rd Party A4A Developer"
+version "1.0"
+appswitcher-url "cennavi://com.bmw.a4a/"
+objc-target "target/objc/hmi-gen"
+objc-res-target "target/objc/assets"

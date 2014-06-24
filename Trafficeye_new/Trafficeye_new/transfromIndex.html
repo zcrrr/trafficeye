@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport"
+		content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title></title>
+		<link href="css/public.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet"media="screen and (-webkit-device-pixel-ratio:1.5)"href="css/mdpi.css" />
+		<link rel="stylesheet"media="screen and (-webkit-device-pixel-ratio:2.0)"href="css/hdpi.css" />
+		<link rel="stylesheet" href="css/base.css" type="text/css">
+		<link rel="stylesheet" media="screen and (-webkit-device-pixel-ratio:1.5)" href="css/mdpibase.css">
+		<link rel="stylesheet" media="screen and (-webkit-device-pixel-ratio:2.0)" href="css/hdpibase.css">
+	</head>
+	<body>
+		<div style="background-image:url(images/bar.png);height:45px;width:100%;">
+			<img src="images/icon_setting.png" width="45px" height="45px" style="float:left;" id="setting"/>
+			<img src="images/icon_refresh.png" width="45px" height="45px" style="float:right;" id="refresh"/>
+			<div style="font-size:24px;color:#FFFFFF;text-align:center;height:45px;line-height:45px;padding-left:45px;">
+				交通简图
+			</div>
+		</div>
+		<div class="wbg" id="trafficContainer">
+			<img id="trafficBgImg" class="cimg" src="images/transform_bg.jpg" style="display:none;"/>
+			<div id='mySwipe'>
+				<div id="indexCon" style="position:relative;left:0px;top:0px;width:100%;"></div>
+			</div>
+			<div id="lunbo" class="nav1">
+				<ul class="indicator" id="tabNav"></ul>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery1.9.1.js"></script>
+	<script type="text/javascript" src="js/swipe.js"></script>
+	<script type="text/javascript" src="js/transfrom.js"></script>
+</html>

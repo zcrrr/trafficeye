@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE HTML PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<meta content="telephone=no" name="format-detection" />
+	<title>路况交通眼</title>
+	<link href="com_css/public.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" media="screen and (-webkit-device-pixel-ratio:1.5)" href="com_css/mdpi.css" />
+	<link rel="stylesheet" media="screen and (-webkit-device-pixel-ratio:2.0)" href="com_css/hdpi.css" />
+</head>
+<body >
+<!-- 用户标题栏 -->
+<div class="header">
+	<div class="tbtn-l" id="backpagebtn"><a></a></div>
+	<div class="tbtn-r sx" id="refreshbtn"><a></a></div>
+	<!--<div id="header_nicknameid"></div>-->
+	<div>好友动态</div>
+</div>
+<!-- 用户信息展示区 -->
+<div class="nxx imgwidth">
+	<!--<div id = "backimage" style="width:640px;height:200px;overflow:hidden;">
+		<img src="images/iimg.jpg" style="position:relative;width:800px;height:200px;left:-80px;top:0px;">
+	</div>-->
+	<img src="com_images/iimg.jpg" alt="" width="100%"/>
+		
+	
+	<div class="nr">
+		<a id="detailbtn">详细<br />资料</a>
+		<a id="looklistbtn"><span id="looknum"></span><br />关注</a>
+		<a id="fanslistbtn"><span id="fansnum"></span><br />粉丝</a>
+	</div>
+	<div class="nl" id="headimgbtn" onclick="headimgbtnUp(this);" sytle="display:none;" >
+		<img id="headimgid" src="com_images/default.png" width="80" height="80" />
+	</div>
+</div>
+<!-- 用户关注功能按钮区 -->
+<div class="nc">
+	<span id="nc_nicknameid"></span>
+	<span class="ncn" id="nc_mid" style="display:none;"></span><!--男-->
+	<span class="ncv" id="nc_wid"  style="display:none;"></span><!--女-->
+	<div class="ncr">
+			<a id="editbtn">编辑</a>
+	</div>
+</div>
+
+<!--2014年3月10日新加div-->
+<div class="yaoq" id = "lookdefault" sytle="display:none;">
+	<h3>你还没有关注任何用户，先关注我们的帐号吧。</h3>
+	<ul class="h-list ygz">
+		<li>
+			<span id = "addlook" class="g-cancel curr-" onclick = "addLook(24362,this);">加关注</span>
+			<div class="h-img"><img src="com_images/logo2.png" alt="" width="40" height="40" /></div>
+			<div class="h-text">交通眼</div>
+		</li>
+	</ul>
+	<h3>绑定微博，邀请好友一起来路况交通眼</h3>
+	<ul class="h-btn bt wbtn ygt">
+		<li class="curr-" id="invite" onclick = "invite(); "><a>立即邀请</a></li>
+	</ul>
+</div>
+<!--2014年3月10日新加div 结束-->
+<!-- 评论列表 -->
+<div id="commentlistid"></div>
+<div id="loadmorebtn" class="qpl bblue" style="display:none;">加载更多</div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+</body>
+<script type="text/javascript" src="libs/zepto.js"></script>
+<script type="text/javascript" src="libs/gmu.js"></script>
+<script type="text/javascript" src="com_js/base.js"></script>
+<script type="text/javascript" src="com_js/index.js"></script>
+</html>

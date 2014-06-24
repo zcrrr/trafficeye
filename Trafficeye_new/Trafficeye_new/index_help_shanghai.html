@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport"
+		content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title></title>
+		<link href="css/public.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet"
+		media="screen and (-webkit-device-pixel-ratio:1.5)"
+		href="css/mdpi.css" />
+		<link rel="stylesheet"
+		media="screen and (-webkit-device-pixel-ratio:2.0)"
+		href="css/hdpi.css" />
+		<script type="text/javascript" src="js/jquery1.9.1.js"></script>
+		<style type="text/css">
+			#topNav {
+				width:100%;
+				float: left;
+				display: block;
+				z-index: 100;
+				overflow: visible;
+				position: fixed;
+				top: 0px; /* position fixed for IE6 */
+				_position: absolute;
+				_top: expression(documentElement.scrollTop + "px");
+				background-image: url( images/bar.png);
+				height:45px	;
+			}
+		</style>
+	</head>
+	<body>
+
+
+<div>
+<div id="topNav" >
+			<img src="images/icon_back.png" width="45px" height="45px"  style="float:left;" id="back" onclick="window.location.href=window.localStorage.pre;"/>
+			<div  style="font-size:24px ;color: #FFFFFF;text-align:center;height:45px;line-height:45px;">
+				上海交通指数帮助
+			</div>
+		</div>
+<div style="margin-top: 45px">
+	<p><strong>一、什么是上海道路交通指数？</strong></p>
+<p>&nbsp;&nbsp;&nbsp;道路交通指数（又称交通拥堵指数）是用量化方法表达道路交通运行拥堵程度，是道路交通状态的数字化表达，类似用温度表达天气冷热程度。道路交通指数反应了一定范围内道路的平均车速和人们对道路交通拥堵程度的感受。上海道路交通指数值用介于0-100之间的数值表达，数值越大，表明道路交通越拥堵，数值越小，表明交通越畅通。</p>
+<p><br/></p>
+
+<p><strong>二、为什么要用交通指数？</strong></p>
+<p>&nbsp;&nbsp;&nbsp; 经过多年的建设，上海已经完成市区重要道路的交通流信息的采集，并实现以红、黄、绿三种颜色代表路况信息发布。但城市道路网络复杂，不同路网车速限制值的不同给拥堵现象描述带来了一定困扰，同样的拥堵状态在不同路网条件下人们感受不一样，如快速路30km/h的旅行车速感觉比较拥挤，但对地面道路却很畅通。</p>
+<p>&nbsp;&nbsp;&nbsp; 交通拥堵指数在技术上消除了各路网络车速与感觉不一致的问题，充分吸取了人们对不同等级道路拥堵的容忍感受，以用数值方式量化描述道路交通运行状态，提高道路交通运行状态表达精度，同时也达到一个指数值无论对快速路、地面主干路或其他道路具有相同的拥堵含义描述，既可以客观公平的评价交通拥堵，也方便出行者的理解与记忆。</p>
+<p><br/></p>
+
+<p><strong>三、指数如何表达拥堵程度？</strong></p>
+<p>&nbsp;&nbsp;&nbsp; 上海市道路交通拥堵指数的计算，是以一定范围内各个路段实时采集的平均车速为基本参数，按不同等级道路设施要素和通行能力，加权集成并经过标准化后计算生成的。 </p>
+<p>&nbsp;&nbsp;&nbsp; 上海道路交通拥堵指数值用介于0-100之间的数值表达，数值越大，表明道路交通越拥堵，数值越小，表明交通越畅通。在指数0-100数据区间基础上，通过对历史数据统计分析、出行调查和现场验证，分类归纳出人们对快速路、地面道路交通拥堵的习惯感受程度，划分出对应畅通、基本畅通、拥挤和阻塞4种拥堵程度等级，方便人们的理解与记忆。</p>
+<p align="center"><img src="index_help_shanghai_1.jpg" width="100%"></p>
+<p><br/></p>
+
+
+<p><br/><br/><br/><br/>更多信息，请访问<a href="http://www.jtcx.sh.cn/">上海市城乡建设和交通发展研究院</a></p>
+
+</div>
+		<script type="text/javascript">
+			$(function() {
+				document.getElementById("back").addEventListener('touchstart', touchstart);
+				document.getElementById("back").addEventListener('touchend', touchend);
+			});
+			function touchstart(e) {
+				$("#back").attr("src", "images/icon_back.png");
+			}
+
+			function touchend(e) {
+				$("#back").attr("src", "images/icon_back_pressed.png");
+			}
+		</script>
+
+</body>
+</html>

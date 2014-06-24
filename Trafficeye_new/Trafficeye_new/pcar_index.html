@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE HTML PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta content="telephone=no" name="format-detection" />
+<title>拼车</title>
+<link href="pcar_css/public.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" media="screen and (-webkit-device-pixel-ratio:1.5)" href="pcar_css/mdpi.css" />
+<link rel="stylesheet" media="screen and (-webkit-device-pixel-ratio:2.0)" href="pcar_css/hdpi.css" /></head>
+<body>
+
+<div class="prompt_mask" style="display:none">
+	<div class="p_load">
+		<div class="loadimg"><span></span></div>
+		<div class="loadtext">正在加载...</div>
+		<div class="loadqx"></div>
+	</div>
+</div>
+
+<div class="header">
+	<!--<div class="tbtn-l"><a></a></div>-->
+	拼车
+</div>
+<div class="car-img">
+	<img src="pcar_img/carp.png" alt="" width="320"/>
+	<!-- <div class="car-text">北北京公白色捷达 手动档京档</div> -->
+</div>
+<!-- <p class="prompt-t margin-top text-h">
+	根据行政部要求：<br />
+	1，用车员工需在开车出发后点击“开车出发”按钮启动跟踪定位功能；<br />
+	2，停车办事时点击“停车办事”按钮，暂停跟踪定位；<br />
+	3，再次开车出发，仍需点击“开车出发”按钮；<br />
+	4，完成差期，归还车辆，需点击“归还车辆”按钮；
+</p> -->
+<p class="tk">
+	<input name="" id="ruleride" type="checkbox" checked="checked" value="" /><label for="t1">已阅读并同意<span class="bblue" onclick="term(this);">《路况交通眼》拼车服务条款。</span></label>
+</p>
+<ul class="h-btn">
+	<li onclick="carpool(this);" class="d"><a><span></span>我要搭车</a></li>
+</ul>
+<ul class="h-btn">
+	<li onclick="passenger(this);" class="s"><a><span></span>我能送人</a></li>
+</ul>
+<ul class="h-btn">
+	<li onclick="publish(this);" class="f"><a><span></span>我的发布</a></li>
+</ul>
+<ul class="h-btn l-color">
+	<li onclick="publishInfo(this);" ><a>发布新的拼车信息</a></li>
+</ul>
+</body>
+<script type="text/javascript" src="libs/zepto.js"></script>
+<script type="text/javascript" src="libs/gmu.js"></script>
+<script type="text/javascript" src="pcar_js/base.js"></script>
+<script type="text/javascript" src="pcar_js/pcar_index.js"></script>
+</html>

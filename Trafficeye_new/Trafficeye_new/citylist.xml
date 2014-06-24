@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<result code="200" description="返回成功">
+  <cityInfo cityCode="101010100" cityName="北京" simpleMap="S100071" version="v1" latitude="39.9" longitude="116.4" zoom="10"/>
+  <cityInfo cityCode="101020100" cityName="上海" simpleMap="S110075" version="v1" latitude="31.25" longitude="121.5" zoom="10"/>
+  <cityInfo cityCode="101280101" cityName="广州" simpleMap="S120054" version="v1" latitude="31.25" longitude="121.5" zoom="10"/>
+  <cityInfo cityCode="101280601" cityName="深圳" simpleMap="S130053" version="v1" latitude="31.25" longitude="121.5" zoom="10"/>
+   <cityInfo cityCode="101210101" cityName="杭州" simpleMap="S260001" version="v1" latitude="31.25" longitude="121.5" zoom="10"/>
+  <cityInfo cityCode="101230101" cityName="福州" simpleMap="S280001" version="v1" latitude="31.25" longitude="121.5" zoom="10"/>
+  <cityInfo cityCode="101200101" cityName="武汉" simpleMap="S310001" version="v1" latitude="31.25" longitude="121.5" zoom="10"/>
+  <cityInfo cityCode="101270101" cityName="成都" simpleMap="S370001" version="v1" latitude="31.25" longitude="121.5" zoom="10"/>
+  <cityInfo cityCode="101040100" cityName="重庆" simpleMap="S360001" version="v1" latitude="31.25" longitude="121.5" zoom="10"/>
+  <cityInfo cityCode="101120201" cityName="青岛" simpleMap="S140001" version="v1" latitude="31.25" longitude="121.5" zoom="10"/>
+  <cityInfo cityCode="101070101" cityName="沈阳" simpleMap="S240001" version="v1" latitude="31.25" longitude="121.5" zoom="10"/>
+  <cityInfo cityCode="101190101" cityName="南京" simpleMap="S250001" version="v1" latitude="31.25" longitude="121.5" zoom="10"/>
+  <cityInfo cityCode="101210401" cityName="宁波" simpleMap="S160001" version="v1" latitude="31.25" longitude="121.5" zoom="10"/>
+  <cityInfo cityCode="101060101" cityName="长春" simpleMap="S220001" version="v1" latitude="31.25" longitude="121.5" zoom="10"/>
+  <cityInfo cityCode="101281701" cityName="中山" simpleMap="S470001" version="v1" latitude="31.25" longitude="121.5" zoom="10"/>
+  <cityInfo cityCode="101090101" cityName="石家庄" simpleMap="S180001" version="v1" latitude="31.25" longitude="121.5" zoom="10"/>
+  <cityInfo cityCode="101250101" cityName="长沙" simpleMap="S320001" version="v1" latitude="31.25" longitude="121.5" zoom="10"/>
+  <cityInfo cityCode="101281601" cityName="东莞" simpleMap="S490001" version="v1" latitude="31.25" longitude="121.5" zoom="10"/>
+  <cityInfo cityCode="101280701" cityName="珠海" simpleMap="S920001" version="v1" latitude="31.25" longitude="121.5" zoom="10"/>
+  <cityInfo cityCode="101280800" cityName="佛山" simpleMap="S480001" version="v1" latitude="31.25" longitude="121.5" zoom="10"/>
+  <cityInfo cityCode="101030100" cityName="天津" simpleMap="0022_103_001" version="v1" latitude="31.25" longitude="121.5" zoom="10"/>
+  <cityInfo cityCode="101190201" cityName="无锡" simpleMap="0510_103_001" version="v1" latitude="31.25" longitude="121.5" zoom="10"/>
+  <cityInfo cityCode="101190401" cityName="苏州" simpleMap="0512_103_001" version="v1" latitude="31.25" longitude="121.5" zoom="10"/>
+  <cityInfo cityCode="101210701" cityName="温州" simpleMap="0577_103_001" version="v1" latitude="31.25" longitude="121.5" zoom="10"/>
+  <cityInfo cityCode="101210901" cityName="金华" simpleMap="0579_103_001" version="v1" latitude="31.25" longitude="121.5" zoom="10"/>
+  <cityInfo cityCode="101230201" cityName="厦门" simpleMap="0592_103_001" version="v1" latitude="31.25" longitude="121.5" zoom="10"/>
+  <cityInfo cityCode="000000000" cityName="城际高速" simpleMap="1" version="v1" latitude="0.0" longitude="0.0" zoom="10"/>
+
+
+
+
+
+</result>

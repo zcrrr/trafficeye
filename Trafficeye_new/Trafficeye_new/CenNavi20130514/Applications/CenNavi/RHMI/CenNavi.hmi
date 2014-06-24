@@ -1,0 +1,131 @@
+app CenNavi
+
+//The entry of the app
+
+entry CenNavi{
+	text SID_APP_NAME
+	image app_icon
+	onSelect open MainState
+}
+
+action show_city_overview
+action show_ahead_traffic
+action turn_on_off_sound
+
+val int map_width = 514
+val int map_height = 420
+//
+model img img_main_screen_city_overview
+model img img_main_screen_ahead_traffic
+
+model img img_main_screen_bg
+model img img_main_screen_map
+model img img_main_screen_ahead
+model img img_main_screen_compass
+model img img_main_screen_compassbg
+
+model img img_main_screen_location
+
+model string main_screen_title
+model string main_screen_notes
+//The main state (screen)
+
+action sync csc_show_area_list_state {
+	action show_area_list_state
+	open AreaListState
+}
+
+state MainState{
+	title [main_screen_title]
+	toolbar{
+		button btn_main_screen_city_overview{
+			image [img_main_screen_city_overview]
+			onSelect trigger show_city_overview
+			tooltip SID_CITY_OVERVIEW
+		}
+		button btn_main_screen_ahead_traffic{
+			image [img_main_screen_ahead_traffic]
+			onSelect trigger show_ahead_traffic
+			tooltip SID_AHEAD_TRAFFIC
+		}
+		
+		button btn_main_screen_dummy_0{
+			selectable false
+		}
+		
+		button btn_main_screen_dummy_1{
+			selectable false
+		}
+		button btn_main_screen_dummy_2{
+			selectable false
+		}
+		button btn_main_screen_dummy_3{
+			selectable false
+		}
+		button btn_main_screen_dummy_4{
+			selectable false
+		}
+		button btn_main_screen_browse_areas{
+			image browse_areas
+			onSelect trigger csc_show_area_list_state
+			tooltip SID_AREA_LIST
+		}
+	}
+	
+	image img_main_screen_bg[img_main_screen_bg]{
+		alignment LeftTop
+		positionX -4
+		positionY -11
+		width map_width
+		height map_height
+	}
+	image img_main_screen_location[img_main_screen_location]{
+		alignment LeftTop
+		positionX 50 
+		positionY 50
+		width 250
+		height 250
+	}
+	image img_main_screen_map[img_main_screen_map]{
+		alignment LeftTop
+		positionX -4
+		positionY -11
+		width map_width
+		height map_height
+	}
+	image img_main_screen_ahead[img_main_screen_ahead]{
+		alignment LeftTop
+		positionX -4
+		positionY -11
+		width map_width
+		height map_height
+	}
+
+	image img_main_screen_compass[img_main_screen_compass]{
+		alignment LeftTop
+		positionX 505
+		positionY 125
+		width 149
+		height 149
+	}
+	image img_main_screen_compassbg[img_main_screen_compassbg]{
+		alignment LeftTop
+		positionX 505
+		positionY 125
+		width 149
+		height 149
+	}
+	label lbl_waiting_annimation{
+		alignment LeftTop
+		positionX 20
+		positionY 20
+		waitingAnimation true
+	}
+	
+	label lbl_notes{
+		alignment LeftTop
+		positionX 60
+		positionY 20
+		text [main_screen_notes]
+	}
+}

@@ -1,0 +1,120 @@
+//
+// Prefix header for all source files of the 'Trafficeye_new' target in the 'Trafficeye_new' project
+//
+
+#import <Availability.h>
+#import "TEUtil.h"
+#import "TEAppDelegate.h"
+#import "MobClick.h"
+
+
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+//检查是否播放音乐
+//在模拟器运行程序的时候播放音乐会报异常，所以要关闭
+#if !(TARGET_IPHONE_SIMULATOR)
+#define playSoundEnabled
+#endif
+
+#import <CoreData/CoreData.h>
+#import <BMWAppKit/BMWAppKit.h>
+#import "MCLogging.h"
+#define USE_OLD_BMWAPPKIT
+#define DECL_NOTIFICATION(notification) extern NSString* notification;
+#define IMPL_NOTIFICATION(notification) NSString* notification = @#notification;
+#define MCLocalizedSID(sid) NSLocalizedString(sid, sid)
+
+#define IOS7OFFSIZE (IOS7?20:0)
+#define IOS7 [[[UIDevice currentDevice] systemVersion] hasPrefix:@"7"]
+#define iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+
+
+
+//版本号
+#define CLIENT_VERSION @"2.3.1"
+#define LOG_VERSION @"231"
+#define MYDEBUG 1
+//endpoints,分是否是测试接口,稍后正式接口会换成在线参数
+//#define TRAFFICEYETEST
+#ifdef TRAFFICEYETEST
+# define ENDPOINTS @"http://mobile.trafficeye.com.cn:8008/TrafficeyeSevice_test"
+# define ENDPOINTS_COM @"http://mobile.trafficeye.com.cn:8008/TrafficeyeCommunityService"
+#else
+# define ENDPOINTS @"http://mobile.trafficeye.com.cn:8000"
+# define ENDPOINTS_COM @"http://mobile.trafficeye.com.cn:21290/TrafficeyeCommunityService"
+# endif
+
+#define APPKEY @"4ec222275270152b2200000b"
+//定义请求的tag,请求的tag从1开始
+#define TAG_LOGIN_WITH_ACOUNT_PASSWORD 1
+#define TAG_REGISTER 2
+#define TAG_AUTOLOGIN 3
+#define TAG_USER_UPLOAD_AVATAR 4
+#define TAG_USER_UPDATE_USERINFO 5
+#define TAG_USER_POINTS_DETAIL 6
+#define TAG_USER_DISTANCE_DETAIL 7
+#define TAG_USER_EVENT_DETAIL 8
+#define TAG_USER_EDIT_PASSWORD 9
+#define TAG_USER_FORGET_PASSWORD 10
+#define TAG_REPORT_EVENT 11
+#define TAG_GET_TRACK 12
+#define TAG_GET_EVENT 13
+#define TAG_EVENT_DETAIL 14
+#define TAG_OPTION 15
+#define TAG_TAXI_INDEX 16
+#define TAG_TAXI_EASY 17
+#define TAG_TAXI_LONG_PRESS 18
+#define TAG_SNS_LOGIN 19
+#define TAG_UPLOAD_SETTING 20
+#define TAG_LIMITNUM 21
+#define TAG_SNS_SHARE 22
+#define TAG_DOWNLOAD_SETTING 23
+#define TAG_UPLOAD_LOCATION 24
+#define TAG_REGISTER_PUSH 25
+#define TAG_PUSH_SETTING 26
+#define TAG_LOOKUP_FRIENDS 27
+#define TAG_BINDING 28
+#define TAG_INVITATION 29
+#define TAG_MESSAGE_COUNT 30
+#define TAG_UPLOAD_RECORD 31
+#define TAG_LOGOUT 33
+#define TAG_NEW_SHARE_SNS 34
+#define TAG_ORDER_CAR 35
+#define TAG_SMART_TIP 36
+#define TAG_ONE_LINE_INFO 37
+#define TAG_ONE_LINE_DETAIL 38
+#define TAG_ANNOUNCEMENT 39
+#define TAG_CHECK_USER 40
+#define TAG_FIND_POI 41
+#define TAG_ROUTE_DRIVE 42
+#define TAG_ROUTE_WALK 43
+
+#define BADGE_TOTAL_NUM 32
+
+#define INDEX_PAGE_MAP 0
+#define INDEX_PAGE_SIGRA 1
+#define INDEX_PAGE_INDEX 2
+#define INDEX_PAGE_TAXI 3
+#define INDEX_PAGE_BUS 4
+#define INDEX_PAGE_SHARECAR 5
+#define INDEX_PAGE_SURVEY 6
+#define INDEX_PAGE_NEWS 7
+#define INDEX_PAGE_WEIBO 8
+
+
+
+#define INDEX_PAGE_SETTING 9
+#define INDEX_PAGE_MESSAGE 10
+#define INDEX_PAGE_USER 11
+#define INDEX_PAGE_ORDER 12
+
+
+

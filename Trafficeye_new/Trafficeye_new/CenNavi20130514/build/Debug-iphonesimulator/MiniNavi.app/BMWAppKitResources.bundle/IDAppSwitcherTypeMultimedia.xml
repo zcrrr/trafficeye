@@ -1,0 +1,69 @@
+<pluginApps>
+    <pluginApp applicationType="Multimedia" applicationWeight="1" text="AppSwitcher">
+        <actions>
+            <hmiAction id="2" target="5" />
+            <hmiAction id="15" actionType="spellWord" target="32" />
+            <combinedAction id="16">
+                <actions>
+                    <hmiAction id="17" target="5" />
+                    <raAction id="18" />
+                </actions>
+            </combinedAction>
+            <combinedAction id="19">
+                <actions>
+                    <hmiAction id="20" target="5" />
+                    <raAction id="21" />
+                </actions>
+            </combinedAction>
+            <combinedAction id="22">
+                <actions>
+                    <hmiAction id="23" target="5" />
+                    <raAction id="24" />
+                </actions>
+            </combinedAction>
+            <raAction id="84" />
+        </actions>
+        <models>
+            <textIdModel id="12" textId="1" speechTextId="18" />
+            <textIdModel id="9" textId="9" />
+            <textIdModel id="3" modelType="Info" />
+            <textIdModel id="1" />
+            <textIdModel id="94" textId="10" />
+            <raListModel id="81" />
+            <textIdModel id="6" textId="14" />
+            <raBoolModel id="7" value="FALSE" />
+            <textIdModel id="38" textId="16" />
+            <raBoolModel id="28" value="FALSE" />
+            <textIdModel id="39" textId="17" />
+            <raBoolModel id="29" value="FALSE" />
+            <textIdModel id="40" textId="15" />
+        </models>
+        <hmiStates>
+            <hmiState id="5" text="" textModel="3">
+                <components>
+                    <label id="8" model="3" />
+                    <button id="33" action="15" model="1" tooltipModel="94" />
+                    <list id="85" model="81" action="84">
+                        <properties>
+                            <property id="6" value="50,30,420" />
+                            <property id="7" value="true" />
+                        </properties>
+                    </list>
+                </components>
+            </hmiState>
+            <hmiState id="32" textModel="3">
+                <components>
+                    <radiobutton id="31" action="22" model="29" textModel="40" />
+                    <radiobutton id="35" action="16" model="7" textModel="38" />
+                    <radiobutton id="36" action="19" model="28" textModel="39" />
+                </components>
+            </hmiState>
+        </hmiStates>
+        <events />
+        <entryButton id="4" action="2" model="12">
+            <properties>
+                <property id="23" value="1" />
+            </properties>
+        </entryButton>
+    </pluginApp>
+</pluginApps>

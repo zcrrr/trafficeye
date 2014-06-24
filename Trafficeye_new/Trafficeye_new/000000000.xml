@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<result code="200" description="简图列表返回成功" fill="1">
+<imgInfo imgid="1" imgname="上海-南京" imgsize="176x150" imgtype="全市简图" typecode="R01" /> 
+<imgInfo imgid="2" imgname="上海-杭州-宁波" imgsize="176x150" imgtype="全市简图" typecode="R01" /> 
+<imgInfo imgid="3" imgname="嘉金立交桥" imgsize="176x150" imgtype="全市简图" typecode="R01" />
+<imgInfo imgid="4" imgname="徐泾立交桥" imgsize="176x150" imgtype="全市简图" typecode="R01" /> 
+<imgInfo imgid="5" imgname="新桥立交桥" imgsize="176x150" imgtype="全市简图" typecode="R01" /> 
+<imgInfo imgid="6" imgname="沪金/申嘉湖立交" imgsize="176x150" imgtype="全市简图" typecode="R01" /> 
+<imgInfo imgid="7" imgname="山阳立交桥" imgsize="176x150" imgtype="全市简图" typecode="R01" />
+</result>

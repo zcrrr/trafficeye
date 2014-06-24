@@ -1,0 +1,7 @@
+SID_APP_NAME = "路況交通眼"
+SID_CITY_OVERVIEW = "城市路況"
+SID_AHEAD_TRAFFIC = "前方路況"
+SID_SOUND_ON_FF = "語音播報"
+SID_AREA_LIST = "區域列表"
+SID_PREVIOUS_PAGE = "上一頁"
+SID_NEXT_PAGE = "下一頁"

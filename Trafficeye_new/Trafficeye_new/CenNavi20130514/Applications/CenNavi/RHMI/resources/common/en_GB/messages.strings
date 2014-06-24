@@ -1,0 +1,7 @@
+SID_APP_NAME = "Traffic Eye"
+SID_CITY_OVERVIEW = "City Overview"
+SID_AHEAD_TRAFFIC = "Traffic Ahead"
+SID_SOUND_ON_FF = "Voice"
+SID_AREA_LIST = "Area List"
+SID_PREVIOUS_PAGE = "Previous"
+SID_NEXT_PAGE = "Next"

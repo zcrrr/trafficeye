@@ -1,0 +1,42 @@
+
+/*-------------loading Cancel btn start-------------*/
+.p_load {
+height:50px;
+width:200px;
+background:rgba(0, 0, 0, 1);
+position:absolute;
+left:50%;
+top:50%;
+margin-left:-100px;
+margin-top:-25px;
+}
+.loadimg {
+width:50px;
+height:50px;
+float:left;
+}
+.loadimg span {
+display:block;
+width:50px;
+height:50px;
+margin:0px 0 0 0px;
+background:url(../images/waiting.gif);
+}
+.loadtext {
+width:99px;
+height:50px;
+line-height:50px;
+float:left;
+color:#fff;
+font-size:15px;
+text-align:center;
+}
+.loadqx {
+float:left;
+width:50px;
+height:50px;
+background-color:#ff5500;
+border-left:1px solid #999;
+background:url(../images/icon_close.png) no-repeat;
+}
+/*---------------loading Cancel btn end---------------*/

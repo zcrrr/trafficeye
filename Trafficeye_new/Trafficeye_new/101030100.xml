@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<result code="200" description="简图列表返回成功" fill="1">
+<imgInfo imgid="0022_103_001" imgname="天津城市内主干路" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0022_105_001" imgname="南京路区域" imgsize="176x150" imgtype="区域简图" typecode="R01" />
+<imgInfo imgid="0022_105_002" imgname="滨江道区域" imgsize="176x150" imgtype="区域简图" typecode="R01" />
+<imgInfo imgid="0022_105_003" imgname="和平路区域" imgsize="176x150" imgtype="区域简图" typecode="R01" />
+<imgInfo imgid="0022_105_004" imgname="南门外区域" imgsize="176x150" imgtype="区域简图" typecode="R01" />
+<imgInfo imgid="0022_105_005" imgname="小白楼区域" imgsize="176x150" imgtype="区域简图" typecode="R01" />
+<imgInfo imgid="0022_106_001" imgname="外环西路北段" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0022_106_002" imgname="天平桥-刘园" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0022_106_003" imgname="中北桥-西青道桥" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0022_106_004" imgname="津静桥-王顶堤桥" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0022_106_005" imgname="外环西路南段" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0022_106_006" imgname="复兴门-双林" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0022_106_007" imgname="昆仑桥-津滨桥" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0022_106_008" imgname="屿东城-空港经济区" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0022_106_009" imgname="张兴庄-小淀" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0022_106_010" imgname="西沽公园" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0022_106_011" imgname="天津北站" imgsize="176x150" imgtype="交通枢纽" typecode="R01" />
+<imgInfo imgid="0022_106_012" imgname="民权门桥-金钟桥" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0022_106_013" imgname="天津西站-鼓楼" imgsize="176x150" imgtype="交通枢纽" typecode="R01" />
+<imgInfo imgid="0022_106_014" imgname="天津站" imgsize="176x150" imgtype="交通枢纽" typecode="R01" />
+<imgInfo imgid="0022_106_015" imgname="顺驰桥-翠阜新村" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0022_106_016" imgname="天津大学周边" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0022_106_017" imgname="营口道-小白楼" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0022_106_018" imgname="东风桥-东兴桥" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0022_106_019" imgname="天津动物园" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0022_106_020" imgname="天津博物馆" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0022_106_021" imgname="土城-海津大桥" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+</result>

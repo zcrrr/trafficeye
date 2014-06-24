@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildTime</key>
+	<string>2014-02-18T09:49:06CET</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>German</string>
+	<key>CFBundleExecutable</key>
+	<string>BMWAppKit</string>
+	<key>CFBundleIdentifier</key>
+	<string>de.bmw.a4a.BMWAppKit</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>FMWK</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.2.5</string>
+	<key>CFBundleSignature</key>
+	<string>appk</string>
+	<key>CFBundleVersion</key>
+	<string>384</string>
+	<key>GitDescribe</key>
+	<string>1.2.5</string>
+	<key>GitHash</key>
+	<string>d7c7f2a33f9d08b3fc7ddac062ac815abde53ea2</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>© 2014, BMW Group. All rights reserved.</string>
+</dict>
+</plist>

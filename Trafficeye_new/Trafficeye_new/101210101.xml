@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<result code="200" description="简图列表返回成功" fill="1">
+<imgInfo imgid="S260001" imgname="全市路况" imgsize="176x150" imgtype="全市简图" typecode="R01" />
+<imgInfo imgid="0571_103_001" imgname="杭州城市内主干路" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0571_105_001" imgname="湖滨区域" imgsize="176x150" imgtype="区域简图" typecode="R01" />
+<imgInfo imgid="0571_105_002" imgname="武林区域" imgsize="176x150" imgtype="区域简图" typecode="R01" />
+<imgInfo imgid="0571_105_003" imgname="吴山区域" imgsize="176x150" imgtype="区域简图" typecode="R01" />
+<imgInfo imgid="0571_106_001" imgname="杭州北站" imgsize="176x150" imgtype="交通枢纽" typecode="R01" />
+<imgInfo imgid="0571_106_002" imgname="石桥立交-德胜互通" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0571_106_003" imgname="三墩互通" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0571_106_004" imgname="浙大紫金港校区" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0571_106_005" imgname="和睦" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0571_106_006" imgname="杭州城北体育公园" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0571_106_007" imgname="浙江绿城医院周边" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0571_106_008" imgname="浙大西溪校区" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0571_106_009" imgname="西湖文化广场" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0571_106_010" imgname="浙大华家池校区" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0571_106_011" imgname="钱江二桥" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0571_106_012" imgname="西湖风景区" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0571_106_013" imgname="湖滨-杭州站" imgsize="176x150" imgtype="交通枢纽" typecode="R01" />
+<imgInfo imgid="0571_106_014" imgname="采荷生态园" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0571_106_015" imgname="复兴立交-望江新园" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0571_106_016" imgname="中兴立交" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0571_106_017" imgname="杭州南站" imgsize="176x150" imgtype="交通枢纽" typecode="R01" />
+<imgInfo imgid="0571_106_018" imgname="江陵路-滨康路" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+</result>

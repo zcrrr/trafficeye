@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="email=no"name="format-detection"/>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>公交换乘</title>
+<link href="bus_css/public.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" media="screen and (-webkit-device-pixel-ratio:1.5)" href="bus_css/mdpi.css" />
+<link rel="stylesheet" media="screen and (-webkit-device-pixel-ratio:2.0)" href="bus_css/hdpi.css" />
+<script type="text/javascript" src="bus_libs/zepto-1.1.3-min.js"></script>
+<script type="text/javascript" src="bus_libs/touch.js"></script>
+<script type="text/javascript" src="bus_libs/json5.js"></script>
+<script type="text/javascript" src="bus_js/common.js"></script>
+</head>
+<body>
+<div class="prompt_mask" style="display:none" id="loadingid">
+	<div class="p_load">
+		<div class="loadimg"><span></span></div>
+		<div class="loadtext">正在加载...</div>
+		<div class="loadqx"></div>
+	</div>
+</div>
+
+<div class="header">
+	<div class="tbtn-l" style="background-color:#dadada;" id="backpagebtn"><a></a></div>
+	<div class="cgbtn">
+		<span class="jc" id="driverbtn">驾车</span><!--点击效果加CURR 当前TAB是ON，可使用一个CLASS-->
+		<span class="bx" id="warkbtn">步行</span>
+		<span class="gj curr" id="busbtn">公交</span>	
+	</div>
+	<div class="sctbn" id="searchbtn">搜索</div>
+</div>
+<div class="inputbox">
+	<div class="i_right" id="changebtn"></div>
+	<div class="i_left">
+		<h2 class="q">
+			<div id="startsiteid" class="inptext">请设置起点</div>
+			<div class="p_empty" style="display:none;" id="starttippanelid"></div><!--当input输入文字时 显示清空按扭-->
+		</h2>
+		<h2 class="z">
+			<div id="endsiteid" class="inptext">请设置终点</div>
+			<div class="p_empty" style="display:none;" id="endtippanelid"></div><!--当input输入文字时 显示清空按扭-->
+		</h2>
+	</div>
+</div>
+
+<ul class="h-btn" id="selectproject" style="display:none;">
+	<li id="tabli0" onclick="setStrategy(0);" class="curr"><a>少时间</a></li>
+	<li id="tabli1" onclick="setStrategy(1);"><a>少换乘</a></li>
+	<li id="tabli2" onclick="setStrategy(2);"><a>坐地铁</a></li>
+	<li id="tabli3" onclick="setStrategy(3);"><a>少步行</a></li>
+</ul>
+<ul class="h-list" id="resultcontainerid" style="display:none;"></ul>
+
+</body>
+<script type="text/javascript" src="bus_js/index.js"></script>
+<script type="text/javascript" src="bus_js/transfer.js"></script>
+</html>

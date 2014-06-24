@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE HTML PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta content="telephone=no" name="format-detection" />
+<title>请选择城市</title>
+<link href="per_css/public.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" media="screen and (-webkit-device-pixel-ratio:1.5)" href="per_css/mdpi.css" />
+<link rel="stylesheet" media="screen and (-webkit-device-pixel-ratio:2.0)" href="per_css/hdpi.css" /></head>
+<body>
+
+<div class="header">
+	<div class="tbtn-l" id="backpagebtn"><a></a></div>
+	请选择城市
+</div>
+
+<div class="itext yztext">
+	请选择城市？<br />
+</div>
+
+<ul class="selbox">
+	<li>
+		<select id="city" name="" class="set" onchange="test1()">
+			<option value="opt0">选择省份</option>
+			<option value="opt1">安徽</option>
+			<option value="opt2">北京</option>
+		            <option value="opt3">重庆</option>
+		            <option value="opt4">福建</option>
+		            <option value="opt5">甘肃</option>
+		            <option value="opt6">广东</option>
+		            <option value="opt7">广西</option>
+		            <option value="opt8">贵州</option>
+		            <option value="opt9">海南</option>
+		            <option value="opt10">河北</option>
+		            <option value="opt11">黑龙江</option>
+			<option value="opt12">河南</option>
+		            <option value="opt13">湖北</option>
+		            <option value="opt14">湖南</option>
+		            <option value="opt15">江苏</option>
+		            <option value="opt16">江西</option>
+		            <option value="opt17">吉林</option>
+		            <option value="opt18">辽宁</option>
+		            <option value="opt19">内蒙古</option>
+		            <option value="opt20">宁夏</option>
+		            <option value="opt21">青海</option>
+			<option value="opt22">陕西</option>
+		            <option value="opt23">山东</option>
+		            <option value="opt24">上海</option>
+		            <option value="opt25">山西</option>
+		            <option value="opt26">四川</option>
+		            <option value="opt27">天津</option>
+		            <option value="opt28">新疆</option>
+		            <option value="opt29">西藏</option>
+		            <option value="opt30">云南</option>
+		            <option value="opt31">浙江</option>
+		</select>
+	</li>	
+	<li>
+		<select id="county" name="" class="set" disabled="true">
+			<option value="opt0">选择城市</option>
+		</select>
+	</li>	
+</ul>
+					
+<ul class="h-btn i-btn n-btn">
+	<li onclick="saveFunction(this);"><a>保存</a></li>
+</ul>
+
+</body>
+
+
+<script type="text/javascript" src="per_js/city.js"></script>
+<script type="text/javascript" src="libs/zepto.js"></script>
+<script type="text/javascript" src="libs/gmu.js"></script>
+<script type="text/javascript" src="per_js/base.js"></script>
+<script type="text/javascript" src="per_js/pre_survey_city.js"></script>
+<!-- <script type="text/javascript" src="per_js/pre_baseinfo_mobile_success.js"></script> -->
+</html>

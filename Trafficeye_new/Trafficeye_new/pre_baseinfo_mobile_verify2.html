@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE HTML PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta content="telephone=no" name="format-detection" />
+<title>手机号码验证2</title>
+<link href="per_css/public.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" media="screen and (-webkit-device-pixel-ratio:1.5)" href="per_css/mdpi.css" />
+<link rel="stylesheet" media="screen and (-webkit-device-pixel-ratio:2.0)" href="per_css/hdpi.css" />
+</head>
+<body>
+
+<div class="header">
+	<div class="tbtn-l"  id="backpagebtn"><a></a></div>
+	手机号码验证
+</div>
+
+<div class="itext yztext">
+请填写短信中的验证码：
+</div>
+
+<ul class="register nccc">
+	<li>
+		<h2><input id="verifynumber" name="" type="text" placeholder="6位数字"/></h2>
+		<div class="cf" id="limittime"></div>
+	</li>
+</ul>
+
+<div class="margin1">
+	<ul class="h-btn i-btn">
+		<li class="gay" onclick="trunce(this);"><a>更换号码</a></li>
+		<li  onclick="saveFunction(this);"><a>　下一步　</a></li>
+	</ul>
+</div>
+
+</body>
+<script type="text/javascript" src="libs/zepto.js"></script>
+<script type="text/javascript" src="libs/gmu.js"></script>
+<script type="text/javascript" src="per_js/base.js"></script>
+<script type="text/javascript" src="per_js/pre_baseinfo_mobile_verify2.js"></script>
+</html>

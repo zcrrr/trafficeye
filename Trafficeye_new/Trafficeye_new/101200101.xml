@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<result code="200" description="简图列表返回成功" fill="1">
+<imgInfo imgid="S310001" imgname="全市路况" imgsize="176x150" imgtype="全市简图" typecode="R01" />
+<imgInfo imgid="0027_103_001" imgname="武汉城市内主干路" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0027_105_001" imgname="武广区域" imgsize="176x150" imgtype="区域简图" typecode="R01" />
+<imgInfo imgid="0027_105_002" imgname="江汉路区域" imgsize="176x150" imgtype="区域简图" typecode="R01" />
+<imgInfo imgid="0027_105_003" imgname="中南区域" imgsize="176x150" imgtype="区域简图" typecode="R01" />
+<imgInfo imgid="0027_106_001" imgname="金银湖公园" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0027_106_002" imgname="汉口站-三金潭立交" imgsize="176x150" imgtype="交通枢纽" typecode="R01" />
+<imgInfo imgid="0027_106_003" imgname="二七长江大桥" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0027_106_004" imgname="武汉大学" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0027_106_005" imgname="武黄立交" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0027_106_006" imgname="武昌南站-南湖" imgsize="176x150" imgtype="交通枢纽" typecode="R01" />
+<imgInfo imgid="0027_106_007" imgname="武汉国际博览中心" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0027_106_008" imgname="沌口-太子湖" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0027_106_009" imgname="米粮山立交-王家湾" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0027_106_010" imgname="菱角湖万达广场" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0027_106_011" imgname="解放公园" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0027_106_012" imgname="宗关-硚口路" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0027_106_013" imgname="中山公园" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0027_106_014" imgname="江汉路-客运港" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0027_106_015" imgname="湖北大学周边" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0027_106_016" imgname="五里墩-月湖桥" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0027_106_017" imgname="月湖-琴台立交" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0027_106_018" imgname="黄鹤楼" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0027_106_019" imgname="洪山广场" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0027_106_020" imgname="紫阳公园" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0027_106_021" imgname="丁字桥" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+</result>

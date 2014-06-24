@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<result code="200" description="简图列表返回成功" fill="1">
+<imgInfo imgid="0510_103_001" imgname="无锡城市内主干路" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0510_105_001" imgname="中山路区域" imgsize="176x150" imgtype="区域简图" typecode="R01" />
+<imgInfo imgid="0510_105_002" imgname="五爱广场区域" imgsize="176x150" imgtype="区域简图" typecode="R01" />
+<imgInfo imgid="0510_105_003" imgname="无锡南门区域" imgsize="176x150" imgtype="区域简图" typecode="R01" />
+<imgInfo imgid="0510_106_001" imgname="高桥-无锡枢纽" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0510_106_002" imgname="东北塘-友谊路" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0510_106_003" imgname="惠山国家森林公园" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0510_106_004" imgname="无锡站" imgsize="176x150" imgtype="交通枢纽" typecode="R01" />
+<imgInfo imgid="0510_106_005" imgname="东亭-广南路" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0510_106_006" imgname="九里河湿地公园-紫薇园" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0510_106_007" imgname="蠡湖中央公园-嶂山" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0510_106_008" imgname="迎龙桥" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0510_106_009" imgname="兴竹立交-金城公铁立交" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0510_106_010" imgname="景渎立交-景云立交" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0510_106_011" imgname="梅村立交" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0510_106_012" imgname="金星-金城湾公园" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0510_106_013" imgname="兴旺桥-新洲生态园" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0510_106_014" imgname="江南大学周边" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0510_106_015" imgname="立信立交-惠吴桥" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0510_106_016" imgname="苏南硕放机场" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+</result>

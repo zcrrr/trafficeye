@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE HTML PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta content="telephone=no" name="format-detection" />
+<title>路况交通眼</title>
+<link href="com_css/public.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" media="screen and (-webkit-device-pixel-ratio:1.5)" href="com_css/mdpi.css" />
+<link rel="stylesheet" media="screen and (-webkit-device-pixel-ratio:2.0)" href="com_css/hdpi.css" />
+</head>
+<body>
+<div class="header">
+	<div class="tbtn-l" id="backpagebtn"><a></a></div>
+	<div class="tbtn-r sx" id="refreshbtn"><a></a></div>
+	事件详情
+</div>
+<ul class="l-list">
+	<li>
+		<div id="user_avater_id"></div>
+		<div class="l-text">
+			<h3 id="usernameid"></h3><!--用户昵称-->
+			<span class="l-cont" id="contentid"></span><!--内容-->
+		</div>
+		<div id="media_id" class="nxx">
+			<img id="media_id" src="com_images/default_pic.png" alt="" width="300px"/>
+		</div>
+		<h4 id="timeid"></h4><!--距现在时间-->
+		<div class="l-r"><a id="praise_count_btn" class="z"  style="display:none;"></a></div>
+	</li>
+	<ul class="l-pl">
+	<li id="praiseviewid" sytel="display:none;">
+			<div class="zan" id="praiseavatarlistid"><!--赞的头像改为赞的人名-->
+			</div>
+	</li>
+	<span id="commentslistid">
+	</span>
+</ul>
+</ul>
+
+
+<div class="h-inp-box m-inp-box" style="margin-top:1px">
+	<div class="h-inp m-inp">
+		<input name="keyTxt" id="inputtext" type="search" placeholder="评论" />	
+	</div>
+	<div class="m-btn" id = "inputbtn">提交</div>	
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+</body>
+<script type="text/javascript" src="libs/zepto.js"></script>
+<script type="text/javascript" src="libs/gmu.js"></script>
+<script type="text/javascript" src="com_js/base.js"></script>
+<script type="text/javascript" src="com_js/map_personaldetails.js"></script>
+</html>

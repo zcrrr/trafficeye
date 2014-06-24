@@ -1,0 +1,26 @@
+﻿/*==========-webkit-device-pixel-ratio:1.5)==================*/
+/*@media screen and (-webkit-device-pixel-ratio:1.5) {*/
+.tbtn-l a, .tbtn-r a { background: url(../per_img/dpi1.5/ar.png) no-repeat center bottom; background-size: 10px 32px; }
+.h-inp { border-width: 4px; -webkit-border-image: url(../images/dpi1.5/h-inp.png) 6 repeat; }
+/*-------------login.html style---------------*/
+.login li.a span { background: url(../per_img/dpi1.5/login_sinaweibo.png) no-repeat center bottom; background-size: 46px 46px; }
+.login li.b span { background: url(../per_img/dpi1.5/login_qqweibo.png) no-repeat center bottom; background-size: 46px 46px; }
+.login li.c span { background: url(../per_img/dpi1.5/login_trafficeye.png) no-repeat center bottom; background-size: 46px 46px; }
+.login li.d span { background: url(../per_img/dpi1.5/login_qq.png) no-repeat center bottom; background-size: 46px 46px; }
+/*-------------info.html style---------------*/
+.ncn, .ncv, .third-s, .third-t, .third-vx { background: url(../per_img/dpi1.5/n.png) no-repeat center center; background-size: 13px 14px; }
+.ncv { background: url(../per_img/dpi1.5/v.png) no-repeat center center; background-size: 13px 14px; }
+.third-s { background: url(../per_img/dpi1.5/s.png) no-repeat center center; background-size: 18px 14px; }
+.third-t { background: url(../per_img/dpi1.5/t.png) no-repeat center center; background-size: 14px 14px; }
+.third-vx { background: url(../per_img/dpi1.5/vx.png) no-repeat center center; background-size: 17px 14px; }
+.infolist li span.libg_arrow { background: url(../per_img/dpi1.5/r-arr.png) no-repeat center; background-size: 8px 12px; }
+/*------------medaldetails------------------*/
+.medaldetails { background: url(../per_img/dpi1.5/mxx.png) no-repeat left top; background-size: 150px 150px; }
+/*------------baseinfo------------------*/
+.grsetuplist li span.libg_arrow { background: url(../per_img/dpi1.5/r-arr.png) no-repeat center; background-size: 8px 12px; }
+.heighta li span.libg_arrow { background: url(../per_img/dpi1.5/r-arr.png) no-repeat center; background-size: 8px 12px; }
+select.set { background: #ffffff url(../per_img/dpi1.5/sanjiao.png) no-repeat right center; background-size: 22px 8px; }
+/*--------------loading full----------------*/
+.loadimg span { background: url(../per_img/dpi1.5/ld.png) no-repeat center top; background-size: 20px 60px; }
+.loadqx { background: url(../per_img/dpi1.5/ld.png) no-repeat 20px -30px; background-size: 20px 60px; }
+/*}*/

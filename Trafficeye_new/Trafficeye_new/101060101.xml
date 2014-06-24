@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<result code="200" description="简图列表返回成功" fill="1">
+<imgInfo imgid="S220001" imgname="全市路况" imgsize="176x150" imgtype="全市简图" typecode="R01" /> 
+<imgInfo imgid="S220003" imgname="火车站" imgsize="176x150" imgtype="区域简图" typecode="R01" /> 
+<imgInfo imgid="S220002" imgname="南站" imgsize="176x150" imgtype="区域简图" typecode="R01" />
+<imgInfo imgid="0431_103_001" imgname="长春城市内主干路" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0431_105_001" imgname="重庆路区域" imgsize="176x150" imgtype="区域简图" typecode="R01" />
+<imgInfo imgid="0431_105_002" imgname="桂林路区域" imgsize="176x150" imgtype="区域简图" typecode="R01" />
+<imgInfo imgid="0431_105_003" imgname="红旗街区域" imgsize="176x150" imgtype="区域简图" typecode="R01" />
+<imgInfo imgid="0431_106_001" imgname="百国兴隆寺" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0431_106_002" imgname="兴业" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0431_106_003" imgname="卧龙寿明园-东风" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0431_106_004" imgname="长春公园" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0431_106_005" imgname="长春站-人民广场" imgsize="176x150" imgtype="交通枢纽" typecode="R01" />
+<imgInfo imgid="0431_106_006" imgname="伪满皇宫博物院" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0431_106_007" imgname="荣光-彩虹广场" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0431_106_008" imgname="解放桥" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0431_106_009" imgname="长春市体育馆" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0431_106_010" imgname="劳动公园-自由大桥" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0431_106_011" imgname="长春国际汽车公园" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0431_106_012" imgname="观澜湖公园" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0431_106_013" imgname="世界雕塑公园" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0431_106_014" imgname="吉林农业大学" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+
+</result>

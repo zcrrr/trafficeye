@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<result code="200" description="简图列表返回成功" fill="1">
+<imgInfo imgid="S160001" imgname="全市路况" imgsize="176x150" imgtype="全市简图" typecode="R01" />
+<imgInfo imgid="0574_103_001" imgname="宁波城市内主干路" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0574_105_001" imgname="天一区域" imgsize="176x150" imgtype="区域简图" typecode="R01" />
+<imgInfo imgid="0574_105_002" imgname="万达区域" imgsize="176x150" imgtype="区域简图" typecode="R01" />
+<imgInfo imgid="0574_106_001" imgname="高桥-望春" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0574_106_002" imgname="西门-文教" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0574_106_003" imgname="老外滩-日湖公园" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0574_106_004" imgname="宁波大学周边" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0574_106_005" imgname="宁波栎社机场" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0574_106_006" imgname="宁波站" imgsize="176x150" imgtype="交通枢纽" typecode="R01" />
+<imgInfo imgid="0574_106_007" imgname="天一广场-白鹤" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0574_106_008" imgname="宁波东站-福明" imgsize="176x150" imgtype="交通枢纽" typecode="R01" />
+<imgInfo imgid="0574_106_009" imgname="海晏路-盛莫路" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0574_106_010" imgname="宁波博物馆周边" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+</result>

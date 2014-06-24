@@ -1,0 +1,32 @@
+dependencies: \
+  /Users/don/BMW/Project/CenNavi/CenNavi/Applications/CenNavi/src/CenNaviInterface.m \
+  /Users/don/BMW/Project/CenNavi/CenNavi/Main/Common/src/Audio/MCAudioManager.h \
+  /Users/don/BMW/Project/CenNavi/CenNavi/Applications/CenNavi/src/CenNaviInterface.h \
+  /Users/don/BMW/Project/CenNavi/CenNavi/Applications/CenNavi/src/CenNaviFeatureController.h \
+  /Users/don/BMW/Project/CenNavi/CenNavi/Main/Common/src/Feature/MCDefaultFeatureController.h \
+  /Users/don/BMW/Project/CenNavi/CenNavi/Main/Common/src/Feature/MCFeatureController.h \
+  /Users/don/BMW/Project/CenNavi/CenNavi/Main/Common/src/Feature/MCFeatureConfiguration.h \
+  /Users/don/BMW/Project/CenNavi/CenNavi/Main/Common/src/Feature/MCFeatureIdentifier.h \
+  /Users/don/BMW/Project/CenNavi/CenNavi/Main/Common/src/Feature/MCFunctionIdentifier.h \
+  /Users/don/BMW/Project/CenNavi/CenNavi/Main/Common/src/IDHmiService+Connected.h \
+  /Users/don/BMW/Project/CenNavi/CenNavi/Applications/CenNavi/RHMI/target/objc/hmi-gen/CenNaviHmiProvider.h \
+  /Users/don/BMW/Project/CenNavi/CenNavi/Applications/CenNavi/RHMI/target/objc/hmi-gen/MainStateView.h \
+  /Users/don/BMW/Project/CenNavi/CenNavi/Applications/CenNavi/RHMI/target/objc/hmi-gen/AreaListStateView.h \
+  /Users/don/BMW/Project/CenNavi/CenNavi/Applications/CenNavi/RHMI/target/objc/hmi-gen/AreaStateView.h \
+  /Users/don/BMW/Project/CenNavi/CenNavi/ASIHTTPRequest.h \
+  /Users/don/BMW/Project/CenNavi/CenNavi/ASIHTTPRequestConfig.h \
+  /Users/don/BMW/Project/CenNavi/CenNavi/ASIHTTPRequestDelegate.h \
+  /Users/don/BMW/Project/CenNavi/CenNavi/ASIProgressDelegate.h \
+  /Users/don/BMW/Project/CenNavi/CenNavi/ASICacheDelegate.h \
+  /Users/don/BMW/Project/CenNavi/CenNavi/CenNaviCache.h \
+  /Users/don/BMW/Project/CenNavi/CenNavi/TrafficMap.h \
+  /Users/don/BMW/Project/CenNavi/CenNavi/Applications/CenNavi/RHMI/target/objc/hmi-gen/CenNaviIdentifiers.h \
+  /Users/don/BMW/Project/CenNavi/CenNavi/Applications/CenNavi/src/RHMIInit.h \
+  /Users/don/BMW/Project/CenNavi/CenNavi/Applications/CenNavi/src/RHMICommon.h \
+  /Users/don/BMW/Project/CenNavi/CenNavi/SBJson.h \
+  /Users/don/BMW/Project/CenNavi/CenNavi/SBJsonParser.h \
+  /Users/don/BMW/Project/CenNavi/CenNavi/SBJsonWriter.h \
+  /Users/don/BMW/Project/CenNavi/CenNavi/SBJsonStreamParser.h \
+  /Users/don/BMW/Project/CenNavi/CenNavi/SBJsonStreamParserAdapter.h \
+  /Users/don/BMW/Project/CenNavi/CenNavi/SBJsonStreamWriter.h \
+  /Users/don/BMW/Project/CenNavi/CenNavi/NSObject+SBJson.h

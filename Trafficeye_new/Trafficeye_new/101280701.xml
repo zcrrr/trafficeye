@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<result code="200" description="简图列表返回成功" fill="1">
+<imgInfo imgid="S920001" imgname="全市路况" imgsize="176x150" imgtype="全市简图" typecode="R01" /> 
+<imgInfo imgid="0756_103_001" imgname="珠海城市内主干路" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0756_105_001" imgname="拱北区域" imgsize="176x150" imgtype="区域简图" typecode="R01" />
+<imgInfo imgid="0756_105_002" imgname="吉大区域" imgsize="176x150" imgtype="区域简图" typecode="R01" />
+<imgInfo imgid="0756_106_001" imgname="坦洲镇-南屏" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0756_106_002" imgname="珠海市体育中心" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0756_106_003" imgname="翠香路" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0756_106_004" imgname="板樟山森林公园" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0756_106_005" imgname="拱北" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+</result>

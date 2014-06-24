@@ -1,0 +1,82 @@
+.t .b ul li a span {
+	display:block;
+	height:50px;
+	width:50px;
+	mar
+}
+
+
+.t .b ul li.ia a span {
+	-webkit-background-size:150px 100px;
+	background:url(../images/dpi2/icons_trafficindex.png) no-repeat left top;
+}
+
+.t .b ul li.iaps a span {
+	-webkit-background-size:150px 100px;
+	background:url(../images/dpi2/icons_trafficindex.png) no-repeat left -50px;
+}
+.t .b ul li.ib a span {
+	-webkit-background-size:150px 100px;
+	background:url(../images/dpi2/icons_trafficindex.png) no-repeat -50px top;
+}
+.t .b ul li.ibps a span {
+	-webkit-background-size:150px 100px;
+	background:url(../images/dpi2/icons_trafficindex.png) no-repeat -50px -50px;
+}
+.t .b ul li.ic a span {
+	-webkit-background-size:150px 100px;
+	background:url(../images/dpi2/icons_trafficindex.png) no-repeat -100px top;
+}
+.t .b ul li.icps a span {
+	-webkit-background-size:150px 100px;
+	background:url(../images/dpi2/icons_trafficindex.png) no-repeat -100px -50px;
+}
+.indicator > li {
+	background: url(../images/dpi2/mi.png) no-repeat left top;
+	-webkit-background-size:6px 12px;
+}
+.indicator > li.active {
+	background: url(../images/dpi2/mi.png) no-repeat left bottom;
+	-webkit-background-size:6px 12px;
+}
+.t .c ul li a span {
+	display:block;
+	height:50px;
+	width:50px;
+	mar
+}
+
+
+.t .c ul li.ia a span {
+	-webkit-background-size:150px 100px;
+	background:url(../images/dpi2/icons_trafficindex.png) no-repeat left top;
+}
+
+.t .c ul li.iaps a span {
+	-webkit-background-size:150px 100px;
+	background:url(../images/dpi2/icons_trafficindex.png) no-repeat left -50px;
+}
+.t .c ul li.ib a span {
+	-webkit-background-size:150px 100px;
+	background:url(../images/dpi2/icons_trafficindex.png) no-repeat -50px top;
+}
+.t .c ul li.ibps a span {
+	-webkit-background-size:150px 100px;
+	background:url(../images/dpi2/icons_trafficindex.png) no-repeat -50px -50px;
+}
+.t .c ul li.ic a span {
+	-webkit-background-size:150px 100px;
+	background:url(../images/dpi2/icons_trafficindex.png) no-repeat -100px top;
+}
+.t .c ul li.icps a span {
+	-webkit-background-size:150px 100px;
+	background:url(../images/dpi2/icons_trafficindex.png) no-repeat -100px -50px;
+}
+.indicator > li {
+	background: url(../images/dpi2/mi.png) no-repeat left top;
+	-webkit-background-size:6px 12px;
+}
+.indicator > li.active {
+	background: url(../images/dpi2/mi.png) no-repeat left bottom;
+	-webkit-background-size:6px 12px;
+}

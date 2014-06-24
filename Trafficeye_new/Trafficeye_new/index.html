@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport"
+		content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title></title>
+		<link href="css/public.css" rel="stylesheet" type="text/css" />
+	
+		<link rel="stylesheet"
+		media="screen and (-webkit-device-pixel-ratio:2.0)"
+		href="css/hdpi.css" />
+		
+		
+		<link rel="stylesheet" media="screen and (-webkit-device-pixel-ratio:2.0)" href="css/hdpibase.css">
+		<script type="text/javascript" src="js/jquery1.9.1.js"></script>
+		<script type="text/javascript" src="js/swipe.js"></script>
+		<script type="text/javascript" src="js/traffic.js"></script>
+		<script type="text/javascript">
+			//        var param = '{"area":"北京-全路网,深圳-全市","width":380,"height":400}';
+			//        Traffic.initByParam(param);
+		</script>
+		<script type="text/javascript">
+			setTimeout("reflesh()", 5 * 60 * 1000);
+			//每5分钟刷新一次
+		</script>
+		<script type="text/javascript">
+			$(function() {
+			document.getElementById("setting").addEventListener('touchstart', touchstart_set);
+			document.getElementById("setting").addEventListener('touchend', touchend_set);
+			document.getElementById("refresh").addEventListener('touchstart', touchstart_ref);
+			document.getElementById("refresh").addEventListener('touchend', touchend_ref);
+
+			});
+			function touchstart_set(e) {
+				$("#setting").attr("src", "images/icon_setting_pressed.png");
+			}
+
+			function touchend_set(e) {
+				$("#setting").attr("src", "images/icon_setting.png");
+				window.indexSet.indexSetMethod();
+			}
+
+			function touchstart_ref(e) {
+				$("#refresh").attr("src", "images/icon_refresh_pressed.png");
+			}
+
+			function touchend_ref(e) {
+				$("#refresh").attr("src", "images/icon_refresh.png");
+			}
+
+			//跳转到详细页面
+			function godetail(city,width,height) {
+				window.localStorage.city = city;
+				window.localStorage.width = width;
+				window.localStorage.height = height;
+				window.localStorage.pre = "index.html";
+				window.location.href = "index_list.html";
+			}
+			
+		</script>
+            <script>
+                //通过js调用Objective-C
+                function settingClick(cmd)
+                {
+                    window.location.href="objc://"+cmd;
+                }
+                function share(shareText){
+                    shareTextEncode1 = encodeURI(shareText);
+                    
+                    shareTextEncode2 = encodeURI(shareTextEncode1);
+                    window.location.href="objc://"+"share:"+":/"+shareTextEncode2;
+                }
+                </script>
+	</head>
+	<body>
+
+		<div style="background-image:url(images/bar.png);	height:45px	;width:100%;" >
+			<img src="images/icon_setting.png" width="45px" height="45px"  style="float:left;" id="setting" onclick="settingClick('goSetting');"/>
+			<img src="images/icon_refresh.png" width="45px" height="45px" style="float:	right;" id="refresh" onClick="reflesh();"/>
+			<div  style="font-size:24px ;color: #FFFFFF;text-align:center;height:45px;line-height:45px;">
+				交通指数
+			</div>
+		</div>
+
+		<div class="wbg" id="trafficContainer">
+			<!--<div id="loading" align="center"><img src="images/waiting.gif" align="center">loadings</div>-->
+			<img id="trafficBgImg" class="cimg" src="images/index_bg_1.jpg" alt="" style="display:none;"/>
+
+			<div id='mySwipe'>
+
+				<div id="indexCon"
+				style="position: relative; left: 0px; top: 0px; width: 100%;">
+				</div>
+			</div>
+			<div id="lunbo" class="nav">
+				<ul class="indicator" id="tabNav"></ul>
+			</div>
+			
+		</div>
+	</body>
+</html>

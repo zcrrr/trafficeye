@@ -1,0 +1,89 @@
+app CenNavi
+
+model string area_state_title
+model string area_state_notes
+
+model img img_area_state_previous
+model img img_area_state_next
+
+model img img_area_screen_bg
+model img img_area_state_map
+model img img_area_screen_compass
+model img img_area_screen_compassbg
+
+state AreaState{
+    title [area_state_title]
+    
+	toolbar{
+		button btn_area_state_previous{
+			image previous
+			tooltip SID_PREVIOUS_PAGE
+		}
+		button btn_area_state_dummy_0{
+			selectable false
+		}
+		button btn_area_state_dummy_1{
+			selectable false
+		}
+		button btn_area_state_dummy_2{
+			selectable false
+		}
+		button btn_area_state_dummy_3{
+			selectable false
+		}
+		button btn_area_state_dummy_4{
+			selectable false
+		}
+		button btn_area_state_dummy_5{
+			selectable false
+		}
+		button btn_area_state_next{
+			image next
+			tooltip SID_NEXT_PAGE
+		}
+	}
+		
+	image img_area_screen_bg[img_area_screen_bg]{
+		alignment LeftTop
+		positionX -4
+		positionY -11
+		width map_width
+		height map_height
+	}
+		
+	image img_area_state_map[img_area_state_map]{
+		alignment LeftTop
+		positionX -4
+		positionY -11
+        width map_width
+		height map_height
+	}
+	image img_area_screen_compass[img_main_screen_compass]{
+		alignment LeftTop
+		positionX 505
+		positionY 125
+		width 149
+		height 149
+	}
+	image img_area_screen_compassbg[img_main_screen_compassbg]{
+		alignment LeftTop
+		positionX 505
+		positionY 125
+		width 149
+		height 149
+	}
+	
+	label lbl_waiting_annimation{
+		alignment LeftTop
+		positionX 20
+		positionY 20
+		waitingAnimation true
+	}
+	
+	label lbl_notes{
+		alignment LeftTop
+		positionX 60
+		positionY 20
+		text [area_state_notes]
+	}
+}

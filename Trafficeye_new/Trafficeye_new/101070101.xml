@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<result code="200" description="简图列表返回成功" fill="1">
+<imgInfo imgid="S240001" imgname="全市路况" imgsize="176x150" imgtype="全市简图" typecode="R01" />
+<imgInfo imgid="0024_103_001" imgname="沈阳城市内主干路" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0024_105_001" imgname="太原街区域" imgsize="176x150" imgtype="区域简图" typecode="R01" />
+<imgInfo imgid="0024_105_002" imgname="中街区域" imgsize="176x150" imgtype="区域简图" typecode="R01" />
+<imgInfo imgid="0024_106_001" imgname="三台子-沈阳医学院" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0024_106_002" imgname="二台子-沈阳东互通" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0024_106_003" imgname="铁西体育场" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0024_106_004" imgname="怒江公园-北陵公园" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0024_106_005" imgname="明廉-寿泉" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0024_106_006" imgname="小白楼-西塔" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0024_106_007" imgname="金融中心-沈阳北站" imgsize="176x150" imgtype="交通枢纽" typecode="R01" />
+<imgInfo imgid="0024_106_008" imgname="大东广场-沈海园" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0024_106_009" imgname="沈阳东站-航空城" imgsize="176x150" imgtype="交通枢纽" typecode="R01" />
+<imgInfo imgid="0024_106_010" imgname="黄海公园-劳动公园" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0024_106_011" imgname="保工街-铁西广场" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0024_106_012" imgname="沈阳站-中山公园" imgsize="176x150" imgtype="交通枢纽" typecode="R01" />
+<imgInfo imgid="0024_106_013" imgname="青年公园-沈阳故宫" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0024_106_014" imgname="万泉公园" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0024_106_015" imgname="南阳湖街" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0024_106_016" imgname="工农大桥" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0024_106_017" imgname="沈阳奥体中心" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+</result>

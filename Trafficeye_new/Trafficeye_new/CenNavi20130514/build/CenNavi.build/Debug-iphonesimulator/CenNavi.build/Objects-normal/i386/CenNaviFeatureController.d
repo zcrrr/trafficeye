@@ -1,0 +1,24 @@
+dependencies: \
+  /Users/don/BMW/Project/CenNavi/CenNavi/Applications/CenNavi/src/CenNaviFeatureController.m \
+  /Users/don/BMW/Project/CenNavi/CenNavi/Applications/CenNavi/RHMI/target/objc/hmi-gen/CenNaviIdentifiers.h \
+  /Users/don/BMW/Project/CenNavi/CenNavi/Applications/CenNavi/src/CenNaviFeatureController.h \
+  /Users/don/BMW/Project/CenNavi/CenNavi/Main/Common/src/Feature/MCDefaultFeatureController.h \
+  /Users/don/BMW/Project/CenNavi/CenNavi/Main/Common/src/Feature/MCFeatureController.h \
+  /Users/don/BMW/Project/CenNavi/CenNavi/Main/Common/src/Feature/MCFeatureConfiguration.h \
+  /Users/don/BMW/Project/CenNavi/CenNavi/Main/Common/src/Feature/MCFeatureIdentifier.h \
+  /Users/don/BMW/Project/CenNavi/CenNavi/Main/Common/src/Feature/MCFunctionIdentifier.h \
+  /Users/don/BMW/Project/CenNavi/CenNavi/Main/Common/src/IDHmiService+Connected.h \
+  /Users/don/BMW/Project/CenNavi/CenNavi/Applications/CenNavi/RHMI/target/objc/hmi-gen/CenNaviHmiProvider.h \
+  /Users/don/BMW/Project/CenNavi/CenNavi/Applications/CenNavi/RHMI/target/objc/hmi-gen/MainStateView.h \
+  /Users/don/BMW/Project/CenNavi/CenNavi/Applications/CenNavi/RHMI/target/objc/hmi-gen/AreaListStateView.h \
+  /Users/don/BMW/Project/CenNavi/CenNavi/Applications/CenNavi/RHMI/target/objc/hmi-gen/AreaStateView.h \
+  /Users/don/BMW/Project/CenNavi/CenNavi/ASIHTTPRequest.h \
+  /Users/don/BMW/Project/CenNavi/CenNavi/ASIHTTPRequestConfig.h \
+  /Users/don/BMW/Project/CenNavi/CenNavi/ASIHTTPRequestDelegate.h \
+  /Users/don/BMW/Project/CenNavi/CenNavi/ASIProgressDelegate.h \
+  /Users/don/BMW/Project/CenNavi/CenNavi/ASICacheDelegate.h \
+  /Users/don/BMW/Project/CenNavi/CenNavi/CenNaviCache.h \
+  /Users/don/BMW/Project/CenNavi/CenNavi/TrafficMap.h \
+  /Users/don/BMW/Project/CenNavi/CenNavi/Main/Production/src/CenNaviDemoAppDelegate.h \
+  /Users/don/BMW/Project/CenNavi/CenNavi/Applications/CenNavi/src/CenNaviInterface.h \
+  /Users/don/BMW/Project/CenNavi/CenNavi/Applications/CenNavi/src/RHMIInit.h

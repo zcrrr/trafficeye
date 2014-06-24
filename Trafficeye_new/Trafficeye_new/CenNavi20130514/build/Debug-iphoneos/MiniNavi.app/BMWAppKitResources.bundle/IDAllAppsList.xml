@@ -1,0 +1,212 @@
+<pluginApps>
+    <pluginApp applicationType="OnlineServices" applicationWeight="100000" text="AppSwitcher">
+        <actions>
+            <hmiAction id="2" target="5" />
+            <raAction id="3" />
+            <hmiAction id="15" actionType="spellWord" target="32" />
+            <combinedAction id="16">
+                <actions>
+                    <hmiAction id="17" target="5" />
+                    <raAction id="18" />
+                </actions>
+            </combinedAction>
+            <combinedAction id="19">
+                <actions>
+                    <hmiAction id="20" target="5" />
+                    <raAction id="21" />
+                </actions>
+            </combinedAction>
+            <combinedAction id="22">
+                <actions>
+                    <hmiAction id="23" target="5" />
+                    <raAction id="24" />
+                </actions>
+            </combinedAction>
+            <combinedAction id="25">
+                <actions>
+                    <hmiAction id="26" target="5" />
+                    <raAction id="27" />
+                </actions>
+            </combinedAction>
+            <raAction id="84" />
+            <combinedAction id="42">
+                <actions>
+                    <hmiAction id="43" target="0" />
+                    <raAction id="44" />
+                </actions>
+            </combinedAction>
+        </actions>
+        <models>
+            <textIdModel id="82" textId="1" speechTextId="24" />
+            <textIdModel id="12" textId="23" />
+            <textIdModel id="85" textId="23" />
+            <formatDataModel id="86" modelType="Info" formatStringModel="85">
+                <models>
+                    <raDataModel id="91" />
+                </models>
+            </formatDataModel>
+            <textIdModel id="1" />
+            <textIdModel id="94" textId="2" />
+            <textIdModel id="37" textId="17" />
+            <raImageModel id="50" />
+            <formatDataModel id="49" modelType="Info" formatString="%0 %1">
+                <models>
+                    <raDataModel id="81" />
+                    <textIdModel id="57" textId="21" />
+                </models>
+            </formatDataModel>
+            <raImageModel id="95" />
+            <formatDataModel id="72" modelType="Info" formatString="%0 %1">
+                <models>
+                    <raDataModel id="97" />
+                    <textIdModel id="98" textId="22" />
+                </models>
+            </formatDataModel>
+            <textIdModel id="14" modelType="Info" textId="18" />
+            <textIdModel id="13" textId="19" />
+            <raBoolModel id="48" value="FALSE" />
+            <textIdModel id="47" textId="20" />
+            <raListModel id="83" />
+            <textIdModel id="78" modelType="Info" textId="8" />
+            <raListModel id="53" />
+            <textIdModel id="79" modelType="Info" textId="9" />
+            <raListModel id="51" />
+            <textIdModel id="80" modelType="Info" textId="10" />
+            <raListModel id="54" />
+            <textIdModel id="88" modelType="Info" textId="11" />
+            <raListModel id="55" />
+            <textIdModel id="89" modelType="Info" textId="12" />
+            <raListModel id="56" />
+            <textIdModel id="90" modelType="Info" textId="13" />
+            <raListModel id="52" />
+            <textIdModel id="92" modelType="Info" textId="15" />
+            <raListModel id="58" />
+            <textIdModel id="93" modelType="Info" textId="16" />
+            <raListModel id="59" />
+            <textIdModel id="6" textId="3" />
+            <raBoolModel id="7" value="FALSE" />
+            <textIdModel id="38" textId="28" />
+            <raBoolModel id="28" value="FALSE" />
+            <textIdModel id="39" textId="29" />
+            <raBoolModel id="29" value="FALSE" />
+            <textIdModel id="40" textId="26" />
+            <raBoolModel id="30" value="FALSE" />
+            <textIdModel id="41" textId="27" />
+        </models>
+        <hmiStates>
+            <hmiState id="5" text="" textModel="82">
+                <components>
+                    <label id="100" model="86" />
+                    <button id="33" action="15" model="1" tooltipModel="94" />
+                    <list id="87" model="83" action="84">
+                        <properties>
+                            <property id="7" value="true" />
+                            <property id="6" value="50,30,420" />
+                        </properties>
+                    </list>
+                    <label id="64" model="78" />
+                    <list id="65" model="53" action="84">
+                        <properties>
+                            <property id="7" value="true" />
+                            <property id="6" value="50,30,420" />
+                        </properties>
+                    </list>
+                    <label id="60" model="79" />
+                    <list id="61" model="51" action="84">
+                        <properties>
+                            <property id="7" value="true" />
+                            <property id="6" value="50,30,420" />
+                        </properties>
+                    </list>
+                    <label id="66" model="80" />
+                    <list id="67" model="54" action="84">
+                        <properties>
+                            <property id="7" value="true" />
+                            <property id="6" value="50,30,420" />
+                        </properties>
+                    </list>
+                    <label id="68" model="88" />
+                    <list id="69" model="55" action="84">
+                        <properties>
+                            <property id="7" value="true" />
+                            <property id="6" value="50,30,420" />
+                        </properties>
+                    </list>
+                    <label id="70" model="89" />
+                    <list id="71" model="56" action="84">
+                        <properties>
+                            <property id="7" value="true" />
+                            <property id="6" value="50,30,420" />
+                        </properties>
+                    </list>
+                    <label id="62" model="90" />
+                    <list id="63" model="52" action="84">
+                        <properties>
+                            <property id="7" value="true" />
+                            <property id="6" value="50,30,420" />
+                        </properties>
+                    </list>
+                    <label id="74" model="92" />
+                    <list id="75" model="58" action="84">
+                        <properties>
+                            <property id="7" value="true" />
+                            <property id="6" value="50,30,420" />
+                        </properties>
+                    </list>
+                    <label id="76" model="93" />
+                    <list id="77" model="59" action="84">
+                        <properties>
+                            <property id="7" value="true" />
+                            <property id="6" value="50,30,420" />
+                        </properties>
+                    </list>
+                </components>
+            </hmiState>
+            <hmiState id="32" textModel="6">
+                <components>
+                    <radiobutton id="31" action="22" model="29" textModel="40" />
+                    <radiobutton id="34" action="25" model="30" textModel="41" />
+                    <radiobutton id="35" action="16" model="7" textModel="38" />
+                    <radiobutton id="36" action="19" model="28" textModel="39" />
+                </components>
+            </hmiState>
+            <popupHmiState id="9" text="" textModel="37">
+                <components>
+                    <label id="73" model="72" imageModel="95">
+                        <properties>
+                            <property id="10" value="50" />
+                            <property id="2" value="false" />
+                        </properties>
+                    </label>
+                    <separator id="96">
+                        <properties>
+                            <property id="2" value="false" />
+                        </properties>
+                    </separator>
+                    <label id="99" model="49" imageModel="50">
+                        <properties>
+                            <property id="10" value="50" />
+                            <property id="2" value="false" />
+                        </properties>
+                    </label>
+                    <label id="10" model="14">
+                        <properties>
+                            <property id="2" value="false" />
+                        </properties>
+                    </label>
+                    <button id="11" action="3" model="13" />
+                    <checkbox id="46" action="42" model="48" textModel="47" />
+                </components>
+            </popupHmiState>
+        </hmiStates>
+        <events>
+            <popupEvent id="8" target="9" priority="0" />
+            <focusEvent id="45" />
+        </events>
+        <entryButton id="4" action="2" model="82">
+            <properties>
+                <property id="23" value="2" />
+            </properties>
+        </entryButton>
+    </pluginApp>
+</pluginApps>

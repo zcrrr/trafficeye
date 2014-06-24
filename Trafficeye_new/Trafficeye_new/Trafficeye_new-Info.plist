@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>路况交通眼</string>
+	<key>CFBundleExecutable</key>
+	<string>${EXECUTABLE_NAME}</string>
+	<key>CFBundleIcons</key>
+	<dict/>
+	<key>CFBundleIcons~ipad</key>
+	<dict/>
+	<key>CFBundleIdentifier</key>
+	<string>TrafficeEye.Cennavi</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>${PRODUCT_NAME}</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>2.3.1</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>QQ05FB91E1</string>
+				<string>tencent100372961</string>
+				<string>trafficeye</string>
+				<string>wx5f53246df8e6fee0</string>
+				<string>wb801327203</string>
+				<string>wb2022960751</string>
+			</array>
+		</dict>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>2.3.1</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>Partner</key>
+	<string>2088901405332933</string>
+	<key>RSA private key</key>
+	<string>MIICeAIBADANBgkqhkiG9w0BAQEFAASCAmIwggJeAgEAAoGBALz2WdPp5Mh7etTB/cvkhBwPlSClA83fc60AQYdIW/O/hZnCShvFmljUwTNCDsGliul6LvxM2uo+AABl7m2W1IuGCRqyVgt/6TkSaiQtJ1iaUmkhudbG04PEQZtu6vL1O0y/d6nSsTb7vaPw7TIodFmCERhixrSQCLIg1HmdejuZAgMBAAECgYAJWbtqNBnBHfMfEhZn/3/WD6NWgTPl/RexSOD1O8xpDGIlEKswIqAXozeIPM2UIYf1M7mdfIQcsUK4wlKBE8SiqQtkDEK74duDDpejcxUXiUjvTQ48RGfc/a/ija3kfR0/y6dr9xd62gPFbSF0Z5rV6F9IXCAeJ9k3v00MjCOePQJBAOhp049La2+y97k1zXd3I6uYE48fFg0E0MRD5LgIUffKme2zlk4U9Ze5+vS/Ic20cdkdILWdgGoAfO5TPFNh1G8CQQDQI6bWuXbjqLlT8IbORkzmeyL5LuV1/QFX3Dl44fvtb63uzGUZxTq4glKiHqDjN3UaS3QNbdvRdWmmo/wSHUR3AkEA0pxb4AXLdSxsOoVcDX+EbpJgXxkfhWqwuLqBwJehl/gcJ4DPmzB5IiaiGTo/KsbzSHmR06LH5MdObzY0e6cytwJBAILZtvyNEloja4eC0i0B8zx+s0j2m5kmmt6Se6ssXwYxTKaw5uphnP38KFj1am4OIleKkgYTR7uR1f7GXyVAMxcCQQCZZ/Qm/jYq/7Xgt2e70COkIc9/tKmPhqcrfexSPsgBb7mDwQXpKczhp5knmD8sn0uaYh5h14qNvvSfH5Obn0iE</string>
+	<key>RSA public key</key>
+	<string>MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCWSf6v5ANzqGZx0ibjaRXn7gebtTzjlV1Nzoema6NNmo3U/WqtHsQ+c916Wwyk5XR6I30Vfwn/JiYVHdaAN8+OoNsHa9s32iO23DtwE3g1+0C1imri5fizIo39KqcX/s4yCamKLgonZ1wqKxB//y93A3pP1ngpN9Wf7RMxqDF36wIDAQAB</string>
+	<key>Seller</key>
+	<string>trafficeye@cennavi.com.cn</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UISupportedExternalAccessoryProtocols</key>
+	<array>
+		<string>com.bmw.a4a</string>
+	</array>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+</dict>
+</plist>

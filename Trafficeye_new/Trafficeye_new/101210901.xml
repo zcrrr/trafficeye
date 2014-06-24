@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<result code="200" description="简图列表返回成功" fill="1">
+<imgInfo imgid="0579_103_001" imgname="金华城市内主干路" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0579_105_001" imgname="江北区域" imgsize="176x150" imgtype="区域简图" typecode="R01" />
+<imgInfo imgid="0579_105_002" imgname="江南区域" imgsize="176x150" imgtype="区域简图" typecode="R01" />
+<imgInfo imgid="0579_106_001" imgname="仙桥立交" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0579_106_002" imgname="十八里立交" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0579_106_003" imgname="湖海塘" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0579_106_004" imgname="假日公园" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0579_106_005" imgname="中国茶文化园" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0579_106_006" imgname="金华东站" imgsize="176x150" imgtype="交通枢纽" typecode="R01" />
+<imgInfo imgid="0579_106_007" imgname="金华火车站" imgsize="176x150" imgtype="交通枢纽" typecode="R01" />
+<imgInfo imgid="0579_106_008" imgname="城北景观公园" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0579_106_009" imgname="浙江师大" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0579_106_010" imgname="后周" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0579_106_011" imgname="宾虹西路-金星北街" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0579_106_012" imgname="婺城大桥" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0579_106_013" imgname="白龙桥火车站" imgsize="176x150" imgtype="交通枢纽" typecode="R01" />
+<imgInfo imgid="0579_106_014" imgname="临江西路" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+</result>

@@ -1,0 +1,350 @@
+<pluginApps>
+    <pluginApp applicationType="OnlineServices" text="CenNavi" applicationWeight="100">
+        <actions>
+            <raAction id="65"/>
+            <raAction id="66"/>
+            <raAction id="69"/>
+            <raAction id="70"/>
+            <raAction id="73"/>
+            <raAction id="74"/>
+            <raAction id="77"/>
+            <raAction id="78"/>
+            <raAction id="81"/>
+            <raAction id="82"/>
+            <raAction id="85"/>
+            <raAction id="86"/>
+            <raAction id="89"/>
+            <raAction id="90"/>
+            <raAction id="94"/>
+            <raAction id="95"/>
+            <combinedAction id="137">
+                <actions>
+                    <raAction id="100"/>
+                    <hmiAction id="152" target="135"/>
+                </actions>
+            </combinedAction>
+            <raAction id="153"/>
+            <raAction id="20"/>
+            <raAction id="25"/>
+            <raAction id="138"/>
+            <combinedAction id="139" sync="true">
+                <actions>
+                    <raAction id="50"/>
+                    <hmiAction id="154" target="136"/>
+                </actions>
+            </combinedAction>
+            <raAction id="21"/>
+            <raAction id="26"/>
+            <raAction id="29"/>
+            <raAction id="30"/>
+            <raAction id="33"/>
+            <raAction id="34"/>
+            <raAction id="37"/>
+            <raAction id="38"/>
+            <raAction id="41"/>
+            <raAction id="42"/>
+            <raAction id="45"/>
+            <raAction id="46"/>
+            <raAction id="51"/>
+            <hmiAction id="156" target="134"/>
+        </actions>
+        <models>
+            <raDataModel id="103"/>
+            <raDataModel id="61"/>
+            <raImageModel id="104"/>
+            <raImageModel id="105"/>
+            <raImageModel id="53"/>
+            <raImageModel id="55"/>
+            <raImageModel id="106"/>
+            <raImageModel id="107"/>
+            <raDataModel id="59"/>
+            <raDataModel id="108"/>
+            <raDataModel id="109"/>
+            <raDataModel id="68"/>
+            <raDataModel id="110"/>
+            <raDataModel id="72"/>
+            <raDataModel id="111"/>
+            <raDataModel id="76"/>
+            <raDataModel id="112"/>
+            <raDataModel id="80"/>
+            <raDataModel id="113"/>
+            <raDataModel id="84"/>
+            <raDataModel id="114"/>
+            <raDataModel id="88"/>
+            <raDataModel id="115"/>
+            <raDataModel id="116"/>
+            <raListModel id="117"/>
+            <raDataModel id="97"/>
+            <raListModel id="99"/>
+            <raImageModel id="19"/>
+            <raImageModel id="24"/>
+            <raImageModel id="2"/>
+            <raImageModel id="6"/>
+            <raImageModel id="8"/>
+            <raImageModel id="10"/>
+            <raImageModel id="12"/>
+            <raImageModel id="4"/>
+            <raDataModel id="118"/>
+            <raDataModel id="16" modelType="Info"/>
+            <raDataModel id="14"/>
+            <raDataModel id="119"/>
+            <raDataModel id="120"/>
+            <raDataModel id="121"/>
+            <raDataModel id="28"/>
+            <raDataModel id="122"/>
+            <raDataModel id="32"/>
+            <raDataModel id="123"/>
+            <raDataModel id="36"/>
+            <raDataModel id="124"/>
+            <raDataModel id="40"/>
+            <raDataModel id="125"/>
+            <raDataModel id="44"/>
+            <raDataModel id="126"/>
+            <raDataModel id="127"/>
+            <raDataModel id="128"/>
+            <raDataModel id="129"/>
+            <raDataModel id="130"/>
+            <textIdModel id="101" textId="145"/>
+            <imageIdModel id="102" imageId="148"/>
+            <textIdModel id="18" textId="142"/>
+            <textIdModel id="23" textId="144"/>
+            <textIdModel id="48" textId="141"/>
+            <imageIdModel id="49" imageId="149"/>
+            <textIdModel id="63" textId="143"/>
+            <imageIdModel id="64" imageId="151"/>
+            <textIdModel id="92" textId="140"/>
+            <imageIdModel id="93" imageId="150"/>
+        </models>
+        <entryButton id="155" action="156" model="101" imageModel="102"/>
+        <events>
+            <focusEvent id="131" targetModel="127"/>
+            <multimediaInfoEvent id="132" textModel1="128" textModel2="129"/>
+            <statusbarEvent id="133" textModel="130"/>
+        </events>
+        <hmiStates>
+            <toolbarHmiState id="134" textModel="118">
+                <toolbarComponents>
+                    <button id="17" action="20" selectAction="21" tooltipModel="18" model="119" imageModel="19"/>
+                    <button id="22" action="25" selectAction="26" tooltipModel="23" model="120" imageModel="24"/>
+                    <button id="27" action="29" selectAction="30" tooltipModel="28" model="121">
+                        <properties>
+                            <property id="2" value="false"/>
+                        </properties>
+                    </button>
+                    <button id="31" action="33" selectAction="34" tooltipModel="32" model="122">
+                        <properties>
+                            <property id="2" value="false"/>
+                        </properties>
+                    </button>
+                    <button id="35" action="37" selectAction="38" tooltipModel="36" model="123">
+                        <properties>
+                            <property id="2" value="false"/>
+                        </properties>
+                    </button>
+                    <button id="39" action="41" selectAction="42" tooltipModel="40" model="124">
+                        <properties>
+                            <property id="2" value="false"/>
+                        </properties>
+                    </button>
+                    <button id="43" action="45" selectAction="46" tooltipModel="44" model="125">
+                        <properties>
+                            <property id="2" value="false"/>
+                        </properties>
+                    </button>
+                    <button id="47" action="139" selectAction="51" tooltipModel="48" model="126" imageModel="49"/>
+                </toolbarComponents>
+                <components>
+                    <image id="1" model="2">
+                        <properties>
+                            <property id="20" value="-4"/>
+                            <property id="21" value="-11"/>
+                            <property id="17" value="0"/>
+                            <property id="10" value="420"/>
+                            <property id="9" value="514"/>
+                        </properties>
+                    </image>
+                    <image id="3" model="4">
+                        <properties>
+                            <property id="20" value="50"/>
+                            <property id="21" value="50"/>
+                            <property id="17" value="0"/>
+                            <property id="10" value="250"/>
+                            <property id="9" value="250"/>
+                        </properties>
+                    </image>
+                    <image id="5" model="6">
+                        <properties>
+                            <property id="20" value="-4"/>
+                            <property id="21" value="-11"/>
+                            <property id="17" value="0"/>
+                            <property id="10" value="420"/>
+                            <property id="9" value="514"/>
+                        </properties>
+                    </image>
+                    <image id="7" model="8">
+                        <properties>
+                            <property id="20" value="-4"/>
+                            <property id="21" value="-11"/>
+                            <property id="17" value="0"/>
+                            <property id="10" value="420"/>
+                            <property id="9" value="514"/>
+                        </properties>
+                    </image>
+                    <image id="9" model="10">
+                        <properties>
+                            <property id="20" value="505"/>
+                            <property id="21" value="125"/>
+                            <property id="17" value="0"/>
+                            <property id="10" value="149"/>
+                            <property id="9" value="149"/>
+                        </properties>
+                    </image>
+                    <image id="11" model="12">
+                        <properties>
+                            <property id="20" value="505"/>
+                            <property id="21" value="125"/>
+                            <property id="17" value="0"/>
+                            <property id="10" value="149"/>
+                            <property id="9" value="149"/>
+                        </properties>
+                    </image>
+                    <label id="13" model="14">
+                        <properties>
+                            <property id="20" value="20"/>
+                            <property id="21" value="20"/>
+                            <property id="17" value="0"/>
+                            <property id="8" value="true"/>
+                        </properties>
+                    </label>
+                    <label id="15" model="16">
+                        <properties>
+                            <property id="20" value="60"/>
+                            <property id="21" value="20"/>
+                            <property id="17" value="0"/>
+                        </properties>
+                    </label>
+                </components>
+            </toolbarHmiState>
+            <toolbarHmiState id="135" textModel="103">
+                <toolbarComponents>
+                    <button id="62" action="65" selectAction="66" tooltipModel="63" model="108" imageModel="64"/>
+                    <button id="67" action="69" selectAction="70" tooltipModel="68" model="109">
+                        <properties>
+                            <property id="2" value="false"/>
+                        </properties>
+                    </button>
+                    <button id="71" action="73" selectAction="74" tooltipModel="72" model="110">
+                        <properties>
+                            <property id="2" value="false"/>
+                        </properties>
+                    </button>
+                    <button id="75" action="77" selectAction="78" tooltipModel="76" model="111">
+                        <properties>
+                            <property id="2" value="false"/>
+                        </properties>
+                    </button>
+                    <button id="79" action="81" selectAction="82" tooltipModel="80" model="112">
+                        <properties>
+                            <property id="2" value="false"/>
+                        </properties>
+                    </button>
+                    <button id="83" action="85" selectAction="86" tooltipModel="84" model="113">
+                        <properties>
+                            <property id="2" value="false"/>
+                        </properties>
+                    </button>
+                    <button id="87" action="89" selectAction="90" tooltipModel="88" model="114">
+                        <properties>
+                            <property id="2" value="false"/>
+                        </properties>
+                    </button>
+                    <button id="91" action="94" selectAction="95" tooltipModel="92" model="115" imageModel="93"/>
+                </toolbarComponents>
+                <components>
+                    <image id="52" model="53">
+                        <properties>
+                            <property id="20" value="-4"/>
+                            <property id="21" value="-11"/>
+                            <property id="17" value="0"/>
+                            <property id="10" value="420"/>
+                            <property id="9" value="514"/>
+                        </properties>
+                    </image>
+                    <image id="54" model="55">
+                        <properties>
+                            <property id="20" value="-4"/>
+                            <property id="21" value="-11"/>
+                            <property id="17" value="0"/>
+                            <property id="10" value="420"/>
+                            <property id="9" value="514"/>
+                        </properties>
+                    </image>
+                    <image id="56" model="10">
+                        <properties>
+                            <property id="20" value="505"/>
+                            <property id="21" value="125"/>
+                            <property id="17" value="0"/>
+                            <property id="10" value="149"/>
+                            <property id="9" value="149"/>
+                        </properties>
+                    </image>
+                    <image id="57" model="12">
+                        <properties>
+                            <property id="20" value="505"/>
+                            <property id="21" value="125"/>
+                            <property id="17" value="0"/>
+                            <property id="10" value="149"/>
+                            <property id="9" value="149"/>
+                        </properties>
+                    </image>
+                    <label id="58" model="59">
+                        <properties>
+                            <property id="20" value="20"/>
+                            <property id="21" value="20"/>
+                            <property id="17" value="0"/>
+                            <property id="8" value="true"/>
+                        </properties>
+                    </label>
+                    <label id="60" model="61">
+                        <properties>
+                            <property id="20" value="60"/>
+                            <property id="21" value="20"/>
+                            <property id="17" value="0"/>
+                        </properties>
+                    </label>
+                </components>
+            </toolbarHmiState>
+            <hmiState id="136" textModel="116">
+                <components>
+                    <label id="96" model="97">
+                        <properties>
+                            <property id="2" value="false"/>
+                        </properties>
+                    </label>
+                    <separator id="157"/>
+                    <list id="98" model="99" action="137" selectAction="153"/>
+                </components>
+            </hmiState>
+        </hmiStates>
+    </pluginApp>
+    <pluginApp applicationType="Navigation" text="CenNaviLink0" applicationWeight="0">
+        <actions>
+            <hmiAction id="163" target="134"/>
+        </actions>
+        <models>
+            <raDataModel id="158"/>
+            <raDataModel id="159"/>
+            <raDataModel id="160"/>
+            <raDataModel id="161"/>
+            <textIdModel id="164" textId="145"/>
+            <imageIdModel id="165" imageId="148"/>
+        </models>
+        <entryButton id="162" action="163" model="164" imageModel="165"/>
+        <events>
+            <focusEvent id="166" targetModel="158"/>
+            <multimediaInfoEvent id="167" textModel1="159" textModel2="160"/>
+            <statusbarEvent id="168" textModel="161"/>
+        </events>
+        <hmiStates/>
+    </pluginApp>
+</pluginApps>

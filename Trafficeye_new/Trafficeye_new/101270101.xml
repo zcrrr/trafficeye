@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<result code="200" description="简图列表返回成功" fill="1">
+<imgInfo imgid="S370001" imgname="全市路况" imgsize="176x150" imgtype="全市简图" typecode="R01" />
+
+</result>

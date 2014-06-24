@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE HTML PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta content="telephone=no" name="format-detection" />
+<title>手机号码验证</title>
+<link href="per_css/public.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" media="screen and (-webkit-device-pixel-ratio:1.5)" href="per_css/mdpi.css" />
+<link rel="stylesheet" media="screen and (-webkit-device-pixel-ratio:2.0)" href="per_css/hdpi.css" />
+</head>
+<body>
+
+<div class="header">
+	<div class="tbtn-l" id="backpagebtn"><a></a></div>
+	手机号码验证
+</div>
+
+<div class="itext">
+我们将向您输入的手机号码：
+<a href="#" class="curr" id="inputmobile"></a>
+发送一条验证码短信，请确认该手机是否可用？
+</div>
+
+<ul class="h-btn i-btn n-btn">
+	<li class="gay" id="backpagebtnt"><a>更换号码</a></li>
+	<li onclick="saveFunction(this);"><a>　下一步　</a></li>
+</ul>
+
+
+</body>
+<script type="text/javascript" src="libs/zepto.js"></script>
+<script type="text/javascript" src="libs/gmu.js"></script>
+<script type="text/javascript" src="per_js/base.js"></script>
+<script type="text/javascript" src="per_js/pre_survey_mobile_verify.js"></script>
+</html>

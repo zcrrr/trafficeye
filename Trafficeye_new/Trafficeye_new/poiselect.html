@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta content="email=no"name="format-detection"/>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>公交换乘</title>
+<link href="bus_css/public.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" media="screen and (-webkit-device-pixel-ratio:1.5)" href="bus_css/mdpi.css" />
+<link rel="stylesheet" media="screen and (-webkit-device-pixel-ratio:2.0)" href="bus_css/hdpi.css" />
+<script type="text/javascript" src="bus_libs/zepto-1.1.3-min.js"></script>
+<script type="text/javascript" src="bus_libs/touch.js"></script>
+<script type="text/javascript" src="bus_libs/json5.js"></script>
+<script type="text/javascript" src="bus_js/common.js"></script>
+</head>
+<body>
+<div class="prompt_mask" style="display:none" id="loadingid">
+	<div class="p_load">
+		<div class="loadimg"><span></span></div>
+		<div class="loadtext">正在加载...</div>
+		<div class="loadqx"></div>
+	</div>
+</div>
+
+<div class="header">
+	<div class="tbtn-l" style="background-color:#dadada;" id="toindexbtn"><a></a></div>
+	<div class="hinput">
+		<h2 style="margin-left:8px;">
+			<input type="text" placeholder="请输入终点" id="selectsiteinput"/>
+			<div class="p_empty" style="display:none;"></div><!--当input输入文字时 显示清空按扭-->
+		</h2>
+	</div>
+	<div class="sctbn"  id="selectsitesearchbtn">搜索</div>
+</div>
+
+<!--
+<ul class="rab">
+	<li class="a" id="mylocbtn"><a>我的位置</a></li>
+	<li class="b" id="clickmapbtn"><a>地图选点</a></li>
+</ul>
+-->
+
+<ul class="h-list dzxx" id="selectcontainerid"></ul>
+
+</body>
+<script type="text/javascript" src="bus_js/poiselect.js"></script>
+</html>

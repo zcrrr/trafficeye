@@ -1,0 +1,122 @@
+﻿/*==========-webkit-device-pixel-ratio:1.5)==================*/
+/*@media screen and (-webkit-device-pixel-ratio:1.5) {*/
+body {
+-webkit-background-size:40px 25px;
+background:#f5f5f5 url(../images/dpi1.5/common_body_bg.png) repeat;
+}
+.header {
+height:50px;
+line-height:50px;
+padding:0 70px;
+}
+.header {
+-webkit-background-size:30px 50px;
+background:#559cba url(../images/dpi1.5/common_header_bg.png) repeat;
+}
+.topbtn_l a, .topbtn_r a {
+font-size:17px;
+width:56px;
+height:36px;
+padding-top:2px;
+line-height:34px;
+margin:7px 6px 0 6px;
+border-width:none;
+-webkit-border-image:none;
+-webkit-background-size:56px 72px;
+background:url(../images/dpi1.5/common_header_btn_bg.png) no-repeat left top;
+}
+.text3 a {
+width:68px;
+-webkit-background-size:68px 72px;
+background: url(../images/dpi1.5/common_header_3btn_bg.png) no-repeat left top;
+}
+.text4 a {
+width:88px;
+-webkit-background-size:88px 72px;
+background:url(../images/dpi1.5/common_header_4btn_bg.png) no-repeat left top;
+}
+.fh a {
+width:56px;
+padding-left:6px;
+-webkit-background-size:56px 72px;
+background:url(../images/dpi1.5/common_header_fhbtn.png) no-repeat left top;
+}
+.topbtn_l.curr a, .topbtn_r.curr a, .topbtn_l.text3.curr a, .topbtn_r.text3.curr a, .topbtn_l.text4.curr a, .topbtn_r.text4.curr a, .topbtn_l.fh.curr a {
+background-position: left bottom;
+}
+
+.prompt_load {
+-webkit-background-size:54px 54px;
+background:url(../images/dpi1.5/waiting.gif) no-repeat center top;
+}
+.prompt_title {
+-webkit-background-size:22px 22px;
+background:#434343 url(../images/dpi1.5/prompt_logo.png) no-repeat 35px center;
+}
+.loadimg span {
+-webkit-background-size:50px 50px;
+background:url(../images/waiting.gif);
+}
+.loadqx {
+-webkit-background-size:50px 50px;
+background:url(../images/icon_close.png) ;
+}
+/*===============select_date.html style===============*/
+.date_title {
+-webkit-background-size:314px 38px;
+background:url(../images/dpi1.5/select_date_tl_bg.png) no-repeat left top;
+}
+.date_pre span{
+-webkit-background-size:44px 36px;
+background:url(../images/dpi1.5/select_date_pre.png) no-repeat left top;
+}
+.date_next span{
+-webkit-background-size:44px 36px;
+background:url(../images/dpi1.5/select_date_pre.png) no-repeat left bottom;
+}
+.date_pre.curr span{
+background-position: right top;
+}
+.date_next.curr span{
+background-position: right bottom;
+}
+.date_week {
+-webkit-background-size:314px 30px;
+background:url(../images/dpi1.5/select_date_week_bg.png) no-repeat left top;
+}
+.date_list {
+-webkit-background-size:314px 44px;
+background:url(../images/dpi1.5/select_date_li_bg.png) repeat-y left top;
+}
+.date_btbg{
+-webkit-background-size:314px 30px;
+background:url(../images/dpi1.5/select_date_bt_bg.png) no-repeat left top;
+}
+.select_date_logo {
+-webkit-background-size:60px 60px;
+background:url(../images/dpi1.5/select_date_icon01.png) no-repeat center center;
+}
+/*===============select_date.html end===============*/
+/*----------huisetishi start----------*/
+.nav_new .icon {
+-webkit-background-size:20px 20px;
+background:url(../images/dpi1.5/common_input_cancel.png) no-repeat 12px center;
+}
+/*----------huisetishi end----------*/
+/*----------reddottishi digital start----------*/
+.m-dot {
+-webkit-background-size:17px 17px;
+background: url(../images/dpi1.5/my.png) no-repeat center;
+}
+span.s{
+padding-left:10px;
+min-width:8px;
+-webkit-background-size:48px 22px;
+background:url(../images/dpi1.5/massicon.png) no-repeat left center;
+}
+span.s s{
+-webkit-background-size:48px 22px;
+background:url(../images/dpi1.5/massicon.png) no-repeat right center;
+}
+/*----------reddottishi digital end----------*/
+/*}*/

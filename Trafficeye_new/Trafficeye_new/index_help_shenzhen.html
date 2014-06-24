@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport"
+		content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title></title>
+		<link href="css/public.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet"
+		media="screen and (-webkit-device-pixel-ratio:1.5)"
+		href="css/mdpi.css" />
+		<link rel="stylesheet"
+		media="screen and (-webkit-device-pixel-ratio:2.0)"
+		href="css/hdpi.css" />
+		<script type="text/javascript" src="js/jquery1.9.1.js"></script>
+		<style type="text/css">
+			#topNav {
+				width: 100%;
+				float: left;
+				display: block;
+				z-index: 100;
+				overflow: visible;
+				position: fixed;
+				top: 0px; /* position fixed for IE6 */
+				_position: absolute;
+				_top: expression(documentElement.scrollTop + "px");
+				background-image: url( images/bar.png);
+				height: 45px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="topNav" >
+			<img src="images/icon_back.png" width="45px" height="45px"  style="float:left;" id="back" onclick="window.location.href=window.localStorage.pre;"/>
+			<div  style="font-size:24px ;color: #FFFFFF;text-align:center;height:45px;line-height:45px;">
+				深圳交通指数帮助
+			</div>
+		</div>
+		<div style="margin-top: 45px">
+			<p>
+				<strong>一、深圳市交通指数是什么？</strong>
+			</p>
+			<p>
+				&nbsp;&nbsp;&nbsp; 深圳市道路交通运行指数（简称“交通指数”）是对路网交通总体运行状况进行定量化评估的综合性指标，与传统的车速、流量等参数相比，具有直观、简单的特点。类似于体检时量体温，交通指数让人们不仅是模糊地知道堵或不堵，更能清楚地了解堵到何种程度，从而对全市整体交通，以及特定片区或路段的交通运行情况有一个直观量化的了解，为市民出行提供有益参考。
+			</p>
+			<p>
+				&nbsp;&nbsp;&nbsp; 深圳市发布的交通指数取值范围为0～5，分为畅通（0～1）、基本畅通（1～2）、缓行（2～3）、轻度拥堵（3～4）和拥堵（4～5）等五个等级，分别用绿色、浅绿、黄色、橙色和红色表示。交通指数越大表明一次出行相比顺畅状况（如凌晨时刻）多花费的时间越长。例如，当处于“畅通”等级时，车辆可如在凌晨时段一样自由行驶；处于“拥堵”等级时，路上花费的时间将至少是顺畅状况下的2倍以上，拥堵状况严重。
+			</p>
+			<p align="center"><img src="index_help_shenzhen_1.png" width="100%">
+			</p>
+			<p align="center">
+				<strong>交通指数和出行时间关系图</strong>
+			</p>
+			<p>
+				<br/>
+			</p>
+
+			<p>
+				<strong>二、深圳市交通指数怎么算？</strong>
+			</p>
+			<p>
+				&nbsp;&nbsp;&nbsp; 深圳市交通指数计算利用了全市14000余辆出租车的实时GPS数据（包含车速、位置等），相当于每天有万余辆车不断地在全市各条道路上巡回，持续发回调查结果，相比人工调查等传统方法在覆盖范围和准确性上优势明显。利用出租车GPS数据，能够计算各条道路、各个片区以及全市路网的平均车速和出行时间。通过实地调查和专家评分，建立出行时间与交通指数的换算关系模型，这样由点及线、由线及面，一步步推算路段、关口、片区以及全市等不同空间范围的交通指数，具有相对稳定可靠的优点，能够较好地贴合人们对实际路况的主观感受。
+			</p>
+			<p>
+				&nbsp;&nbsp;&nbsp; 由于出租车与社会车辆在驾驶习惯、行驶路线等存在一定的差异，可能造成计算误差。如少数严重拥堵或偏远的道路出租车样本数量不足，使得计算和评估结果与实际情况存在偏差，或因无样本而不能计算指数（在路况地图中以灰色显示）。针对这一问题，现已着手在近期接入固定检测器等多种来源基础数据，进一步提高指数和车速等指标计算的准确性。
+			</p>
+			<p>
+				<br/>
+			</p>
+
+			<p>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+				更多信息，请访问<a href="http://szmap.sutpc.com">深圳市交通运输委员会</a>
+				<br/>
+				<br/>
+			</p>
+
+		</div>
+		<script type="text/javascript">
+			function reflesh() {
+				document.location.reload();
+			}
+
+			setTimeout("reflesh()", 1 * 60 * 1000);
+			//每5分钟刷新一次
+		</script>
+		<script type="text/javascript">
+			$(function() {
+				document.getElementById("back").addEventListener('touchstart', touchstart);
+				document.getElementById("back").addEventListener('touchend', touchend);
+			});
+			function touchstart(e) {
+				$("#back").attr("src", "images/icon_back.png");
+			}
+
+			function touchend(e) {
+				$("#back").attr("src", "images/icon_back_pressed.png");
+			}
+		</script>
+	</body>
+</html>

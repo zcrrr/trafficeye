@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE HTML PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta content="telephone=no" name="format-detection" />
+<title></title><!--用户昵称-->
+<link href="per_css/public.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" media="screen and (-webkit-device-pixel-ratio:1.5)" href="per_css/mdpi.css" />
+<link rel="stylesheet" media="screen and (-webkit-device-pixel-ratio:2.0)" href="per_css/hdpi.css" />
+</head>
+<body>
+<div class="header">
+	<div class="tbtn-l" id="backpagebtn"><a></a></div>
+	<p id="baseinfonicknameheader"></p><!--用户昵称-->
+</div>
+<ul class="h-btn">
+	<li id="baseinfo"><a>基础信息</a></li>
+	<li id="survey"><a>有奖调查</a></li>
+	<li id="car"><a>拼车</a></li>
+</ul>
+<!--此为有奖调查的介绍，初始化页面不显示-->
+<div class="att" id="surveydescid"  style="display:none">参加“交通眼”有奖调查，有机会获得丰厚奖励，您需要填写以下信息的填写。我们对这些信息的利用，仅限于统计分析，绝不会向外泄露。关于本产品更详细的隐私保护政策，请您参考服务条款中第四条“隐私保护”部分。
+</div>
+<div class="att" id="pcardescid"  style="display:none">参加“交通眼”拼车活动,以下信息将展示给有意和您拼车的朋友,您的资料 填写越全面真实,越能获得和您拼车的朋友的信任,填写QQ、微信号码方便有 意和您拼车的朋友同您交流。
+</div>
+<!-- 此为基础信息的内容，默认显示-->
+<ul class="grsetuplist" id="baseinfolist"  style="display:none">	
+	<li class="heaherimg" onclick="infoimgClick(this);">
+		头  像
+		<span class="txx" id="baseinfoimg"></span>
+		<span class="libg_arrow"></span>
+	</li>
+	<li onclick="infonicknameClick(this);">
+		昵  称
+		<span class="txx" id="baseinfonickname"></span>
+		<span class="libg_arrow"></span>
+	</li>
+	<li onclick="inforelnameClick(this);">
+		真实姓名
+		<span class="txx" id="baseinfousername"></span>
+		<span class="libg_arrow"></span>
+	</li>
+	<li onclick="infomobileClick(this);">
+		手机号码
+		<span class="txx" id="baseinfophonenumber"></span>
+		<span class="libg_arrow"></span>
+	</li>
+	<li onclick="infocityClick(this);">
+		所在城市
+		<span class="txx" id="baseinfocity"></span>
+		<span class="libg_arrow"></span>
+	</li>
+	<li onclick="infosexClick(this);">
+		性  别
+		<span class="txx" id="baseinfosex"></span>
+		<span class="libg_arrow"></span>
+	</li>	
+	<li onclick="infobirthdayClick(this);">
+		出生日期
+		<span class="txx" id="baseinfobirthdate"></span>
+		<span class="libg_arrow"></span>
+	</li>
+	<li onclick="infodescriptionClick(this);">
+		一句话简介
+		<span class="txx" id="baseinfodescript"></span>
+		<span class="libg_arrow"></span>
+	</li>
+</ul>
+<!--此为调查问卷的内容-->
+<ul class="grsetuplist" id="surveybaseid" style="display:none">	
+	<li onclick="suveryrelnameClick(this);">
+		真实姓名<span style="color:#ff0000">*</span>
+		<span class="txx" id="suveryusername"></span> 
+		<span class="libg_arrow"></span>
+	</li>
+	<li onclick="suverymobileClick(this);">
+		手机号码<span style="color:#ff0000">*</span>
+		<span class="txx" id="suveryphonenumber"></span>
+		<span class="libg_arrow"></span>
+	</li>
+	<li onclick="suverycityClick(this);">
+		所在城市<span style="color:#ff0000">*</span>
+		<span class="txx" id="suverycity"></span> 
+		<span class="libg_arrow"></span>
+	</li>
+	<li onclick="suverysexClick(this);">
+		性  别<span style="color:#ff0000">*</span>
+		<span class="txx" id="suverysex"></span>
+		<span class="libg_arrow"></span>
+	</li>	
+	<li onclick="suverybirthdayClick(this);">
+		出生日期<span style="color:#ff0000">*</span>
+		<span class="txx" id="suverybirthdate"></span>
+		<span class="libg_arrow"></span>
+	</li>
+</ul>
+<!--调查问卷内容-->
+<ul class="heighta" id="surveyextid" style="display:none">	
+	<li onclick="surveyextincomeClick(this);">
+		您的家庭年收入大约是？<span style="color:#ff0000">*</span>
+		<span class="txx" id="surveyextincome"></span>
+		<span class="libg_arrow"></span>
+	</li>
+	<li onclick="surveyexttravelClick(this);">
+		您最常采用的出行方式是？<span style="color:#ff0000">*</span>
+		<span class="txx" id="surveyexttravel"></span>
+		<span class="libg_arrow"></span>
+	</li>
+	<li onclick="surveyextcartimeClick(this);">
+		您平均每日的驾车时长是？<span style="color:#ff0000">*</span>
+		<span class="txx" id="surveyextcartime"></span>
+		<span class="libg_arrow"></span>
+	</li>
+	<li onclick="surveyextcarClick(this);">
+		您目前驾驶车辆的品牌型号是？<span style="color:#ff0000">*</span>
+		<span class="txx" id="surveyextcar"></span>
+		<span class="libg_arrow"></span>
+	</li>	
+	<li onclick="surveyextbuytimeClick(this);">
+		您目前驾驶车辆的购买时间是？<span style="color:#ff0000">*</span>
+		<span class="txx" id="surveyextbuytime"></span>
+		<span class="libg_arrow"></span>
+	</li>
+	<li onclick="surveyextmanyClick(this);">
+		您目前驾驶的车辆是您的第几辆车？<span style="color:#ff0000">*</span>
+		<span class="txx" id="surveyextmany"></span>
+		<span class="libg_arrow"></span>
+	</li>
+	<li onclick="surveyextfirstClick(this);">
+		您首次获得驾照的时间是？<span style="color:#ff0000">*</span>
+		<span class="txx" id="surveyextfirst"></span>
+		<span class="libg_arrow"></span>
+	</li>	
+</ul>
+
+<div id="surveydescidhtml"  style="display:none">
+	<br/>
+	<font color="red" size="large">在完整填写以上调查信息后，请您点击返回按钮，完成调查问卷的填写，感谢您的参与。</font>
+	<br/>
+	<br/>
+</div>
+
+<ul class="h-btn i-btn" id="modifyPwdid" style="display:none">
+	<!--若是用户基础信息界面，显示修改密码，其他页面不显示-->
+	<!--<li class="gay" onclick="modifyPassword(this);"><a>修改密码</a></li>-->
+	<!--<li onclick="saveBaseInfo(this);"><a>保存</a></li>-->
+	<li onclick="modifyPassword(this);"><a>修改密码</a></li>
+</ul>
+
+
+<!--此为拼车的内容-->
+<ul class="grsetuplist" id="pcarbaseid" style="display:none">	
+	<li onclick="pcarusername(this);">
+		真实姓名<span style="color:#ff0000">*</span>
+		<span class="txx" id="pcarusername"></span>
+		<span class="libg_arrow"></span>
+	</li>
+	<li onclick="pcarmobile(this);">
+		手机号码<span style="color:#ff0000">*</span>
+		<span class="txx" id="pcarmobile"></span>
+		<span class="libg_arrow"></span>
+	</li>
+	<li onclick="pcarcity(this);">
+		所在城市<span style="color:#ff0000">*</span>
+		<span class="txx" id="pcarcity"></span>
+		<span class="libg_arrow"></span>
+	</li>
+	<li onclick="pcarsex(this);">
+		性  别<span style="color:#ff0000">*</span>
+		<span class="txx" id="pcarsex"></span>
+		<span class="libg_arrow"></span>
+	</li>	
+	<li onclick="pcarbirthday(this);">
+		出生日期<span style="color:#ff0000">*</span>
+		<span class="txx" id="pcarbirthday"></span>
+		<span class="libg_arrow"></span>
+	</li>
+	<li onclick="pcarcarnumber(this);">
+		车牌号码
+		<span class="txx" id="pcarcarnumber"></span>
+		<span class="libg_arrow"></span>
+	</li>
+	<li onclick="pcarweixin(this);">
+		微信号码
+		<span class="txx" id="pcarweixin"></span>
+		<span class="libg_arrow"></span>
+	</li>
+	<li onclick="pcarqqnum(this);">
+		QQ号码
+		<span class="txx" id="pcarqqnum"></span>
+		<span class="libg_arrow"></span>
+	</li>
+</ul>
+
+</body>
+<script type="text/javascript" src="libs/zepto.js"></script>
+<script type="text/javascript" src="libs/gmu.js"></script>
+<script type="text/javascript" src="per_js/base.js"></script>
+<script type="text/javascript" src="per_js/pre_baseinfo.js"></script>
+</html>

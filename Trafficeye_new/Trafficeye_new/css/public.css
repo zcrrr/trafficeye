@@ -1,0 +1,274 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, p, blockquote, th, td, img {
+	margin:0;
+	padding:0;
+	border:0;
+	outline:none;
+	-webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+	-webkit-user-select:none;
+}
+
+body {
+	font-size:15px;
+	color:#181818;
+	line-height:160%;
+	font-family:Arial, sans-serif, Helvetica, "Microsoft YaHei", "SimHei";
+	background:#f5f5f5;
+}
+html, body{
+	height:100%;
+}
+input {
+	-webkit-appearance:none;
+	-webkit-border-radius:0;
+}
+ul, ol, li {
+	list-style:none;
+}
+a {
+	color:#00317a;
+	text-decoration:none;
+	-webkit-touch-callout:none
+}
+a:active {
+	color:#f60;
+}
+.wbg {
+	/*margin:0 auto;
+	width:300px;*/
+	width:100%;
+	height:100%;
+	position:relative;
+	left:0px;
+	top:0px;
+}
+.wbg img.cimg {
+	display:block;
+	margin:0 auto;/*	width:100%;
+	height:100%;*/
+	}
+.wgay {
+	background:rgba(0, 0, 0, 0.5);
+	position:relative;
+	float:left;
+	top:5px;
+}
+.bg{
+	background:rgba(0, 0, 0, 0.3);
+	position:relative;
+	top:5px;
+}
+.t {
+	color:#FFF;
+	position:relative
+}
+.t .s {
+	position:absolute;
+	right:10px;
+	top:15px;
+	color:#FFF;
+	font-size:40px
+}
+.t .s  img{
+	display:block;
+	height:50px;
+	width:50px;
+}
+.t .b {
+	position:absolute;
+	right:5px;
+	top:68px;
+	color:#FFF;
+}
+.t .b ul li {
+	float:left;
+}
+.t .b ul li a {
+	display:block;
+}
+.t .b ul li a span {
+	display:block;
+	height:32px;
+	width:32px;
+}
+.t .b ul li.ia a span {
+	background:url(../images/dpi1/icons_trafficindex.png) no-repeat left top;
+}
+.t .b ul li.iaps a span {
+	background:url(../images/dpi1/icons_trafficindex.png) no-repeat left -32px;
+}
+.t .b ul li.ib a span {
+	background:url(../images/dpi1/icons_trafficindex.png) no-repeat -32px top;
+}
+.t .b ul li.ibps a span {
+	background:url(../images/dpi1/icons_trafficindex.png) no-repeat -32px -32px;
+}
+.t .b ul li.ic a span {
+	background:url(../images/dpi1/icons_trafficindex.png) no-repeat -64px top;
+}
+.t .b ul li.icps a span {
+	background:url(../images/dpi1/icons_trafficindex.png) no-repeat -64px -32px;
+}
+
+.t .c {
+	position:absolute;
+	right:5px;
+	top:15px;
+	color:#FFF;
+}
+.t .c ul li {
+	float:left;
+}
+.t .c ul li a {
+	display:block;
+}
+.t .c ul li a span{
+	display:block;
+	height:32px;
+	width:32px;
+	
+}
+.t .c ul li.ia a span {
+	background:url(../images/dpi1/icons_trafficindex.png)no-repeat left top ;
+}
+.t .c ul li.iaps a span {
+	background:url(../images/dpi1/icons_trafficindex.png)no-repeat left -32px ;
+}
+.t .c ul li.ib a span {
+	background:url(../images/dpi1/icons_trafficindex.png) no-repeat -32px top;
+}
+.t .c ul li.ibps a span {
+	background:url(../images/dpi1/icons_trafficindex.png) no-repeat -32px -32px;
+}
+.t .c ul li.ic a span {
+	background:url(../images/dpi1/icons_trafficindex.png) no-repeat -64px top;
+}
+.t .c ul li.icps a span {
+	background:url(../images/dpi1/icons_trafficindex.png) no-repeat -64px -32px;
+}
+
+
+
+.t .add {
+	float:left;
+	height:60px;
+	padding-left:5px;
+	line-height:60px;
+	padding-top:5px;
+	font-size:40px;
+}
+.t .d {
+	float:left;
+	font-size:14px;
+	padding-top:13px;
+	padding-left:10px;
+	line-height:160%
+}
+.t .d2 {
+	float:left;
+	font-size:14px;
+	padding-top:30px;
+	padding-left:10px;
+	line-height:160%
+}
+.t .p {
+	clear:both;
+	padding-left:10px;
+	line-height:140%
+}
+.wimg {
+	background:rgba(255, 255, 255, 0.5);
+	min-height:170px;
+	margin:10px 5px 5px 9px;
+	text-align: center
+}
+.waiting {
+	background:rgba(255, 255, 255, 0.5);
+	min-height:170px;
+	margin:50px 5px 5px 10px;
+	text-align: center
+}
+.ly {
+	font-size:9px;
+	line-height:140%;
+	text-align:center;
+	padding:5px 10px 10px;
+	color:#FFF
+}
+.ly2 {
+	font-size:9px;
+	text-align:center;
+	color:#FFF;
+	position:absolute;
+ 	bottom:5px;
+ 	width:100%;
+}
+.nav {
+	position:absolute;
+	bottom:5px;
+	left:0;
+	right:0;
+	text-align:center;
+	font-size:0;
+	line-height:0;
+	margin-top:5px;
+	margin-bottom:10px
+}
+.nav1 {
+	position:absolute;
+	bottom:5px;
+	left:0;
+	right:0;
+	text-align:center;
+	font-size:0;
+	line-height:0;
+	margin-top:5px;
+	margin-bottom:5px
+}
+.indicator, .indicator > li {
+	display:inline-block;
+}
+.indicator > li {
+	background: url(../images/dpi1/mi.png) no-repeat left top;
+	height:6px;
+	width:6px;
+	margin-right:8px
+}
+.indicator > li.active {
+	background: url(../images/dpi1/mi.png) no-repeat left bottom;
+	height:6px;
+	width:6px;
+}
+.indicator > li:last-child {
+	margin:0;
+}
+#mySwipe {
+	position:relative;
+	left:0px;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+.area{
+position:absolute; left:16px; top:19px; font-size:25px;
+}
+.city{
+position:absolute; right:14px; top:18px;font-size:25px;
+}
+.aa{
+ padding-top:20px;height:30px; padding-left:15px; width:100%;line-height:30px;
+}
+.img1{
+	position:absolute; right:5px; width:40px; height:40px;  top: 40px; margin:5px;
+}
+.img2{
+	position:absolute; right:50px; width:40px; height:40px;  top: 40px;margin:5px;
+}
+.img3{
+	position:absolute; right:95px; width:50px; height:50px;  top: -10px; margin:5px;
+}
+.img4{
+	position:absolute; right:45px; width:50px; height:50px;  top: -10px; margin:5px;
+}
+.img5{
+	position:absolute; right:0px; width:50px; height:50px;  top: -10px; margin:5px;
+}

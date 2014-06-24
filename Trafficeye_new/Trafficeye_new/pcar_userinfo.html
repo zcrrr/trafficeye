@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE HTML PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta content="telephone=no" name="format-detection" />
+<title>完善拼车个人信息</title>
+<link href="pcar_css/public.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" media="screen and (-webkit-device-pixel-ratio:1.5)" href="pcar_css/mdpi.css" />
+<link rel="stylesheet" media="screen and (-webkit-device-pixel-ratio:2.0)" href="pcar_css/hdpi.css" /></head>
+<body>
+
+<div class="header">
+	<div class="tbtn-l" id="backpagebtn"><a></a></div>
+	完善拼车个人信息
+</div>
+
+<div class="tabinfo-box">
+	<table class="info">
+		<tr>
+			<td >真实姓名<span style="color:#ff0000">*</span></td>
+			<td onclick="username(this);" id="username" class="border-left" style="text-align:right"></td>
+		</tr>
+		<tr>
+			<td>手机号码<span style="color:#ff0000">*</span></td>
+			<td onclick="mobile(this);" id="mobile" class="border-left" style="text-align:right"></td>
+		</tr>
+		<tr>
+			<td>所在城市<span style="color:#ff0000">*</span></td>
+			<td onclick="city(this);" id="city" class="border-left" style="text-align:right"></td>
+		</tr>
+		<tr>
+			<td>性　　别<span style="color:#ff0000">*</span></td>
+			<td onclick="sex(this);" id="sex" class="border-left" style="text-align:right"></td>
+		</tr>
+		<tr>
+			<td>出生日期<span style="color:#ff0000">*</span></td>
+			<td onclick="birthday(this);" id="birthday" class="border-left" style="text-align:right"></td>
+		</tr>
+		<tr>
+			<td>车牌号码</td>
+			<td onclick="carnumber(this);" id="carnumber" class="border-left" style="text-align:right">选填,用于线上交流</td>
+		</tr>
+		<tr>
+			<td>微信号码</td>
+			<td onclick="weixin(this);" id="weixin" class="border-left" style="text-align:right">选填,用于线上交流</td>
+		</tr>
+		<tr>
+			<td>QQ 号码</td>
+			<td onclick="qqnum(this);" id="qqnum" class="border-left" style="text-align:right">选填,用于线上交流</td>
+		</tr>
+	</table>
+</div>
+</body>
+<script type="text/javascript" src="libs/zepto.js"></script>
+<script type="text/javascript" src="libs/gmu.js"></script>
+<script type="text/javascript" src="pcar_js/base.js"></script>
+<script type="text/javascript" src="pcar_js/pcar_userinfo.js"></script>
+</html>

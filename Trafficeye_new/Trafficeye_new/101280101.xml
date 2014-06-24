@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<result code="200" description="简图列表返回成功" fill="1">
+<imgInfo imgid="S120054" imgname="全市路况" imgsize="176x150" imgtype="全市简图" typecode="R01" /> 
+<imgInfo imgid="S120030" imgname="CBD" imgsize="176x150" imgtype="区域简图" typecode="R01" /> 
+<imgInfo imgid="S120031" imgname="天河商业区" imgsize="176x150" imgtype="区域简图" typecode="R01" /> 
+<imgInfo imgid="S120032" imgname="珠江" imgsize="176x150" imgtype="区域简图" typecode="R01" /> 
+<imgInfo imgid="S120007" imgname="广州东站" imgsize="176x150" imgtype="交通枢纽" typecode="R01" />
+<imgInfo imgid="S120004" imgname="广州站" imgsize="176x150" imgtype="交通枢纽" typecode="R01" />
+<imgInfo imgid="S120001" imgname="东风东路" imgsize="176x150" imgtype="道路简图" typecode="R01" /> 
+<imgInfo imgid="S120002" imgname="东风西路" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="S120003" imgname="东风中路" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="S120005" imgname="东晓南路" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="S120006" imgname="东濠涌高架" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="S120011" imgname="广州大道北" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="S120012" imgname="广州大道南" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="S120013" imgname="广州大道中" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="S120016" imgname="环城高速" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="S120017" imgname="环市东路" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="S120018" imgname="环市西路" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="S120019" imgname="环市中路" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="S120020" imgname="黄埔大道东" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="S120021" imgname="黄埔大道西" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="S120022" imgname="黄埔大道中" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="S120023" imgname="机场路" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="S120026" imgname="康王路" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="S120027" imgname="科韵路" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="S120033" imgname="天河路" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="S120034" imgname="新港东路" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="S120035" imgname="新港西路" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="S120036" imgname="新港中路" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="S120039" imgname="中山大道东" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="S120040" imgname="中山大道西" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="S120041" imgname="中山大道中" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="S120037" imgname="昌岗东路" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="S120038" imgname="昌岗西路" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="S120042" imgname="昌岗中路" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="S120053" imgname="东湖路" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="S120051" imgname="东晓路" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="S120060" imgname="工业大道北" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="S120043" imgname="广园东路" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="S120044" imgname="广园中路" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="S120056" imgname="增槎路" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="S120048" imgname="解放北路" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="S120057" imgname="解放南路" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="S120058" imgname="解放中路" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="S120049" imgname="麓湖路" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="S120047" imgname="人民路" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="S120052" imgname="双桥路" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+
+
+
+</result>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDApplicationManifest</key>
+	<dict>
+		<key>hmiCategory</key>
+		<string>OnlineServices</string>
+		<key>icon</key>
+		<data>
+		/9j/4AAQSkZJRgABAQAAAQABAAD/4QBYRXhpZgAATU0AKgAAAAgAAgESAAMA
+		AAABAAEAAIdpAAQAAAABAAAAJgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAAB
+		AAAAMqADAAQAAAABAAAAMgAAAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEB
+		AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/
+		2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEB
+		AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAyADIDAREAAhEBAxEB/8QA
+		HwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUF
+		BAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkK
+		FhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1
+		dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXG
+		x8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEB
+		AQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAEC
+		AxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRom
+		JygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOE
+		hYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU
+		1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD+1H9sn9sn
+		4EfsIfArxH+0J+0L4luNB8E6Hc2ekabp2k2Y1bxZ418WasJ/7D8FeCtCE1u+
+		teJtZNtcyW9q1xa2dnY2eoaxq9/pui6bqOo2v6L4V+FfGnjLxplvAnAmWf2l
+		neYqrXnOtU+r5flmX4ZRljM2zbGOMoYPLsHGUXVrOM6lSrUo4XC0sRjMRh8P
+		V8/NM0wWT4Krj8fVVKhSWr05pSs2oxTaTk0pNttRjFSnOUYxlJfzD33/AAdq
+		z3OqXkfhP/gnP4h1TQvtEg0q/wDEf7UWg+GNburPeRBNqWg2PwT8U2ml3bph
+		prKDxBqqQOTGLybbvP8ApPQ/ZW5jTwlGeb+OWWYTHunF4rDZfwDi8ywlKry3
+		nChjcTxZlVfEU4u9qtTL8LKUfedKGqX4njPpB8KYSpUi8NXqQg2lUjUq2nra
+		8eXBzT/7dnJO+kncs2P/AAdf65enaP8AgntpELZ2sJv21vDaFW/usJPgAhVu
+		eQ2COc4r4TH/ALP7gjATqU6v0o+D/aUpSjUpvhrKYThOLtKM4PxIcoyi9JRa
+		5k9GrpnDW+kTlNKPNHhPiavG11KjlecVE09U1KGTSUk1qrN3XU7vS/8Ag6J1
+		7Uyv/GB/ha33HB8z9tzwjwe4O74GR8jI9+a+Rx/0KeB8FzW+kjwxWtr7vDmW
+		K/pbxAn3v1/y+axv0qsswnNbw/4zrNX0hk+f6/dw7K3qeu+Ff+Dizxl4u3/2
+		R+wxoV+Idhuf7I/bC8Nay1srttVplsvgm3l7mBVPNMYkYEBsg4+WxH0RsgXt
+		f7O8Z8uzb2KvU+pcK0q6he/L7V4fi7E+yUujnv0TZ+eZ/wDTt4Z4bdNZt4f8
+		S5e63N7D+1P7Uyv2/JrL2P13humqritZKm5OK1kkfsB+xL/wUK+F/wC2hba1
+		oen+G/EPwt+LXhSwi1XxP8LfF09lfXg0eedLVPEXhXxBp+yw8V+HEu5YLO5v
+		4bbT76wu57ePUNKtI7yxmu/5u8RPDLOvDvGUqeMxGGzTLMVOUMFm+BVSNGpO
+		KcnQxNCqva4TFcic1Tk6lOpBSdCvV9nVVP8AevBT6RHh/wCOWFxf+q+Lnhs4
+		y2lGvmGR4ydN4unh5SjT+t4acbLF4WFWcKNafs6NfDValGOJw9FYjDSrff1f
+		mx+8H8ef/B2B/amq33/BOrwlHd3B0HUNe/aj8S3+kiRvsV1rnhnQPgrZaBqc
+		8GfLku9KtPE3iCCylZS8CateCNl8593+rf7L2eCwOO8bs4q0qf8AaGHyzgPL
+		sNiml7algswxnFOJx+HhN+8qeJr5XltWrFNKUsJSbu4xP52+khms8s4Rwko1
+		HCNfEVITSbtNe2wMbOz1uqkk7/ZlJbNp/wAknxK8CeJbD4W+JdS8NaVd6lqF
+		lbwXVzY2MTS3t1pUMqvqMVtFGC8zeSAZYE3Ge2WeEq6O4P8ATn01uJ+NMZ4B
+		cc4TgPE42nmteOXwzF5bKqse+G3i4vO40Hh/9ocHRVJY9UL1JZZ9di705VEf
+		yv4D8U8G1fGngylxxVof2FUx0lbE1KVOjUx1k8NSdWtJUaderFV6eBlVcYLM
+		ZYSz9o4Mi/4be/ZHufhh+z98Ote+FuieGNd8HfEnwhbfEXx54L8NxaX4n8Qf
+		Cb7e8Xje38WXVpbQ6pqWtvpki7RqCXOqW+pWv2/SLq2kluYT/wAwVTCeKv8A
+		qrxxhcpVKjxguGOI6fDePzGeGlhavE1TBYhZJVp+0bpc8MU6ThKS+rwlGDqt
+		U3KJ/wBHX0lMZ9F3Mso4YxvhVisupwx+Y5B7LJ8hwOJpYzh7JYQpQzyOactK
+		EnTlBTkqeInLGVMTP3YTdP20v0w/4Kc/tmf8Ej9SX9kaH9mHw38JbLWNO8Vx
+		D4wyfBvw3HYeHtT+E8ejo1lb+P10uzgi1DXJfEcOmPm6R/E40mTxHbahM1td
+		bT/LH0fZfS3zjgDxDy7jjJ8/4Y4kwnDCy7Kcy4lqYdY3NuLqeOwqxOZZFLEV
+		akouvl8MfKeI5YYWOJxFCFCpUlGjOP8ADv0leFZ4LgLPcJ4N8XYfH8YZrl1a
+		eR4jKas51MtpycHJVKs4qjQx06XtKOEU5e0VX32qckmeX+LP2hvgp+1L+17+
+		y4/7Cnwc0TwbrPhW1iP7QWrfCLwjH4f+HFv4OGr6TFcXXieTRLK00QQ3Wivr
+		2nXEt5HBLfz3WgQTrcazY6ZJD/d/0P63i3gOIMDV4ioZllOJlj8Bh44XGYjm
+		rYjDwVaefzqx9rOc8uq4ZOXJiEuerGnOnF1IKo/81/EyjnWH+i140Yvx8wOJ
+		w+X4HheU+G6eeqWKzPD8ayUsLkeNyWpWdXE4atiM+xGXUKNVOj7SNStCtzYe
+		WI5v6Yf+CetpHpf7cv7PjWbPC97b/FzS7x42KG605fhR4r1NbOfaR5tuuoWN
+		peLFJlVuYI5gA6gj+/8AxlrzxXB2OlV97kxGCqU+bVxn9ew1PmT/AJvZ1akW
+		10nJbNn+cf7PLOMwX0meFcNDE1KeHzDLeKaGNownJU8RTp8J57jYwqRvaUVi
+		sHhayTTXPQpSesItf1V1/Hx/0On8s/8AwccfDnV/iR8UP+Cdml6RZi6mt4/2
+		tnleWSOC1to5tK+AQ866uZSI4Yv3R5JLMRhEd8Cv6v8Ao9fSg8H/AKKvAPjR
+		x34x8Z4XhPJcS+AsNluGhQxOZ8QcRY+hLi+X9mcOZBgIVswzbGWr03V9nThg
+		8HGpTq5hi8JRnGqfyF9LylmmN4Z4ayrJ6H1nH4/G4506bqQowUMPVyipWqVK
+		tSUYwp04Sc5SbcrK0Iyk1F/mx8KP2JfC7R2k/i7xtM05Cs+n+GNPgCKcZaP+
+		1NU3GRh0Z001F9M9a/zk8f8A/SHM+jjcwwHgF9HrCyy6n7WGC4p8YOJMXHF4
+		i0nGGJfBvB0qUMLCa/eKhiOL8VVV7VFGXNE/gf8A4g/jcXFSz7P503L48NlV
+		BSjFbuLxeLT5mmtZRwqWjcb7nJfHz4lf8Eyf2T4buy8aXE/xD8d2yM8ngTwN
+		b6Z4w8WC5wcJrL6dZWOg+HpJH++df1Wxl6kQvgiv5d4E+nn+1S+kdiv7T4N4
+		R8EeBeGMTWk3xNj/AAeyPLOHlGcrylhMbxVXz7OM5lFO7ll9HGOT+KUW7n61
+		wl9GPiHi+FOWCzHxBhltoxWZ5lxvnmVZeoxSVsOsLVw7rRivhhhaFSK0Stpf
+		8r/Gf/BQ34geLPCXjL4j/s1f8E4vC+gfB3wTFdSax8YPjPrEc/he0ktyRHZz
+		ajDpHh3wrPrVw+yBNB0rxLrWo/aZEhcBipb+8fDzjb6VOXU6FfxT8WvC/jLE
+		PllissyPwM4byLAx09+lSzXD43B4+pa7UarwVDv7PWy/XKX0A+FsXRTzbxU8
+		WcNiJayjkHG2d0aUJPV2qZrXx7qWb3lh4XSvZXaP28/4I1/tHeIP22P+CZf7
+		XnjTUPhZ4A+GXiXTP2h/hh8PHg8EQHTtJ8RPpWhaP4kF/cLcW5urIiXWTbx2
+		s97fQo8azCWIyMR95xx4/cOeHNOHi/x/gJ5XwpwJgPacR1OF8rljMWsvx+L/
+		ALNqZjSyxVqVTE/VauZ0quJo0a06zwlCtKhCrWjCjU8vxB+ipiPD/wCiv48e
+		H/DvG/EvHeM4txuTcTZRiOOsw9ri8ullGZ8OShlSzHnnSlSnHLa9aFd4fCwW
+		IxDjUio81U+6/wBhbT77Sv27/wBnnT9StZrO8t7n4uLNbzrtdc/BnxsVYdVe
+		Nx80cqM0cincjMOa/as88QuB/FXwdw3H3hxxRlHGXB3EEMHXyrP8kxKxODxH
+		JmWCjiMNWi1DEYLMMHVfsMflmOo4bMMBiFKhjMNRqrlP89voGZJm/Dn0s+E8
+		lz3L8Tlea4LDcWQxOCxdN06sL8FcTOFSLu4VqFVLnoYijKpQrw9+lUnHU/qV
+		r+dj/ocP5f8A/g4n+JFj8OPiR/wT8v8AULmSKG9t/wBrRVggRprq8mttH+BR
+		jt7W3T55pnM5AAwqAmSR441Zh/J30rvD3PfEnIOGMh4cyypmmaTx+M9lShyw
+		hSpzrZQ6uIxFeo40sPhqUKbnWrVZxjGK6yai/wAU8XuHMw4kr8LYXLMJPF4q
+		FTN0oxso04VllilUq1JWhSpR5Fzzm0ktryaT/nw1/wCK/wAWPjFbR+GNK13W
+		fDek61PDpmneCPA9xeP4n8RXF7KtvaWOr6zpO7Vr67v5ZEhj8O+GTbwSyutt
+		Ldatu21814N/Qn8OOBJ4TiHjnB4HjvjCHLXhRx1BVuGMmr6SSweW148maYij
+		LbG5lTnS5lzUMHSdpvfg/wAG8gyJ0sfndOjnebK01CtHnyzB1N7UcPNWxU4u
+		1q2JUo3V4Uo6M9N+M/8AwQu+K/wt/ZN8VftP/Hf4hfCr9n5dO8mXw58IvGse
+		sX3jXxbPqME01johm8M2upwaX451+cCPSfC/2PWLlQl5eeKr/wAMwWN/Lbf2
+		rGMYQhThGNOnShGnSp04xhTpU4q0KdOnFKFOnBK0YQjGMVZRSSP2RJJKKSUY
+		pRjFJKMYraMYqyjFbJJJJbI/ImTwh+1x+2defA/9i69+Lvj/AMUfDvw9qctt
+		4B8FeJtaubzwL8LvD9tHHLrviRtMi8pJdM8LaXHJLplvfS3aWl3PFpmimyl1
+		eQy/mHjL4s8NeCXh1xD4jcUyc8Fk2HUMDl1Oahi88zrFc1PK8lwV7/v8biP4
+		lSzWGwlPE4uacKEk/nOLOJsv4QyHHZ9mTbo4SFqNCLSq4zF1Pdw+EpX+3WqW
+		5pf8u6SqVXdQd/7QP2QP2e/hd+yP+w/8U/gl8JNJTTPDHg/4ifAcahqEqxnW
+		PFXibW5HbXPF/iK5UA3ut67NNHJcSH5ILdLWwtUis7O3hj/grg7jni/xw+gV
+		9JXxB41xf1vOeKq/inmFDD03L6jlOV8P5fkLyzJsroyb+r5flsctnClBO86j
+		q4ms5V6tWpL8UyrOc14y8E/EHPM3qe1xeZy4mrwpq/scNhsFRwX1fCYaL+Ch
+		hlh3ypat81Sbc5zb+hv2Z9Bs779rr9nrXHjVdQ0O8+J/lXAGHktL34S+MrOa
+		1kPVkEs8U8YbPltHJtI8xg38w/sw/GLizhTxXzvwiw+YYqvwN4qZPi8RmGQ1
+		a855fgeJ+GcLV4hwHEuDw0pOnhsxqZdk+NyTG1qCjLG4TF4eOK9r9RwkqP8A
+		KfhdlmCq/SC8H83+r0VmNGfHOE+uezisTPAz4Fz6f1SVVLmlRjXqe3hCTapz
+		c3C3tKnN++Vf7xn+nR/J7/wcxeDbjxb8SP8AgnSbZWaTTrP9sg5UEkfatB+A
+		TYyOefsh46kBvQ0f1+v6IP6/X9EeA/8ABFb4l/8ABPj9nrxrd6p+0drWreFP
+		2mtR1W60zwL45+KGnWcXwZ8L6LcsttaW3gvxDby3Vr4Z8XarHLImveJPHEWj
+		hYWXSvD+p21nNfJqQB5f/wAFbP227T9q79qbxL8O9B1uDUfg98BtT1HwL4HX
+		Tb6K90XxH4ni8qDxv47hntp57DUft+qxPoGh6hbPLA3h7SILmykA1e8MwB4b
+		+wf4c8P+D73xr8UjbwjWvFN7J4S0C5dV32nhHw/eMl9JbsRuT+3/ABHHdXE7
+		qV8+z0zSg24RjP8Aiv8AtEePcdxxx5gvDrA15vhzw+pc+Lo05P2WN4rzKhCp
+		jK9VJtTllmDnRy+jdN06ksby2dWR/H3j1xBWzjPaPD9CpL6hkML1oRvy1szx
+		EFKtOXSTw1KVPDx3cZe2a+I/QKfw98TPEvhX4vfDjQP2gdZ8L/DT45+KNA8W
+		+MtLXwfouseN9Bv9AhsoLSz+HfxAuNQtrrwppwjsYntYp9H1i40qaSeXS7m2
+		Mhr8O4E+mTxt4UeDtXwZy/w+4KzbIngc6y76zj6OKg8ZRz513mU82wVNyoZj
+		XxCrzjWqTlTdWChGSVmfH5H4t5zw1wrLhKhkmT4jBOjjKDqV4VE60Mbz/WHi
+		acXyVp1OdxnKXxKyZ+kX7JgRP2mfgfEk73AhHj2Hz5n8yebyfhj4kj86d+C8
+		0m3fM+BvkZmwN1fP/s97v6VfA8nCNJzw/GUvZwXLCHNwTxTL2dNa2hC/LBXd
+		opK+h8P4Vu/jl4UOyjfF8cPlWiV+Bs5dorpFXsuysfu9X/Ryf6Un5w/8FKf2
+		FJv23PhX4Tg8H+ItM8HfGr4PeJLzxl8JvEWu281z4cubnVNO/srxN4N8VJax
+		zXsXhvxfp0drBfXljDPd2N5p+m3iW9zHBNbygH8znxG/4JMf8FEtUa6tIP2O
+		bLXLhC8Umo+Hf2gvgVDod+4yDcaavijxdoWtx2k33oo9T021ulVgs0e4EkA+
+		UL//AII3f8FYbG7a40H9hu/KICYUT9pb9lyEAgfuwBL8UoQADjAOAAKcXaSb
+		V0mm13s7tfMa3V+59Y/C7/gnD/wVS8GaFoejXH7FGo20el6daWjbf2i/2aJf
+		njiXz3Jh+J7lmkmMkjMM7mdjk5zX+XvH30QPEji7iHiDP5VMur4jO83zLNKj
+		niMIpuWOxdbEJN1MxXwxnGCu1ZRWiP5O4g8L+NczzHMcesrhXnjcbicVd5hl
+		sG/b1pz19pi1a0ZWS6H2H4P/AGN/+CjlgIl1P9knUrTbt3Fvjt8ALjae5/0f
+		4gyEjnnGTjoCa/Bc6+gH4xYlyeFwGWVb3t/wp5NT36/vM4j6+p8LjfB/xId/
+		Y8Ke33s/7eyCn/6XmHzv/T/Xj9iD9j/4nfDjxIfjB8em0XSvF1rpV7pHgr4f
+		eH9UTXoPCkOqoIdY1nX9fgRLDUfEV7aBtNgttIa40yxsZrpvtt5Ncotn/VH0
+		R/oXYnwZ4ln4jcbYnDVeJ6GExeDyPK8JVp4iOWyx9Cpg8bmGLxNCU8O68sDV
+		xGCwmFw1bE0Y0MZicRiK0q8qVPD/AKL4PeB+b8O8ULj7jWpg4ZtgcDi8u4by
+		LA1vrdHKIZio08xzLHY1JU8TmeKw8fqdOGH5sPhsLUrr2tadZex/USv9Ez+p
+		QoAKACgAoAKACgAoA//Z
+		</data>
+		<key>localizedNames</key>
+		<dict>
+			<key>CDSVehicleLanguage_INVALID</key>
+			<string>Traffic Eye</string>
+			<key>ar</key>
+			<string>Traffic Eye</string>
+			<key>cs</key>
+			<string>Traffic Eye</string>
+			<key>de</key>
+			<string>Traffic Eye</string>
+			<key>el</key>
+			<string>Traffic Eye</string>
+			<key>en_GB</key>
+			<string>Traffic Eye</string>
+			<key>en_US</key>
+			<string>Traffic Eye</string>
+			<key>es_ES</key>
+			<string>Traffic Eye</string>
+			<key>fr_FR</key>
+			<string>Traffic Eye</string>
+			<key>hu</key>
+			<string>Traffic Eye</string>
+			<key>it</key>
+			<string>Traffic Eye</string>
+			<key>ja</key>
+			<string>Traffic Eye</string>
+			<key>ko</key>
+			<string>Traffic Eye</string>
+			<key>nl_NL</key>
+			<string>Traffic Eye</string>
+			<key>pl</key>
+			<string>Traffic Eye</string>
+			<key>pt</key>
+			<string>Traffic Eye</string>
+			<key>ru</key>
+			<string>Traffic Eye</string>
+			<key>sk</key>
+			<string>Traffic Eye</string>
+			<key>sl</key>
+			<string>Traffic Eye</string>
+			<key>sv</key>
+			<string>Traffic Eye</string>
+			<key>tr</key>
+			<string>Traffic Eye</string>
+			<key>zh_CN</key>
+			<string>路况交通眼</string>
+			<key>zh_TW</key>
+			<string>路况交通眼</string>
+		</dict>
+		<key>name</key>
+		<string>CenNavi</string>
+		<key>requiresAudioService</key>
+		<false/>
+		<key>requiresCarDataService</key>
+		<true/>
+		<key>supportedBrands</key>
+		<array>
+			<string>BMW</string>
+		</array>
+		<key>token</key>
+		<string>AQAAAAgACAB1AEQAWgBeAHcASQBBAAkAPABfAFkAYABoAB4ARgB0AE8AWgB+AEUAYQBLAF4AKwA8ABMAXwBNAEkABgAjAB8AbwBQAFUAZABeAEUAfQARAD8AKAB6ABsAVwB2AFYAZQBEAAUAPAASAFEASwB9AHQARwBCAGgAbAB4AE8AWABiAFwAVgBnAEoATQAFAD4AIwB/ACUANwAuADsAaQA=</string>
+		<key>uniqueIdentifier</key>
+		<string>04ab1b3c-378b-4af2-9ad6-19fc544bc6ce</string>
+		<key>url</key>
+		<string>cennavi://com.bmw.a4a/</string>
+		<key>vendor</key>
+		<string>3rd Party A4A Developer</string>
+		<key>version</key>
+		<string>1.0</string>
+	</dict>
+	<key>Signatures</key>
+	<dict>
+		<key>IDApplicationManifestSignature</key>
+		<data>
+		gMA/ei1ABIV222wze6YTyLjBn6BwvlhKtIcAYa4tpjqULvnpLYjEkI7xkWJr
+		70B7Zx1h85ssgA5vHGT1YyXeAGJN8dHeVMMOREMKEui3pp9BaPa62BTtfxEG
+		q2ONwAmZyTGrmXWFNHApYpAUnWJQwms7JqTD46rWT9FqAGLpzviBRAhnLqM3
+		zyEBgbT+CgKB13MJtXJkIOL8LAp7XbYP4YU1rhKMM5LCEkwLbeVUfghaAicl
+		WyfWXCEdDIlQmL1Z
+		</data>
+	</dict>
+</dict>
+</plist>

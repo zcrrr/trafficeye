@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE HTML PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta content="telephone=no" name="format-detection" />
+<title>搭车信息详情</title>
+<link href="pcar_css/public.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" media="screen and (-webkit-device-pixel-ratio:1.5)" href="pcar_css/mdpi.css" />
+<link rel="stylesheet" media="screen and (-webkit-device-pixel-ratio:2.0)" href="pcar_css/hdpi.css" /></head>
+<body>
+
+<div class="header">
+	<div class="tbtn-l" id="backpagebtn"><a></a></div>
+	<p id="title" />
+</div>
+<div class="cont-box" id = "ridelist">
+
+</div>
+
+<div class="mapdiv" id="ridemap" style="display:none">地图</div>
+
+
+<ul class="h-btn i-btn">
+	<li class="gay" onclick="lookfirends(this);"><a>查看他的个人信息</a></li>
+	<li class="gay" onclick="fansfriends(this);"><a>查看他发布的动态</a></li>
+</ul>
+
+<ul class="h-btn">
+	<li onclick="callperson(this);"><a>约　　他</a></li>
+</ul>
+
+</body>
+<script type="text/javascript" src="libs/zepto.js"></script>
+<script type="text/javascript" src="libs/gmu.js"></script>
+<script type="text/javascript" src="pcar_js/base.js"></script>
+<script type="text/javascript" src="pcar_js/pcar_ride_info.js"></script>
+</html>

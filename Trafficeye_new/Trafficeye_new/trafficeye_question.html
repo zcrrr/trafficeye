@@ -1,0 +1,378 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport"
+		content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, p, blockquote, th, td, img {
+	margin:0;
+	padding:0;
+	border:0;
+	outline:none;
+	-webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+	-webkit-user-select:none;
+}
+.name1{ font-size: 20px;color: #6c3a00;font-family: "微软雅黑";}
+.button1{font-size: 18px;color: #6c3a00;font-family: "微软雅黑";margin-left:20px; text-align:}
+.button3{font-size: 18px;color: #6c3a00;font-family: "微软雅黑";height:60px; width:80%; margin-left:10px;}
+.button1 div{ height:45px; }
+.button2{ width:140px; height:65px; color:#080000; margin-left:40px;}
+.state{margin-top: 50px;font-size: 18px; margin-left:10px;margin-right:20px;}
+#topNav {
+		width:100%;
+		float: left;
+		display: block;
+		z-index: 100;
+		overflow: visible;
+		position: fixed;
+		top: 0px; /* position fixed for IE6 */
+		_position: absolute;
+		_top: expression(documentElement.scrollTop + "px");
+		background-image: url( images/bar.png);
+		height:45px	;
+	}
+.content{ margin-left:50px; margin-top:80px; }
+</style>
+</head>
+
+<body  >
+<div id="topNav" >
+			<img src="images/icon_back.png" width="45px" height="45px"  style="float:left;" id="back" onClick="goBack();"/>
+			<div  style="font-size:24px ;color: #FFFFFF;text-align:center;height:45px;line-height:45px;margin-right:45px;">有奖调查
+			</div>
+</div>
+
+<div id="state0" class="state" style="display:none;">
+
+	<div class="content">
+		<div class="f1" >
+			<div class="name1">
+			<h3 id="name_1">1、请问您的月平均收入是多少？</h3>
+			</div>
+			<div class="button1">
+				<div onClick="checkaction($(this));"><input type="radio" value="A"  name="radio1" />A. 3,000元及以下</div>
+			
+				<div onClick="checkaction($(this));"><input type="radio" value="B" name="radio1"/>B. 3,000-5,000元</div>
+			
+				<div onClick="checkaction($(this));"><input type="radio" value="C" name="radio1" />C. 5,000-8,000元</div>
+				
+				<div onClick="checkaction($(this));"><input type="radio" value="D" name="radio1"/>D. 8,000-10,000元</div>
+				<div onClick="checkaction($(this));"><input type="radio" value="E" name="radio1"/>E. 10,000-30,000元</div>
+				
+				<div onClick="checkaction($(this));"><input type="radio" value="F" name="radio1"/>F. 30,000元及以上</div>
+			</div>
+			<div><input type="button" value="下一题" disabled="disabled" id="f1_b" onClick="getvalue();" class="button2"/>
+			 <lable>共10题</lable></div>
+		</div>
+		<div class="f2" style="display:none;">
+			<div class="name1">
+			<h3 id="name_2">2、您通常以哪种方式出行？</h3>
+			</div>
+			<div class="button1">
+				<div onClick="checkaction($(this));"><input type="radio" value="A"  name="radio2" />A. 驾车</div>
+			
+				<div onClick="checkaction($(this));"><input type="radio" value="B" name="radio2" />B. 公交车</div>
+			
+				<div onClick="checkaction($(this));"><input type="radio" value="C" name="radio2"/>C. 地铁</div>
+				
+				<div onClick="checkaction($(this));"><input type="radio" value="D" name="radio2" />D. 打车</div>
+			</div>
+			<div><input type="button" value="下一题" disabled="disabled" id="f2_b" onClick="getvalue();" class="button2"/>
+			 <lable>共10题</lable></div>
+		</div>
+		<div class="f3" style="display:none;">
+			<div class="name1">
+			<h3 id="name_3">3、您驾车出行的主要目的是？</h3>
+			</div>
+			<div class="button1">
+				<div onClick="checkaction($(this));"><input type="radio" value="A"  name="radio3" />A. 无驾车</div>
+			
+				<div onClick="checkaction($(this));"><input type="radio" value="B" name="radio3" />B. 职业司机</div>
+			
+				<div onClick="checkaction($(this));"><input type="radio" value="C" name="radio3" />C. 日常上下班</div>
+				
+				<div onClick="checkaction($(this));"><input type="radio" value="D" name="radio3" />D. 假日出游</div>
+			</div>
+			<div><input type="button" value="下一题" disabled="disabled" id="f3_b" onClick="getvalue();" class="button2"/>
+			 <lable>共10题</lable></div>
+		</div>
+		<div class="f4" style="display:none;">
+			<div class="name1">
+			<h3 id="name_4">4、您现在的汽车品牌是？</h3>
+			</div>
+			<div class="button1">
+				<div onClick="checkaction($(this));"><input type="radio" value="A"  name="radio4"/>A. 无驾车</div>
+			
+				<div onClick="checkaction($(this));"><input type="radio" value="B" name="radio4" />B.美系品牌</div>
+			
+				<div onClick="checkaction($(this));"><input type="radio" value="C" name="radio4"/>C. 欧系品牌</div>
+				
+				<div onClick="checkaction($(this));"><input type="radio" value="D" name="radio4" />D. 日系品牌</div>
+				<div onClick="checkaction($(this));"><input type="radio" value="E" name="radio4"/>E. 国产品牌</div>
+			</div>
+			<div><input type="button" value="下一题" disabled="disabled" id="f4_b" onClick="getvalue();" class="button2"/>
+			 <lable>共10题</lable></div>
+		</div>
+		<div class="f5" style="display:none;">
+			<div class="name1">
+			<h3 id="name_5">5、您现在的汽车价格是？</h3>
+			</div>
+			<div class="button1">
+				<div onClick="checkaction($(this));"><input type="radio" value="A"  name="radio5" />A. 无驾车</div>
+			
+				<div onClick="checkaction($(this));"><input type="radio" value="B" name="radio5" />B. 5万元以下</div>
+			
+				<div onClick="checkaction($(this));"><input type="radio" value="C" name="radio5" />C. 5-10万元</div>
+				
+				<div onClick="checkaction($(this));"><input type="radio" value="D" name="radio5" />D. 10-15万元</div>
+				<div onClick="checkaction($(this));"><input type="radio" value="E" name="radio5" />E. 15-20万元</div>
+				<div onClick="checkaction($(this));"><input type="radio" value="F" name="radio5"/>F. 20-25万元</div>
+				<div onClick="checkaction($(this));"><input type="radio" value="G" name="radio5"/>G. 25-30万元</div>
+				<div onClick="checkaction($(this));"><input type="radio" value="H" name="radio5" />H. 30万元以上</div>
+			</div>
+			<div><input type="button" value="下一题" disabled="disabled" id="f5_b" onClick="getvalue();" class="button2"/>
+			 <lable>共10题</lable></div>
+		</div>
+		<div class="f6" style="display:none;">
+			<div class="name1">
+			<h3 id="name_6">6、您通常在何时使用路况交通眼？</h3>
+			</div>
+			<div class="button1">
+				<div onClick="checkaction($(this));"><input type="radio" value="A"  name="radio6"/>A. 出行前</div>
+			
+				<div onClick="checkaction($(this));"><input type="radio" value="B" name="radio6" />B.路途中</div>
+			</div>
+			<div><input type="button" value="下一题" disabled="disabled" id="f6_b" onClick="getvalue();" class="button2"/>
+			 <lable>共10题</lable></div>
+		</div>
+		<div class="f7" style="display:none;">
+			<div class="name1">
+			<h3 id="name_7">7、路况交通眼中，您最常用的栏目是？</h3>
+			</div>
+			<div class="button1">
+				<div onClick="checkaction($(this));"><input type="radio" value="A"  name="radio7" />A. 地图</div>
+			
+				<div onClick="checkaction($(this));"><input type="radio" value="B" name="radio7" />B. 简图</div>
+			
+				<div onClick="checkaction($(this));"><input type="radio" value="C" name="radio7" />C. 交通指数</div>
+				
+				<div onClick="checkaction($(this));"><input type="radio" value="D" name="radio7" />D. 出租车</div>
+				<div onClick="checkaction($(this));"><input type="radio" value="E" name="radio7"/>E. 交通微博</div>
+				<div onClick="checkaction($(this));"><input type="radio" value="F" name="radio7" />F.交通资讯</div>
+			</div>
+			<div><input type="button" value="下一题" disabled="disabled" id="f7_b" onClick="getvalue();" class="button2"/>
+			 <lable>共10题</lable></div>
+		</div>
+		<div class="f8" style="display:none;">
+			<div class="name1">
+			<h3 id="name_8">8、除路况交通眼外，您最常用的其他提供路况服务的APP是？</h3>
+			</div>
+			<div class="button1">
+				<div onClick="checkaction($(this));"><input type="radio" value="A"  name="radio8" />A.未使用过其他应用</div>
+			
+				<div onClick="checkaction($(this));"><input type="radio" value="B" name="radio8"/>B.掌城路况通</div>
+			
+				<div onClick="checkaction($(this));"><input type="radio" value="C" name="radio8" />C.路况电台通</div>
+				
+				<div onClick="checkaction($(this));"><input type="radio" value="D" name="radio8" />D. 百度地图</div>
+				<div onClick="checkaction($(this));"><input type="radio" value="E" name="radio8" />E.高德地图/导航</div>					        
+				<div onClick="checkaction($(this));"><input type="radio" value="F" name="radio8" />F.导航犬</div>
+				<div onClick="checkaction($(this));"><input type="radio" value="G" name="radio8" />G.车托帮</div>
+				<div onClick="checkaction($(this));"><input type="radio" value="H" name="radio8" />H.WAZE</div>
+				<div onClick="checkaction($(this));"><input type="radio" value="I" name="radio8" />I.INRIX</div>
+				<div onClick="checkaction($(this));"><input type="radio" value="J" name="radio8" />J.其他</div>
+			</div>
+			<div><input type="button" value="下一题" disabled="disabled" id="f8_b" onClick="getvalue();" class="button2"/>
+			 <lable>共10题</lable></div>
+		</div>
+		<div class="f9" style="display:none;">
+			<div class="name1">
+			<h3 id="name_9">9、您认为路况服务最好的搭载平台是？</h3>
+			</div>
+			<div class="button1">
+				<div onClick="checkaction($(this));"><input type="radio" value="A"  name="radio9"/>A. 车载系统</div>
+			
+				<div onClick="checkaction($(this));"><input type="radio" value="B" name="radio9" />B. 手机</div>
+			
+				<div onClick="checkaction($(this));"><input type="radio" value="C" name="radio9"/>C.便携式导航仪</div>
+				
+				<div onClick="checkaction($(this));"><input type="radio" value="D" name="radio9" />D. 电脑</div>
+			</div>
+			<div><input type="button" value="下一题" disabled="disabled" id="f9_b" onClick="getvalue();" class="button2"/>
+			 <lable>共10题</lable></div>
+		</div>
+		<div class="f10" style="display:none;">
+			<div class="name1">
+			<h3 id="name_10">10、您是否愿意接收周边餐馆优惠、商场打折等相关生活服务信息？</h3>
+			</div>
+			<div class="button1">
+				<div onClick="checkaction($(this));"><input type="radio" value="A"  name="radio10" />A. 是</div>
+			
+				<div onClick="checkaction($(this));"><input type="radio" value="B" name="radio10"/>B. 否</div>
+			</div>
+			<div><input type="button" value="提交" disabled="disabled" id="f10_b" onClick="submit();" class="button2"/>
+			 <lable>共10题</lable></div>
+		</div>
+	</div>
+</div>
+<div id="state-1" style="display:none;" class="state">
+<p >亲， </p>
+		<p  style="text-indent:2em;">第一期有奖调查尚未开始，将于<label id="start">xxxx年xx月xx日xx时xx分</label>开始，请您到时再来~~</p>
+		<p align="center"><input type="button" value="返回"  class="button3"onClick="goBack();"/></p>
+</div>
+<div id="state1" style="display:none;" class="state">
+<p >亲， </p>
+		<p  style="text-indent:2em;" id="state1_title">您已经完成第一期有奖调查，无法再次答题，感谢您的关注。</p>
+		<p  style="text-indent:2em;">本期调查，您没有获得奖励，下次继续努力！</p>
+		<p align="center"><input type="button" value="返回"  class="button3"onClick="goBack();"/></p>
+</div>
+<div id="state2" style="display:none;" class="state">
+<p >亲， </p>
+		<p  style="text-indent:2em;" id="state2_title">您已经完成第一期有奖调查，无法再次答题，感谢您的关注。</p>
+		<p  style="text-indent:2em;">本期调查您获得5元话费奖励，话费奖励将于本期调查结束后统一发放。请您关注。</p>
+		<p align="center"><input type="button" value="返回"  class="button3"onClick="goBack();"/></p>
+</div>
+<div id="state3"  class="state" style="display:none;">
+<p >亲， </p>
+		<p  style="text-indent:2em;">您已经完成第一期有奖调查，无法再次答题，感谢您的关注。</p>
+		<p  style="text-indent:2em;">本期调查您获得5元话费奖励，话费奖励已于<label id="time">xxxx年xx月xx日</label>转入您<label id="username">***</label>的账户<label id="phone"> 13812345678 </label>手机中。请您核实。</p>
+		<p align="center"><input type="button" value="返回"  class="button3" onClick="goBack();"/></p>
+</div>
+</body>
+<script src="js/jquery1.9.1.js" type="text/javascript"></script>
+<script type="text/javascript">
+	var num =1;
+	var arrayObj = new Array();
+	var locations="";
+	var uid=0;
+	var pid="";
+	function getvalue(){
+		var arr = document.getElementsByName("radio"+num);
+		for(var j=0;j<arr.length;j++){
+		if(arr[j].checked){
+		var title = $("#name_"+num).html();
+			title =num+":"+arr[j].value;
+			arrayObj[num-1] =title ;
+		}
+		}
+		$(".f"+num).css("display","none");
+		num++;
+		$(".f"+num).css("display","");
+	}
+	function checkaction(obj){
+		obj.children("input").attr("checked","checked");
+		$("#f"+num+"_b").removeAttr("disabled");
+	}
+	function submit(){
+	var arr = document.getElementsByName("radio"+num);
+		for(var j=0;j<arr.length;j++){
+			if(arr[j].checked){
+				var title = $("#name_"+num).html();
+				title =num+":"+arr[j].value;
+				arrayObj[num-1] =title ;
+			}
+		}
+		var sstr = locations+"$"+arrayObj.join(",");
+		$.ajax({
+		url : "http://mobile.trafficeye.com.cn:8008/TrafficeyeSevice_test/api2/v3/answerQuestion",
+		type : 'get',
+		async : false,
+		data : {
+			result:sstr,
+			uid:uid,
+			vesion:'1',
+			pid:pid,
+			realName:name,
+			phone:phone,
+			gender:gender,
+			birthday:birth
+		},
+		dataType : 'jsonp',
+		jsonp : 'callback',
+		timeout:3000,
+		error : function(XMLHttpRequest, textStatus, errorThrown) {
+		alert("网络不给力,请稍候再试！"+textStatus);
+		goBack();
+		},
+
+		success : function(result) {
+		$("#state"+result.code+"_title").html("感谢您参加有奖调查活动。");
+		$("#state"+result.code).css("display","");
+		$("#state"+result.code).siblings().css("display","none");
+		$("#topNav").css("display","");
+		if(result.code==3){
+				$("#time").html(result.desc);
+				$("#phone").html(result.phone);
+				$("#username").html(result.username);
+			}
+		}
+	});	
+		$("#f"+num+"_b").attr("disabled","disabled");
+		
+	}
+		var name="";
+		var phone="";
+		var gender="";
+		var birth="";
+		function initMethod(obj){
+			var object = $.parseJSON(obj);
+			uid = object.uid;
+			pid = object.pid;
+			name=object.name;
+			phone=object.phone;
+			gender=object.gender;
+			birth=object.birth;
+			locations = object.location;
+				$.ajax({
+				url : "http://mobile.trafficeye.com.cn:8008/TrafficeyeSevice_test/api2/v3/answerQualifications",
+				type : 'get',
+				async : false,
+				data : {
+					uid:uid,
+					pid:pid,
+					phone:phone
+				},
+				dataType : 'jsonp',
+				jsonp : 'callback',
+				timeout:3000,
+				error : function(XMLHttpRequest, textStatus, errorThrown) {
+				alert("网络不给力,请稍候再试！");
+				goBack();
+				},
+		
+				success : function(result) {
+					$("#state"+result.code).css("display","");
+					$("#state"+result.code).siblings().css("display","none");
+					$("#topNav").css("display","");
+					if(result.code==-1){
+					$("#start").html(result.desc);
+					}
+					if(result.code==3){
+					$("#time").html(result.desc);
+					$("#phone").html(result.phone);
+					$("#username").html(result.username);
+					}
+				}
+				
+			});	
+		}
+		function goBack(){
+			window.location.href="objc://goBack";
+		}
+		$(function() {
+			//initMethod(window.question.init());
+//			initMethod("{\"uid\":22376,\"pid\":\"004402143568271\",\"location\":\"116.389873,39.967363\",\"phone\":15510048298,\"name\":\"褚晓娜\",\"gender\":\"女\",\"birth\":\"2013-07-11\"}");
+				document.getElementById("back").addEventListener('touchstart', touchstart);
+				document.getElementById("back").addEventListener('touchend', touchend);
+			});
+			function touchstart(e) {
+				$("#back").attr("src", "images/icon_back.png");
+			}
+
+			function touchend(e) {
+				$("#back").attr("src", "images/icon_back_pressed.png");
+			}
+</script>
+</html>

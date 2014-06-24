@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport"
+		content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title></title>
+		<link href="css/public.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet"
+		media="screen and (-webkit-device-pixel-ratio:1.5)"
+		href="css/mdpi.css"/>
+		<link rel="stylesheet"
+		media="screen and (-webkit-device-pixel-ratio:2.0)"
+		href="css/hdpi.css" />
+		
+        <link rel="stylesheet" href="css/base.css" type="text/css">
+		<link rel="stylesheet" media="screen and (-webkit-device-pixel-ratio:1.5)" href="css/mdpibase.css">
+		<link rel="stylesheet" media="screen and (-webkit-device-pixel-ratio:2.0)" href="css/hdpibase.css">
+		<script type="text/javascript" src="js/jquery1.9.1.js"></script>
+		<script type="text/javascript" src="js/iscroll.js"></script>
+	</head>
+	<body>
+
+		<div style="background-image:url(images/bar.png);	height:45px	;width:100%;" >
+			<img src="images/icon_back.png" width="45px" height="45px"  style="float:left;" id="back" onclick="window.location.href='index.html';"/>
+			<img src="images/icon_refresh.png" width="45px" height="45px" style="float:	right;" id="reflesh" onclick="document.location.reload();"/>
+			<div  style="font-size:24px ;color: #FFFFFF;text-align:center;height:45px;line-height:45px;">
+				交通指数
+			</div>
+		</div>
+
+		<div class="wbg" id="trafficContainer">
+			<!--<div id="loading" align="center"><img src="images/waiting.gif" align="center">loadings</div>-->
+			<img id="trafficBgImg" class="cimg" src="images/index_bg_1.jpg" alt="" style="display:none;"/>
+			<div id="indexCon" style="position: relative; left: 0px; top: 0px; width: 100%;">
+				<div class='bg' id='shadow'></div>
+				<div id="listContainer" style="position:absolute;top:60px;bottom:60px;width:360px;overflow:hidden;">
+					<div id="listRes" style="position:absolute;top:0px;width:100%;"></div>
+				</div>
+				<div class='ly2' id="datasource"></div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/traffic.js"></script>
+		<script type="text/javascript">
+			     // var param = '{"area":"北京-全路网","width":380,"height":380}';
+			       	//Traffic.initByParam(param);
+		</script>
+			<script type="text/javascript">
+			function reflesh() {
+				document.location.reload();
+			}
+
+			setTimeout("reflesh()", 5 * 60 * 1000);
+			//每5分钟刷新一次
+			$(function() {
+				document.getElementById("back").addEventListener('touchstart', touchstart);
+				document.getElementById("back").addEventListener('touchend', touchend);
+				document.getElementById("reflesh").addEventListener('touchstart', touchstart_ref);
+				document.getElementById("reflesh").addEventListener('touchend', touchend_ref);
+			});
+			function touchstart(e) {
+				$("#back").attr("src", "images/icon_back.png");
+			}
+
+			function touchend(e) {
+				$("#back").attr("src", "images/icon_back_pressed.png");
+			}
+			function touchstart_ref(e) {
+				$("#reflesh").attr("src", "images/icon_refresh_pressed.png");
+			}
+
+			function touchend_ref(e) {
+				$("#reflesh").attr("src", "images/icon_refresh.png");
+			}
+		</script>
+	</body>
+	
+</html>

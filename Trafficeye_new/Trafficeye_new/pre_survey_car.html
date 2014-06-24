@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE HTML PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta content="telephone=no" name="format-detection" />
+<title>车辆品牌型号</title>
+<link href="per_css/public.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" media="screen and (-webkit-device-pixel-ratio:1.5)" href="per_css/mdpi.css" />
+<link rel="stylesheet" media="screen and (-webkit-device-pixel-ratio:2.0)" href="per_css/hdpi.css" /></head>
+<body>
+
+<div class="header">
+	<div class="tbtn-l" id="backpagebtn"><a></a></div>
+	车辆品牌型号
+</div>
+
+<div class="itext yztext">
+	您目前驾驶车辆的品牌型号是？<br />
+</div>
+
+<ul class="selbox">
+	<li>
+		<select name="" class="set" onchange="test1()" id="car">
+			<option value="品牌">品牌</option>
+			<option value="opt1">阿斯顿.马丁</option>
+			<option value="opt2">奥迪</option>
+			<option value="opt3">奔腾</option>
+			<option value="opt4">宝马</option>
+			<option value="opt5">奔驰</option>
+			<option value="opt6">别克</option>
+			<option value="opt7">比亚迪</option>
+			<option value="opt8">本田</option>
+			<option value="opt9">标致</option>
+			<option value="opt10">保时捷</option>
+			<option value="opt11">宾利</option>
+			<option value="opt12">宝骏</option>
+			<option value="opt13">北京汽车</option>
+			<option value="opt14">长安</option>
+			<option value="opt15">长城</option>
+			<option value="opt16">东南</option>
+			<option value="opt17">大众</option>
+			<option value="opt18">帝豪</option>
+			<option value="opt19">东风</option>
+			<option value="opt20">道奇</option>
+			<option value="opt21">福田</option>
+			<option value="opt22">菲亚特</option>
+			<option value="opt23">福特</option>
+			<option value="opt24">丰田</option>
+			<option value="opt25">法拉利</option>
+			<option value="opt26">观致</option>
+			<option value="opt27">广汽传祺</option>
+			<option value="opt28">黄海</option>
+			<option value="opt29">海马</option>
+			<option value="opt30">哈飞</option>
+			<option value="opt31">华泰</option>
+			<option value="opt32">红旗</option>
+			<option value="opt33">捷豹</option>
+			<option value="opt34">金杯</option>
+			<option value="opt35">JEEP</option>
+			<option value="opt36">江铃</option>
+			<option value="opt37">江淮</option>
+			<option value="opt38">凯迪拉克</option>
+			<option value="opt39">开瑞</option>
+			<option value="opt40">克莱斯勒</option>
+			<option value="opt41">路特斯</option>
+			<option value="opt42">雷诺</option>
+			<option value="opt43">力帆</option>
+			<option value="opt44">路虎</option>
+			<option value="opt45">猎豹</option>
+			<option value="opt46">雷克萨斯</option>
+			<option value="opt47">兰博基尼</option>
+			<option value="opt48">铃木</option>
+			<option value="opt49">马自达</option>
+			<option value="opt50">MG</option>
+			<option value="opt51">玛莎拉蒂</option>
+			<option value="opt52">MINI</option>
+			<option value="opt53">迈凯轮</option>
+			<option value="opt54">纳智捷</option>
+			<option value="opt55">讴歌</option>
+			<option value="opt56">欧宝</option>
+			<option value="opt57">青年莲花</option>
+			<option value="opt58">起亚</option>
+			<option value="opt59">全球鹰</option>
+			<option value="opt60">奇瑞</option>
+			<option value="opt61">启辰</option>
+			<option value="opt62">日产</option>
+			<option value="opt63">瑞麒</option>
+			<option value="opt64">荣威</option>
+			<option value="opt65">双龙</option>
+			<option value="opt66">斯柯达</option>
+			<option value="opt67">双环</option>
+			<option value="opt68">Smart</option>
+			<option value="opt69">思铭</option>
+			<option value="opt70">斯巴鲁</option>
+			<option value="opt71">三菱</option>
+			<option value="opt72">Tesla</option>
+			<option value="opt73">沃尔沃</option>
+			<option value="opt74">威麟</option>
+			<option value="opt75">现代</option>
+			<option value="opt76">雪铁龙</option>
+			<option value="opt77">夏利</option>
+			<option value="opt78">雪佛兰</option>
+			<option value="opt79">西雅特</option>
+			<option value="opt80">英伦</option>
+			<option value="opt81">永源</option>
+			<option value="opt82">野马</option>
+			<option value="opt83">一汽</option>
+			<option value="opt84">英菲尼迪</option>
+			<option value="opt85">众泰</option>
+			<option value="opt86">中兴</option>
+			<option value="opt87">中华</option>
+			<option value="opt88">其他</option>
+		</select>
+	</li>	
+	<li>
+		<select name="" class="set" id="car2" disabled="true">
+			<option value="型号">型号</option>
+		</select>
+	</li>	
+	<li>
+		<select name="" class="set" id="car3">
+			<option value="排量">排量</option>
+			<option value="opt2">排量≤1升</option>
+			<option value="opt3">1升＜排量≤1.6升</option>
+			<option value="opt4">1.6升＜排量≤2.0升</option>
+			<option value="opt5">2.0升＜排量≤2.5升</option>
+			<option value="opt6">2.5升＜排量≤3.0升</option>
+			<option value="opt7">3.0升＜排量≤4.0升</option>
+			<option value="opt8">4.0升以上</option>
+			<option value="opt9">其他</option>
+		</select>
+	</li>	
+</ul>
+					
+<ul class="h-btn i-btn n-btn">
+
+	<li onclick="saveFunction(this);"><a>保存</a></li>
+</ul>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+</body>
+<script type="text/javascript" src="per_js/car.js"></script>
+<script type="text/javascript" src="libs/zepto.js"></script>
+<script type="text/javascript" src="libs/gmu.js"></script>
+<script type="text/javascript" src="per_js/base.js"></script>
+<script type="text/javascript" src="per_js/pre_survey_car.js"></script>
+</html>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<result code="200" description="简图列表返回成功" fill="1">
+<imgInfo imgid="S250001" imgname="全市路况" imgsize="176x150" imgtype="全市简图" typecode="R01" />
+<imgInfo imgid="0025_103_001" imgname="南京城市内主干路" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0025_105_001" imgname="夫子庙区域" imgsize="176x150" imgtype="区域简图" typecode="R01" />
+<imgInfo imgid="0025_105_002" imgname="湖南路区域" imgsize="176x150" imgtype="区域简图" typecode="R01" />
+<imgInfo imgid="0025_105_003" imgname="新街口区域" imgsize="176x150" imgtype="区域简图" typecode="R01" />
+<imgInfo imgid="0025_106_001" imgname="南京西站" imgsize="176x150" imgtype="交通枢纽" typecode="R01" />
+<imgInfo imgid="0025_106_002" imgname="燕子矶" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0025_106_003" imgname="南京东站" imgsize="176x150" imgtype="交通枢纽" typecode="R01" />
+<imgInfo imgid="0025_106_004" imgname="中山陵" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0025_106_005" imgname="马群" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0025_106_006" imgname="南京理工大学周边" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0025_106_007" imgname="百家湖-九龙湖" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0025_106_008" imgname="郑和宝船遗址公园" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0025_106_009" imgname="绿博园" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0025_106_010" imgname="南京奥体中心" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0025_106_011" imgname="菊花台公园-南京南站" imgsize="176x150" imgtype="交通枢纽" typecode="R01" />
+<imgInfo imgid="0025_106_012" imgname="玄武湖公园-南京站" imgsize="176x150" imgtype="交通枢纽" typecode="R01" />
+<imgInfo imgid="0025_106_013" imgname="南京大学周边" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0025_106_014" imgname="莫愁湖公园" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0025_106_015" imgname="夫子庙" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0025_106_016" imgname="赛虹桥立交-安德门" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+<imgInfo imgid="0025_106_017" imgname="雨花台风景名胜区" imgsize="176x150" imgtype="道路简图" typecode="R01" />
+</result>

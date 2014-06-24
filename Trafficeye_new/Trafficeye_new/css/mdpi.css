@@ -1,0 +1,82 @@
+﻿.t .b ul li a span {
+	display:block;
+	height:45px;
+	width:45px;
+}
+
+
+.t .b ul li.ia a span {
+	-webkit-background-size:136px 90px;
+	background:url(../images/dpi1.5/icons_trafficindex.png) no-repeat left top;
+}
+.t .b ul li.iaps a span {
+	-webkit-background-size:136px 90px;
+	background:url(../images/dpi1.5/icons_trafficindex.png) no-repeat left -45px;
+}
+.t .b ul li.ib a span {
+	-webkit-background-size:136px 90px;
+	background:url(../images/dpi1.5/icons_trafficindex.png) no-repeat -45px top;
+}
+.t .b ul li.ibps a span {
+	-webkit-background-size:136px 90px;
+	background:url(../images/dpi1.5/icons_trafficindex.png) no-repeat -45px -45px;
+}
+.t .b ul li.ic a span {
+	-webkit-background-size:136px 90px;
+	background:url(../images/dpi1.5/icons_trafficindex.png) no-repeat -90px top;
+}
+.t .b ul li.icps a span {
+	-webkit-background-size:136px 90px;
+	background:url(../images/dpi1.5/icons_trafficindex.png) no-repeat -90px -45px;
+}
+.indicator > li {
+	background: url(../images/dpi1.5/mi.png) no-repeat left top;
+	-webkit-background-size:6px 12px;
+}
+.indicator > li.active {
+	background: url(../images/dpi1.5/mi.png) no-repeat left bottom;
+	-webkit-background-size:6px 12px;
+}
+
+.t .c ul li a span {
+	display:block;
+	height:45px;
+	width:45px;
+}
+
+
+.t .c ul li.ia a span {
+	-webkit-background-size:136px 90px;
+	background:url(../images/dpi1.5/icons_trafficindex.png) no-repeat left top;
+}
+.t .c ul li.iaps a span {
+	-webkit-background-size:136px 90px;
+	background:url(../images/dpi1.5/icons_trafficindex.png) no-repeat left -45px;
+}
+.t .c ul li.ib a span {
+	-webkit-background-size:136px 90px;
+	background:url(../images/dpi1.5/icons_trafficindex.png) no-repeat -45px top;
+}
+.t .c ul li.ibps a span {
+	-webkit-background-size:136px 90px;
+	background:url(../images/dpi1.5/icons_trafficindex.png) no-repeat -45px -45px;
+}
+.t .c ul li.ic a span {
+	-webkit-background-size:136px 90px;
+	background:url(../images/dpi1.5/icons_trafficindex.png) no-repeat -90px top;
+}
+.t .c ul li.icps a span {
+	-webkit-background-size:136px 90px;
+	background:url(../images/dpi1.5/icons_trafficindex.png) no-repeat -90px -45px;
+}
+.indicator > li {
+	background: url(../images/dpi1.5/mi.png) no-repeat left top;
+	-webkit-background-size:6px 12px;
+}
+.indicator > li.active {
+	background: url(../images/dpi1.5/mi.png) no-repeat left bottom;
+	-webkit-background-size:6px 12px;
+}
+
+
+

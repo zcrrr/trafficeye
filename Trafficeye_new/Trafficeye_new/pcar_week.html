@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE HTML PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta content="telephone=no" name="format-detection" />
+<title>位置</title>
+<link href="pcar_css/public.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" media="screen and (-webkit-device-pixel-ratio:1.5)" href="pcar_css/mdpi.css" />
+<link rel="stylesheet" media="screen and (-webkit-device-pixel-ratio:2.0)" href="pcar_css/hdpi.css" /></head>
+<body>
+<div class="header">
+	<div class="tbtn-l"  id="backpagebtn"><a></a></div>
+	周期
+</div>
+
+<ul class="setup_list seweek">
+	<li id="sun"><!--点击效果加CURR-->
+		<h3>周　　日</h3>
+		<span class="libg_arrow"></span>
+	</li>
+	<li id="mon">
+		<h3>周　　一</h3>
+		<span class="libg_arrow"></span>
+	</li>
+	<li id="tues"><!--选中的效果是selected-->
+		<h3>周　　二</h3>
+		<span class="libg_arrow"></span>
+	</li>
+	<li id="wed"><!--点击效果加CURR-->
+		<h3>周　　三</h3>
+		<span class="libg_arrow"></span>
+	</li>
+	<li id="thur">
+		<h3>周　　四</h3>
+		<span class="libg_arrow"></span>
+	</li>
+	<li id="fri"><!--选中的效果是selected-->
+		<h3>周　　五</h3>
+		<span class="libg_arrow"></span>
+	</li>
+	<li id="sat"><!--选中的效果也有点击效果-->
+		<h3>周　　六</h3>
+		<span class="libg_arrow"></span>
+	</li>
+</ul>
+
+<ul class="h-btn">
+	<li onclick="submitWeek(this);"><a>保　　存</a></li>
+</ul>
+</body>
+<script type="text/javascript" src="libs/zepto.js"></script>
+<script type="text/javascript" src="libs/gmu.js"></script>
+<script type="text/javascript" src="pcar_js/base.js"></script>
+<script type="text/javascript" src="pcar_js/pcar_week.js"></script>
+</html>

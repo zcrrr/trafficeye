@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE HTML PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta content="telephone=no" name="format-detection" />
+<title>交通眼</title>
+<link href="com_css/public.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" media="screen and (-webkit-device-pixel-ratio:1.5)" href="com_css/mdpi.css" />
+<link rel="stylesheet" media="screen and (-webkit-device-pixel-ratio:2.0)" href="com_css/hdpi.css" />
+</head>
+<body>	
+<div class="header">
+	<div class="tbtn-l" id="backpagebtn"><a></a></div>
+	关注与粉丝
+</div>
+
+<ul class="h-list">
+	<li>
+		<span class="gbtn" id="detailbtn">详情</span>
+		<div class="h-img" id="headimgbtn"  onclick="headimgbtnUp(this);">
+			<img src="com_images/default.png" width="40" height="40" id="headerimg"/>
+		</div>
+		<div class="h-text" id="headername"></div>
+	</li>
+</ul>
+<div class="h-inp-box  m-inp-box" style="margin-top:1px">	
+	<div class="h-inp m-inp">
+		<input name="keyTxt" id="inputsearch" type="search" placeholder="输入交通眼的用户昵称进行搜索"/>
+	</div>
+	<div class="m-btn" id = "inputbtn">提交</div>	
+</div>
+<ul id = "lookfanstab" class="h-btn">
+	<li id= "lookbtn"><a>关注</a></li>
+	<li id = "fansbtn"><a>粉丝</a></li>
+</ul>
+
+
+<div id = "listtotal" class="h-listbt"></div>
+<ul class="h-list" id="userlist">
+</ul>
+<div id="loadmorebtn" class="qpl bblue" style="display:none;">加载更多</div>
+<ul class="h-btn bt">
+	<li id = "invitebtn" class="curr-"><a>邀请好友</a></li>
+</ul>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+</body>
+<script type="text/javascript" src="libs/zepto.js"></script>
+<script type="text/javascript" src="libs/gmu.js"></script>
+<script type="text/javascript" src="com_js/base.js"></script>
+<script type="text/javascript" src="com_js/lookfans.js"></script>
+</html>

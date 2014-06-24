@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport"
+		content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title></title>
+		<link href="css/public.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet"
+		media="screen and (-webkit-device-pixel-ratio:1.5)"
+		href="css/mdpi.css" />
+		<link rel="stylesheet"
+		media="screen and (-webkit-device-pixel-ratio:2.0)"
+		href="css/hdpi.css" />
+		<script type="text/javascript" src="js/jquery1.9.1.js"></script>
+		<style type="text/css">
+			#topNav {
+				width:100%;
+				float: left;
+				display: block;
+				z-index: 100;
+				overflow: visible;
+				position: fixed;
+				top: 0px; /* position fixed for IE6 */
+				_position: absolute;
+				_top: expression(documentElement.scrollTop + "px");
+				background-image: url( images/bar.png);
+				height:45px	;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="topNav" >
+			<img src="images/icon_back.png" width="45px" height="45px"  style="float:left;" id="back" onclick="window.location.href=window.localStorage.pre;"/>
+			<div  style="font-size:24px ;color: #FFFFFF;text-align:center;height:45px;line-height:45px;">
+				北京交通指数帮助
+			</div>
+		</div>
+		<div style="margin-top: 45px">
+			<p>
+				<strong>一、什么是北京市交通指数？</strong>
+			</p>
+			<p>
+				&nbsp;&nbsp;&nbsp; 交通指数是交通拥堵指数或交通运行指数(Traffic Performance Index(TPI))的简称,是综合反映道路网畅通或拥堵的概念性指数值。
+			</p>
+			<p>
+				&nbsp;&nbsp;&nbsp; 交通指数取值范围为0～10,分为五级。其中0～2,2～4,4～6,6～8,8～10分别对应“畅通”、“基本畅通”、“轻度拥堵”、“中度拥堵”、“严重拥堵”五个级别,数值越高表明交通拥堵状况越严重。
+			</p>
+			<p>
+				&nbsp;&nbsp;&nbsp; 0～2,畅通:交通运行状况良好,基本没有道路拥堵。
+			</p>
+			<p>
+				&nbsp;&nbsp;&nbsp; 2～4,基本畅通:交通运行状况较好,有少量道路拥堵。
+			</p>
+			<p>
+				&nbsp;&nbsp;&nbsp; 4～6,轻度拥堵:交通运行状况较差,部分环路、主干路拥堵。
+			</p>
+			<p>
+				&nbsp;&nbsp;&nbsp; 6～8,中度拥堵:交通运行状况差,大量环路、主干路拥堵。
+			</p>
+			<p>
+				&nbsp;&nbsp;&nbsp; 8～10,严重拥堵:交通运行状况很差,全市大部分道路拥堵。
+			</p>
+			<p>
+				<br/>
+			</p>
+
+			<p>
+				<strong>二、怎么计算北京市交通指数？</strong>
+			</p>
+			<p>
+				&nbsp;&nbsp;&nbsp; 交通指数是对分布在城市大街小巷的动态车辆位置信息(简称浮动车数据)进行深入加工处理获得的,有超过3万余辆浮动车数据通过通信网络实时回传给数据处理中心。首先对车辆位置数据处理,得到不同功能等级道路的运行速度,然后根据道路功能不同以及流量数据计算该道路在全网中所占权重,最后通过人对拥堵的感知判断,给出换算到0-10的指数指标值。交通指数计算最小时间单位是15分钟,指数值可以实时动态地反映全路网的运行状态,通过定义通勤早、晚高峰或者节假日高峰等不同统计周期,可以得到工作日高峰平均交通指数、日交通指数最大值等反映一天典型交通特征的指数。
+			</p>
+			<p>
+				<br/>
+			</p>
+
+			<p>
+				<strong>三、如何使用北京市交通指数？</strong>
+			</p>
+			<p>
+				&nbsp;&nbsp;&nbsp; 交通指数是集交通拥堵空间范围、持续时间、严重程度的为一体的综合性数值,交通管理者及交通参与者可以通过交通指数,得到全路网或者区域路网的交通状态,以便及时采取有效措施,减少拥堵的发生。
+			</p>
+			<p>
+				&nbsp;&nbsp;&nbsp; 交通指数能够帮助居民判断出行时间消耗,比如在畅通状况下,上班通勤的时间为30分钟,那么当路网处于中度拥堵的时候,就要多预留出大约30分钟的时间提前出门以免迟到。
+			</p>
+			<p>
+				&nbsp;&nbsp;&nbsp; 0～2, 畅 通:居民可顺畅到达目的地。
+			</p>
+			<p>
+				&nbsp;&nbsp;&nbsp; 2～4, 基本畅通:居民一次出行平均需要比畅通时多花费0.2-0.5倍时间。
+			</p>
+			<p>
+				&nbsp;&nbsp;&nbsp; 4～6, 轻度拥堵:居民一次出行平均需要比畅通时多花费0.5-0.8倍时间。
+			</p>
+			<p>
+				&nbsp;&nbsp;&nbsp; 6～8, 中度拥堵:居民一次出行平均需要比畅通时多花费0.8-1.1倍时间。
+			</p>
+			<p>
+				&nbsp;&nbsp;&nbsp; 8～10,严重拥堵:居民一次出行平均需要比畅通时多花费1.1倍以上时间。
+			</p>
+			<p align="center"><img src="index_help_beijing_1.png" width="100%">
+			</p>
+			<p align="center">
+				<strong>交通指数与出行花费时间的大致关系</strong>
+			</p>
+			<p>
+				<br/>
+			</p>
+
+			<p>
+				<br/>
+				<br/>
+				<br/>
+				
+				更多信息，请访问<a href="http://www.bjjtw.gov.cn">北京市交通委员会</a>
+				<br/>
+				<br/>
+			</p>
+
+		</div>
+		<script type="text/javascript">
+			function reflesh() {
+				document.location.reload();
+			}
+
+			setTimeout("reflesh()", 1 * 60 * 1000);
+			//每5分钟刷新一次
+		</script>
+		<script type="text/javascript">
+			$(function() {
+				document.getElementById("back").addEventListener('touchstart', touchstart);
+				document.getElementById("back").addEventListener('touchend', touchend);
+			});
+			function touchstart(e) {
+				$("#back").attr("src", "images/icon_back.png");
+			}
+
+			function touchend(e) {
+				$("#back").attr("src", "images/icon_back_pressed.png");
+			}
+		</script>
+	</body>
+</html>
